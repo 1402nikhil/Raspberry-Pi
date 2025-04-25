@@ -1,6 +1,23 @@
 # Raspberry-Pi-Setup
 This repository contains the setup procedure of ROS2 on the Raspberry Pi
 
+## Raspberry Pi Imager Installation
+
+### Download
+
+- [Raspberry Pi Imager – Official Download Page](https://www.raspberrypi.com/software/)
+
+### Installation Using APT (Recommended)
+
+> This method automatically resolves dependencies.
+
+```bash
+sudo apt install ./filename.deb
+```
+
+> ⚠️ Make sure to include `./` if the `.deb` file is in your current directory.
+
+---
 
 ## OS Installation
 
@@ -11,46 +28,41 @@ This repository contains the setup procedure of ROS2 on the Raspberry Pi
 
 ## Essential Software Installation
 
-### Git
+### Update System First
+```bash
+sudo apt update
+```
+
+### 1. Git
 ```bash
 sudo apt install git
 ```
 
-### OpenSSH Server
+### 2. OpenSSH Server
 ```bash
 sudo apt install openssh-server
 ```
 
----
+### 3. ROS 2 Humble Installation
 
-### ROS 2 Humble Installation
+- Follow the steps mentioned in official documentation to instal ROS2 Humble.
+- [ROS 2 Humble Official Installation Guide](https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debs.html)
 
-- **Reference**: [ROS 2 Humble Official Installation Guide](https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debs.html)
-
----
-
-### Xacro Installation
+### 4. Xacro Installation
 ```bash
 sudo apt install ros-humble-xacro
 ```
 
----
-
-### ros2_control and ros2_controllers Installation
+### 5. ros2_control and ros2_controllers Installation
 ```bash
 sudo apt install ros-humble-ros2-control ros-humble-ros2-controllers ros-humble-hardware-interface
 ```
-
----
-
-### Custom Hardware Message Support
+Custom Hardware Message Support
 ```bash
 sudo apt install ros-humble-controller-manager ros-humble-control-msgs
 ```
 
----
-
-### 🎮 Wireless Controller Setup
+### 6. Wireless Controller Setup
 
 ```bash
 sudo apt install joystick jstest-gtk evtest
@@ -63,6 +75,7 @@ sudo apt install joystick jstest-gtk evtest
 ## Network Configuration (Netplan)
 
 Create or modify a file in `/etc/netplan/` (e.g. `01-netcfg.yaml`) with the following content:
+This file is indentation sensitive!!
 
 ```yaml
 network:

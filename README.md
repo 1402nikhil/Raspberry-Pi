@@ -3,13 +3,11 @@ This repository contains the setup procedure of ROS2 on the Raspberry Pi
 
 ## Raspberry Pi Imager Installation
 
-### Download
+- **Download**: [Raspberry Pi Imager – Official Download Page](https://www.raspberrypi.com/software/)
 
-- [Raspberry Pi Imager – Official Download Page](https://www.raspberrypi.com/software/)
+- **Installation Using APT**
 
-### Installation Using APT (Recommended)
-
-This method automatically resolves dependencies.
+ This method automatically resolves dependencies.
 
 ```bash
 sudo apt install ./filename.deb

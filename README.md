@@ -9,13 +9,13 @@ This repository contains the setup procedure of ROS2 on the Raspberry Pi
 
 ### Installation Using APT (Recommended)
 
-> This method automatically resolves dependencies.
+This method automatically resolves dependencies.
 
 ```bash
 sudo apt install ./filename.deb
 ```
 
-> ⚠️ Make sure to include `./` if the `.deb` file is in your current directory.
+ Make sure to include `./` if the `.deb` file is in your current directory.
 
 ---
 

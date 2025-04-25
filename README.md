@@ -62,6 +62,7 @@ sudo apt install ros-humble-controller-manager ros-humble-control-msgs
 
 ### 6. Micro-ROS Setup
 - Follow the instruction related to Micro-Ros agent setup mentioned in tutorial and the video.
+- Micro-ROS Github: [Micro-Ros](https://github.com/micro-ROS)
 - Micro-ROS tutorial:  [micro-ROS: First Application on RTOS (FreeRTOS)](https://micro.ros.org/docs/tutorials/core/first_application_rtos/freertos/)
 
 - Reference Video: [Micro-ROS Robot using PlatformIO for ESP32 with ROS 2 – YouTube](https://youtu.be/Nf7HP9y6Ovo?si=GkxALOkdCVXuOAPu)

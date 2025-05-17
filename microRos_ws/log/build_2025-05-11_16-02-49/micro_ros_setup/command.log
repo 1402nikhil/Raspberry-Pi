@@ -1,4 +1,0 @@
-Invoking command in '/home/piros/Work/ROS2/microRos_ws/build/micro_ros_setup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/piros/Work/ROS2/microRos_ws/build/micro_ros_setup -- -j4 -l4
-Invoked command in '/home/piros/Work/ROS2/microRos_ws/build/micro_ros_setup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/piros/Work/ROS2/microRos_ws/build/micro_ros_setup -- -j4 -l4
-Invoking command in '/home/piros/Work/ROS2/microRos_ws/build/micro_ros_setup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/piros/Work/ROS2/microRos_ws/build/micro_ros_setup
-Invoked command in '/home/piros/Work/ROS2/microRos_ws/build/micro_ros_setup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/piros/Work/ROS2/microRos_ws/build/micro_ros_setup

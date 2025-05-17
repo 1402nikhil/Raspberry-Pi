@@ -1,7 +1,0 @@
-<library path="three_omniwheel_controller">
-  <class name="three_omniwheel_controller/ThreeOmniwheelController" type="three_omniwheel_controller::ThreeOmniwheelController" base_class_type="controller_interface::ControllerInterface">
-  <description>
-    The differential drive controller transforms linear and angular velocity messages into signals for each wheel(s) for a differential drive robot.
-  </description>
-  </class>
-</library>

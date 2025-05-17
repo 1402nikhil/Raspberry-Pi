@@ -1,0 +1,31 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/nikhil/Work/ROS/microRos_ws/install/micro_ros_agent/include/**",
+        "/home/nikhil/Work/ROS/microRos_ws/install/micro_ros_msgs/include/**",
+        "/home/nikhil/Work/ROS/control_ws/install/three_wheel/include/**",
+        "/home/nikhil/Work/ROS/control_ws/install/diffdrive_arduino/include/**",
+        "/home/nikhil/Work/ROS/control_ws/install/diff_drive/include/**",
+        "/home/nikhil/Work/ROS/controller_ws/install/three_omniwheel_controller/include/**",
+        "/home/nikhil/Work/ROS/controller_ws/install/diff_drive_controller/include/**",
+        "/home/nikhil/Work/ROS/turtlebot3_ws/install/turtlebot3_gazebo/include/**",
+        "/home/nikhil/Work/ROS/turtlebot3_ws/install/turtlebot3_fake_node/include/**",
+        "/home/nikhil/Work/ROS/ros2_ws/install/my_robot_interfaces/include/**",
+        "/opt/ros/humble/include/**",
+        "/home/nikhil/Work/ROS/microRos_ws/src/uros/micro-ROS-Agent/micro_ros_agent/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}

@@ -1,0 +1,88 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-ff0bf0ef15b45de909d2.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "three_omniwheel_controller",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "three_omniwheel_controller::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-three_omniwheel_controller-c7b9ab9e03f7e9f99b06.json",
+					"name" : "three_omniwheel_controller",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "three_omniwheel_controller_parameters::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-three_omniwheel_controller_parameters-107b7a49281ca94b2e1e.json",
+					"name" : "three_omniwheel_controller_parameters",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "three_omniwheel_controller_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-three_omniwheel_controller_uninstall-c813eedf87c50d561a49.json",
+					"name" : "three_omniwheel_controller_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-e0fca4017c57276e3fb8.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/nikhil/Work/ROS/controller_ws/src/three_omniwheel_controller/build/three_omniwheel_controller",
+		"source" : "/home/nikhil/Work/ROS/controller_ws/src/three_omniwheel_controller"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

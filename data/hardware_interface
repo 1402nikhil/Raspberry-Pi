@@ -1,0 +1,129 @@
+#include "my_motor_control/motor_hardware_interface.hpp"
+#include <hardware_interface/types/hardware_interface_type_values.hpp>
+#include <rclcpp/rclcpp.hpp>
+
+namespace my_motor_control
+{
+CallbackReturn MotorHardwareInterface::on_init(const hardware_interface::HardwareInfo &info)
+{
+    motor_velocity_ = 0.0;
+    arduino_serial_.setPort("/dev/ttyUSB0");  // Change based on your Arduino port
+    arduino_serial_.setBaudrate(115200);
+    try
+    {
+        arduino_serial_.open();
+    }
+    catch (serial::IOException &e)
+    {
+        RCLCPP_ERROR(rclcpp::get_logger("MotorHardwareInterface"), "Unable to open serial port!");
+        return CallbackReturn::ERROR;
+    }
+    return CallbackReturn::SUCCESS;
+}
+
+std::vector<hardware_interface::StateInterface> MotorHardwareInterface::export_state_interfaces()
+{
+    return {hardware_interface::StateInterface("motor", "velocity", &motor_velocity_)};
+}
+
+std::vector<hardware_interface::CommandInterface> MotorHardwareInterface::export_command_interfaces()
+{
+    return {hardware_interface::CommandInterface("motor", "velocity", &motor_velocity_)};
+}
+
+return_type MotorHardwareInterface::read(const rclcpp::Time &, const rclcpp::Duration &)
+{
+    // No encoder feedback for now
+    return return_type::OK;
+}
+
+return_type MotorHardwareInterface::write(const rclcpp::Time &, const rclcpp::Duration &)
+{
+    std::string command = std::to_string(motor_velocity_) + "\n";
+    arduino_serial_.write(command);
+    return return_type::OK;
+}
+}  // namespace my_motor_control
+
+#include "pluginlib/class_list_macros.hpp"
+PLUGINLIB_EXPORT_CLASS(my_motor_control::MotorHardwareInterface, hardware_interface::SystemInterface)
+
+
+
+#include "motor/motor_hardware_interface.hpp"
+#include "pluginlib/class_list_macros.hpp"
+#include <rclcpp/rclcpp.hpp>
+#include <std_msgs/msg/int32.hpp>
+#include <micro_ros_utilities/string_utilities.h>
+#include <micro_ros_utilities/type_utilities.h>
+
+namespace motor_control
+{
+    CallbackReturn MotorHardwareInterface::on_init(const hardware_interface::HardwareInfo &info)
+    {
+        if (hardware_interface::ActuatorInterface::on_init(info) != CallbackReturn::SUCCESS)
+        {
+            return CallbackReturn::ERROR;
+        }
+
+        motor_position_ = 0.0;
+        motor_velocity_ = 0.0;
+        motor_command_ = 0.0;
+
+        return CallbackReturn::SUCCESS;
+    }
+
+    CallbackReturn MotorHardwareInterface::on_configure(const rclcpp_lifecycle::State &)
+    {
+        node_ = std::make_shared<rclcpp::Node>("motor_hardware_interface");
+
+        motor_speed_publisher_ = node_->create_publisher<std_msgs::msg::Int32>("motor_speed", 10);
+        motor_speed_subscriber_ = node_->create_subscription<std_msgs::msg::Int32>(
+            "motor_command", 10, std::bind(&MotorHardwareInterface::motor_speed_callback, this, std::placeholders::_1));
+
+        return CallbackReturn::SUCCESS;
+    }
+
+    CallbackReturn MotorHardwareInterface::on_cleanup(const rclcpp_lifecycle::State &)
+    {
+        motor_speed_publisher_.reset();
+        motor_speed_subscriber_.reset();
+        node_.reset();
+        return CallbackReturn::SUCCESS;
+    }
+
+    CallbackReturn MotorHardwareInterface::on_activate(const rclcpp_lifecycle::State &)
+    {
+        RCLCPP_INFO(rclcpp::get_logger("MotorHardwareInterface"), "Activating Motor Hardware Interface");
+        return CallbackReturn::SUCCESS;
+    }
+
+    CallbackReturn MotorHardwareInterface::on_deactivate(const rclcpp_lifecycle::State &)
+    {
+        RCLCPP_INFO(rclcpp::get_logger("MotorHardwareInterface"), "Deactivating Motor Hardware Interface");
+        return CallbackReturn::SUCCESS;
+    }
+
+    return_type MotorHardwareInterface::read(const rclcpp::Time &time, const rclcpp::Duration &period)
+    {
+        motor_position_ += motor_velocity_ * period.seconds();
+        auto msg = std_msgs::msg::Int32();
+        msg.data = static_cast<int>(motor_velocity_);
+        motor_speed_publisher_->publish(msg);
+        return return_type::OK;
+    }
+
+    return_type MotorHardwareInterface::write(const rclcpp::Time &time, const rclcpp::Duration &period)
+    {
+        motor_velocity_ = motor_command_;
+        return return_type::OK;
+    }
+
+    void MotorHardwareInterface::motor_speed_callback(const std_msgs::msg::Int32::SharedPtr msg)
+    {
+        motor_command_ = static_cast<double>(msg->data);
+    }
+}
+
+PLUGINLIB_EXPORT_CLASS(motor_control::MotorHardwareInterface, hardware_interface::ActuatorInterface)
+

@@ -1,0 +1,11 @@
+<library path="three_wheel">
+  <class name="three_wheel/ThreeWheelHardware"          
+         type="three_wheel::ThreeWheelHardware"
+         base_class_type="hardware_interface::SystemInterface">  <!-- name: name of plugin; diff_drive::DiffDriveHardware: add DiffDriveHardware class inside the diff_drive namespace as a plugin-->
+    <description>
+      The ros2_control DiffBot example using a system hardware interface-type. 
+      It uses velocity command and position state interface. The example is the 
+      starting point to implement a hardware interface for differential-drive mobile robots.
+    </description>
+  </class>
+</library>

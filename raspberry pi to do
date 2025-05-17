@@ -1,0 +1,15 @@
+threewheel_system.cpp
+
+state interface check added for drive wheel (line 84)
+chechk communication_check topic name (line 218)
+changed micro ros checking logic (line 245):  Make it abort after some time if micro ros does not respond. also make an argument for it to check for micro ros or not.
+micro ros checking logic (line 304)
+check micro ros responding (line 345)
+check read function for commented part
+
+
+
+change complete path to relative path
+make a gui to show error and warning on esp32 and connect it to ros2
+reset or restart particular thing button on the gui.(ex: micro ros not responding, etc)
+raspberry setup script to setup new sd card

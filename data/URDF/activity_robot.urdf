@@ -1,0 +1,87 @@
+<?xml version="1.0"?>        <!-- to recognize the file as xml file, URDF uses metric system -->
+<robot name="my_robot">        <!-- robot tag -->
+
+    <material name="blue">  <!-- set colour name-->
+        <color rgba="0 0 0.8 1" />
+    </material>
+
+    <material name="grey">  <!-- set colour name-->
+        <color rgba="0.5 0.5 0.5 1" />
+    </material>
+
+    <link name="base_footprint" />    <!-- set base link name -->
+
+    <link name="base_link">    <!-- set base link name -->
+        <visual>
+            <geometry>
+                <box size="0.6 0.4 0.2" />     <!-- set size -->
+            </geometry>
+            <origin xyz="0 0 0.1" rpy="0 0 0" />
+            <material name="blue" />
+        </visual>
+    </link>
+
+    <link name="right_wheel_link">    <!-- set second link name -->
+        <visual>
+            <geometry>
+                <cylinder radius="0.1" length="0.05" />     <!-- set size -->
+            </geometry>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <material name="grey" />
+        </visual>
+    </link>
+
+    <link name="left_wheel_link">    <!-- set second link name -->
+        <visual>
+            <geometry>
+                <cylinder radius="0.1" length="0.05" />     <!-- set size -->
+            </geometry>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <material name="grey" />
+        </visual>
+    </link>
+
+    <link name="castor_wheel_link">    <!-- set second link name -->
+        <visual>
+            <geometry>
+                <sphere radius="0.05" />     <!-- set size -->
+            </geometry>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <material name="grey" />
+        </visual>
+    </link>
+
+    <joint name="footprint_base_joint" type="revolute">     <!-- set joint name and type-->
+        <parent link="base_footprint" />
+        <child link="base_link" />
+        <origin xyz="0 0 0.1" rpy="0 0 0" />
+        <axis xyz="0 0 1" />
+        <limit lower="-3.14" upper="3.14" velocity="100" effort="100" />
+    </joint>
+    
+    <joint name="base_right_wheel_joint" type="continuous">     <!-- set joint name and type-->
+        <parent link="base_link" />
+        <child link="right_wheel_link" />
+        <origin xyz="-0.15 -0.225 0" rpy="1.57 0 0" />
+        <axis xyz="0 0 -1" />
+    </joint>
+
+    <joint name="base_left_wheel_joint" type="continuous">     <!-- set joint name and type-->
+        <parent link="base_link" />
+        <child link="left_wheel_link" />
+        <origin xyz="-0.15 0.225 0" rpy="1.57 0 0" />
+        <axis xyz="0 0 -1" />
+    </joint>
+
+    <joint name="base_castor_joint" type="fixed">     <!-- set joint name and type-->
+        <parent link="base_link" />
+        <child link="castor_wheel_link" />
+        <origin xyz="0.2 0 -0.05" rpy="0 0 0" />
+    </joint>
+
+
+</robot>    
+
+
+   
+

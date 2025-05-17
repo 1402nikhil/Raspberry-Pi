@@ -1,0 +1,2 @@
+Creating a parameter YAML file to add all the parameters of the chassis. This will be converted to .cpp file by the "generate_parameter_library".
+writing the three_omniwheel_controller.hpp after including the created parameter library

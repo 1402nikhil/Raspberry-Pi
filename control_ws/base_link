@@ -1,0 +1,8 @@
+
+  <link name="base_footprint" />    <!-- set base link name -->
+
+  <joint name="footprint_base_joint" type="fixed">     <!-- set joint name and type-->
+      <parent link="base_footprint" />
+      <child link="base_link" />
+      <origin xyz="0 0 ${(2 * wheel_radius) + (base_height / 2.0)}" rpy="0 0 0" />
+  </joint>

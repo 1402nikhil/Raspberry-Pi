@@ -1,5 +1,5 @@
-# Raspberry Pi ROS2 Setup
-This repository contains the setup procedure of ROS2 on the Raspberry Pi
+# Raspberry Pi ROS2
+This repository contains the setup procedure of ROS2 on the Raspberry Pi and the related codes for three omniwheel and differential drive robot.
 
 ## Raspberry Pi Imager Installation
 

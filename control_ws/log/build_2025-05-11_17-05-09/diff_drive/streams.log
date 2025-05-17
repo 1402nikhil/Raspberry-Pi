@@ -1,0 +1,52 @@
+[0.168s] Invoking command in '/home/piros/Work/ROS2/control_ws/build/diff_drive': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/piros/Work/ROS2/ros2_ws/install/py_pkg:/opt/ros/humble /usr/bin/cmake --build /home/piros/Work/ROS2/control_ws/build/diff_drive -- -j4 -l4
+[0.912s] [35m[1mConsolidate compiler generated dependencies of target diff_drive[0m
+[1.453s] [100%] Built target diff_drive
+[1.561s] Invoked command in '/home/piros/Work/ROS2/control_ws/build/diff_drive' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/piros/Work/ROS2/ros2_ws/install/py_pkg:/opt/ros/humble /usr/bin/cmake --build /home/piros/Work/ROS2/control_ws/build/diff_drive -- -j4 -l4
+[1.572s] Invoking command in '/home/piros/Work/ROS2/control_ws/build/diff_drive': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/piros/Work/ROS2/ros2_ws/install/py_pkg:/opt/ros/humble /usr/bin/cmake --install /home/piros/Work/ROS2/control_ws/build/diff_drive
+[1.613s] -- Install configuration: ""
+[1.614s] -- Up-to-date: /home/piros/Work/ROS2/control_ws/install/diff_drive/share/diff_drive/diff_drive.xml
+[1.615s] -- Up-to-date: /home/piros/Work/ROS2/control_ws/install/diff_drive/include/diff_drive
+[1.616s] -- Up-to-date: /home/piros/Work/ROS2/control_ws/install/diff_drive/include/diff_drive/diff_drive
+[1.618s] -- Up-to-date: /home/piros/Work/ROS2/control_ws/install/diff_drive/include/diff_drive/diff_drive/diffdrive_system.hpp
+[1.620s] -- Up-to-date: /home/piros/Work/ROS2/control_ws/install/diff_drive/include/diff_drive/diff_drive/wheel.hpp
+[1.622s] -- Up-to-date: /home/piros/Work/ROS2/control_ws/install/diff_drive/include/diff_drive/diff_drive/visibility_control.h
+[1.626s] -- Up-to-date: /home/piros/Work/ROS2/control_ws/install/diff_drive/share/diff_drive/launch
+[1.628s] -- Up-to-date: /home/piros/Work/ROS2/control_ws/install/diff_drive/share/diff_drive/ros2_control
+[1.629s] -- Up-to-date: /home/piros/Work/ROS2/control_ws/install/diff_drive/share/diff_drive/ros2_control/diff_drive.ros2_control.xacro
+[1.632s] -- Up-to-date: /home/piros/Work/ROS2/control_ws/install/diff_drive/share/diff_drive/urdf
+[1.634s] -- Up-to-date: /home/piros/Work/ROS2/control_ws/install/diff_drive/share/diff_drive/urdf/diff_drive_description.urdf.xacro
+[1.635s] -- Up-to-date: /home/piros/Work/ROS2/control_ws/install/diff_drive/share/diff_drive/urdf/diff_drive.urdf.xacro
+[1.636s] -- Up-to-date: /home/piros/Work/ROS2/control_ws/install/diff_drive/share/diff_drive/urdf/diff_drive.materials.xacro
+[1.636s] -- Up-to-date: /home/piros/Work/ROS2/control_ws/install/diff_drive/share/diff_drive/rviz
+[1.638s] -- Up-to-date: /home/piros/Work/ROS2/control_ws/install/diff_drive/share/diff_drive/rviz/diff_drive_view.rviz
+[1.639s] -- Up-to-date: /home/piros/Work/ROS2/control_ws/install/diff_drive/share/diff_drive/rviz/diff_drive.rviz
+[1.641s] -- Up-to-date: /home/piros/Work/ROS2/control_ws/install/diff_drive/share/diff_drive/launch
+[1.641s] -- Up-to-date: /home/piros/Work/ROS2/control_ws/install/diff_drive/share/diff_drive/launch/diff_drive.launch.py
+[1.642s] -- Up-to-date: /home/piros/Work/ROS2/control_ws/install/diff_drive/share/diff_drive/launch/joystick.launch.py
+[1.642s] -- Up-to-date: /home/piros/Work/ROS2/control_ws/install/diff_drive/share/diff_drive/config
+[1.651s] -- Up-to-date: /home/piros/Work/ROS2/control_ws/install/diff_drive/share/diff_drive/config/diff_drive_controllers.yaml
+[1.653s] -- Up-to-date: /home/piros/Work/ROS2/control_ws/install/diff_drive/share/diff_drive/config/joystick.yaml
+[1.655s] -- Up-to-date: /home/piros/Work/ROS2/control_ws/install/diff_drive/lib/libdiff_drive.so
+[1.657s] -- Up-to-date: /home/piros/Work/ROS2/control_ws/install/diff_drive/share/diff_drive/environment/library_path.sh
+[1.658s] -- Up-to-date: /home/piros/Work/ROS2/control_ws/install/diff_drive/share/diff_drive/environment/library_path.dsv
+[1.659s] -- Up-to-date: /home/piros/Work/ROS2/control_ws/install/diff_drive/share/ament_index/resource_index/package_run_dependencies/diff_drive
+[1.660s] -- Up-to-date: /home/piros/Work/ROS2/control_ws/install/diff_drive/share/ament_index/resource_index/parent_prefix_path/diff_drive
+[1.661s] -- Up-to-date: /home/piros/Work/ROS2/control_ws/install/diff_drive/share/diff_drive/environment/ament_prefix_path.sh
+[1.661s] -- Up-to-date: /home/piros/Work/ROS2/control_ws/install/diff_drive/share/diff_drive/environment/ament_prefix_path.dsv
+[1.662s] -- Up-to-date: /home/piros/Work/ROS2/control_ws/install/diff_drive/share/diff_drive/environment/path.sh
+[1.663s] -- Up-to-date: /home/piros/Work/ROS2/control_ws/install/diff_drive/share/diff_drive/environment/path.dsv
+[1.663s] -- Up-to-date: /home/piros/Work/ROS2/control_ws/install/diff_drive/share/diff_drive/local_setup.bash
+[1.663s] -- Up-to-date: /home/piros/Work/ROS2/control_ws/install/diff_drive/share/diff_drive/local_setup.sh
+[1.664s] -- Up-to-date: /home/piros/Work/ROS2/control_ws/install/diff_drive/share/diff_drive/local_setup.zsh
+[1.664s] -- Up-to-date: /home/piros/Work/ROS2/control_ws/install/diff_drive/share/diff_drive/local_setup.dsv
+[1.664s] -- Installing: /home/piros/Work/ROS2/control_ws/install/diff_drive/share/diff_drive/package.dsv
+[1.665s] -- Up-to-date: /home/piros/Work/ROS2/control_ws/install/diff_drive/share/ament_index/resource_index/packages/diff_drive
+[1.667s] -- Up-to-date: /home/piros/Work/ROS2/control_ws/install/diff_drive/share/ament_index/resource_index/hardware_interface__pluginlib__plugin/diff_drive
+[1.667s] -- Up-to-date: /home/piros/Work/ROS2/control_ws/install/diff_drive/share/diff_drive/cmake/export_diff_driveExport.cmake
+[1.667s] -- Up-to-date: /home/piros/Work/ROS2/control_ws/install/diff_drive/share/diff_drive/cmake/export_diff_driveExport-noconfig.cmake
+[1.668s] -- Up-to-date: /home/piros/Work/ROS2/control_ws/install/diff_drive/share/diff_drive/cmake/ament_cmake_export_targets-extras.cmake
+[1.668s] -- Up-to-date: /home/piros/Work/ROS2/control_ws/install/diff_drive/share/diff_drive/cmake/ament_cmake_export_dependencies-extras.cmake
+[1.669s] -- Up-to-date: /home/piros/Work/ROS2/control_ws/install/diff_drive/share/diff_drive/cmake/diff_driveConfig.cmake
+[1.669s] -- Up-to-date: /home/piros/Work/ROS2/control_ws/install/diff_drive/share/diff_drive/cmake/diff_driveConfig-version.cmake
+[1.669s] -- Up-to-date: /home/piros/Work/ROS2/control_ws/install/diff_drive/share/diff_drive/package.xml
+[1.760s] Invoked command in '/home/piros/Work/ROS2/control_ws/build/diff_drive' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/piros/Work/ROS2/ros2_ws/install/py_pkg:/opt/ros/humble /usr/bin/cmake --install /home/piros/Work/ROS2/control_ws/build/diff_drive

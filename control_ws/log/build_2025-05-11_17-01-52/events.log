@@ -1,0 +1,946 @@
+[0.000000] (-) TimerEvent: {}
+[0.001187] (diff_drive) JobQueued: {'identifier': 'diff_drive', 'dependencies': OrderedDict()}
+[0.001410] (three_wheel) JobQueued: {'identifier': 'three_wheel', 'dependencies': OrderedDict()}
+[0.001684] (diff_drive) JobStarted: {'identifier': 'diff_drive'}
+[0.049376] (three_wheel) JobStarted: {'identifier': 'three_wheel'}
+[0.098290] (-) TimerEvent: {}
+[0.102817] (diff_drive) JobProgress: {'identifier': 'diff_drive', 'progress': 'cmake'}
+[0.105049] (diff_drive) Command: {'cmd': ['/usr/bin/cmake', '/home/piros/Work/ROS2/control_ws/src/diff_drive', '-DCMAKE_INSTALL_PREFIX=/home/piros/Work/ROS2/control_ws/install/diff_drive'], 'cwd': '/home/piros/Work/ROS2/control_ws/build/diff_drive', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('QT_SCALE_FACTOR', '1'), ('LANGUAGE', 'en_IN:en'), ('USER', 'piros'), ('XDG_SESSION_TYPE', 'x11'), ('COMPIZ_CONFIG_PROFILE', 'mate'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/piros/Work/ROS2/control_ws/install/three_wheel/lib:/home/piros/Work/ROS2/control_ws/install/diffdrive_arduino/lib:/home/piros/Work/ROS2/control_ws/install/diff_drive/lib:/home/piros/Work/ROS2/microRos_ws/install/micro_ros_agent/lib:/home/piros/Work/ROS2/microRos_ws/install/micro_ros_msgs/lib:/home/piros/Work/ROS2/ros2_ws/install/my_robot_interfaces/lib:/home/piros/Work/ROS2/controller_ws/install/three_omniwheel_controller/lib:/home/piros/Work/ROS2/controller_ws/install/diff_drive_controller/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/piros'), ('OLDPWD', '/home/piros/Work/ROS2'), ('DESKTOP_SESSION', 'mate'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GTK_MODULES', 'appmenu-gtk-module:gail:atk-bridge:canberra-gtk-module'), ('XDG_SEAT_PATH', '/org/freedesktop/DisplayManager/Seat0'), ('MANAGERPID', '1663'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1686'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=531afbf53fd4eb95884cb8b9680c8089'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3026'), ('UBUNTU_MENUPROXY', '1'), ('QT_QPA_PLATFORMTHEME', 'gtk2'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/piros/Work/ROS2/microRos_ws/install:/home/piros/Work/ROS2/turtlebot3_ws/install:/home/piros/Work/rplidar_ws/install:/home/piros/Work/ROS2/ros2_ws_1/install:/home/piros/Work/ROS2/ros2_ws/install:/home/piros/Work/ROS2/control_ws/install:/home/piros/Work/ROS2/controller_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'piros'), ('JOURNAL_STREAM', '8:27936'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('GTK_OVERLAY_SCROLLING', '0'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/piros:@/tmp/.ICE-unix/1695,unix/piros:/tmp/.ICE-unix/1695'), ('GDM_LANG', 'en_US'), ('INVOCATION_ID', '656f7ef9a71242e8b0df139371bf2cbb'), ('XDG_SESSION_PATH', '/org/freedesktop/DisplayManager/Session0'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'MATE'), ('XDG_SESSION_DESKTOP', 'mate'), ('XAUTHORITY', '/home/piros/.Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('XDG_GREETER_DATA_DIR', '/var/lib/lightdm-data/piros'), ('AMENT_PREFIX_PATH', '/home/piros/Work/ROS2/control_ws/install/three_wheel:/home/piros/Work/ROS2/control_ws/install/diffdrive_arduino:/home/piros/Work/ROS2/control_ws/install/diff_drive:/home/piros/Work/ROS2/turtlebot3_ws/install/turtlebot3_simulations:/home/piros/Work/ROS2/turtlebot3_ws/install/turtlebot3_gazebo:/home/piros/Work/ROS2/turtlebot3_ws/install/turtlebot3_fake_node:/home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup:/home/piros/Work/ROS2/microRos_ws/install/micro_ros_agent:/home/piros/Work/ROS2/microRos_ws/install/micro_ros_msgs:/home/piros/Work/ROS2/ros2_ws_1/install/mera_robot_bringup:/home/piros/Work/ROS2/ros2_ws_1/install/my_robot_description:/home/piros/Work/ROS2/ros2_ws/install/my_robot_bringup:/home/piros/Work/ROS2/ros2_ws/install/py_pkg:/home/piros/Work/ROS2/ros2_ws/install/cpp_pkg:/home/piros/Work/ROS2/ros2_ws/install/course_activities:/home/piros/Work/ROS2/ros2_ws/install/my_robot_interfaces:/home/piros/Work/ROS2/controller_ws/install/three_omniwheel_controller:/home/piros/Work/ROS2/controller_ws/install/diff_drive_controller:/home/piros/Work/rplidar_ws/install/rplidar_ros:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:1361d055-a967-46a8-b11e-aefcf8893eb8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'mate'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('PWD', '/home/piros/Work/ROS2/control_ws/build/diff_drive'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-mate:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=531afbf53fd4eb95884cb8b9680c8089'), ('XDG_DATA_DIRS', '/usr/share/mate:/home/piros/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/piros/Work/ROS2/microRos_ws/install/micro_ros_msgs/local/lib/python3.10/dist-packages:/home/piros/Work/ROS2/ros2_ws/install/py_pkg/lib/python3.10/site-packages:/home/piros/Work/ROS2/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('MATE_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/piros/Work/ROS2/control_ws/install/three_wheel:/home/piros/Work/ROS2/control_ws/install/diffdrive_arduino:/home/piros/Work/ROS2/control_ws/install/diff_drive:/home/piros/Work/ROS2/turtlebot3_ws/install/turtlebot3_simulations:/home/piros/Work/ROS2/turtlebot3_ws/install/turtlebot3_gazebo:/home/piros/Work/ROS2/turtlebot3_ws/install/turtlebot3_fake_node:/home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup:/home/piros/Work/ROS2/microRos_ws/install/micro_ros_agent:/home/piros/Work/ROS2/microRos_ws/install/micro_ros_msgs:/home/piros/Work/ROS2/ros2_ws_1/install/mera_robot_bringup:/home/piros/Work/ROS2/ros2_ws_1/install/my_robot_description:/home/piros/Work/ROS2/ros2_ws/install/my_robot_bringup:/home/piros/Work/ROS2/ros2_ws/install/cpp_pkg:/home/piros/Work/ROS2/ros2_ws/install/course_activities:/home/piros/Work/ROS2/ros2_ws/install/my_robot_interfaces:/home/piros/Work/ROS2/controller_ws/install/three_omniwheel_controller:/home/piros/Work/ROS2/controller_ws/install/diff_drive_controller:/home/piros/Work/rplidar_ws/install/rplidar_ros:/home/piros/Work/ROS2/ros2_ws/install/py_pkg:/opt/ros/humble'), ('QT_FONT_DPI', '96')]), 'shell': False}
+[0.128063] (three_wheel) JobProgress: {'identifier': 'three_wheel', 'progress': 'cmake'}
+[0.137031] (three_wheel) Command: {'cmd': ['/usr/bin/cmake', '/home/piros/Work/ROS2/control_ws/src/three_wheel', '-DCMAKE_INSTALL_PREFIX=/home/piros/Work/ROS2/control_ws/install/three_wheel'], 'cwd': '/home/piros/Work/ROS2/control_ws/build/three_wheel', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('QT_SCALE_FACTOR', '1'), ('LANGUAGE', 'en_IN:en'), ('USER', 'piros'), ('XDG_SESSION_TYPE', 'x11'), ('COMPIZ_CONFIG_PROFILE', 'mate'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/piros/Work/ROS2/control_ws/install/three_wheel/lib:/home/piros/Work/ROS2/control_ws/install/diffdrive_arduino/lib:/home/piros/Work/ROS2/control_ws/install/diff_drive/lib:/home/piros/Work/ROS2/microRos_ws/install/micro_ros_agent/lib:/home/piros/Work/ROS2/microRos_ws/install/micro_ros_msgs/lib:/home/piros/Work/ROS2/ros2_ws/install/my_robot_interfaces/lib:/home/piros/Work/ROS2/controller_ws/install/three_omniwheel_controller/lib:/home/piros/Work/ROS2/controller_ws/install/diff_drive_controller/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/piros'), ('OLDPWD', '/home/piros/Work/ROS2'), ('DESKTOP_SESSION', 'mate'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GTK_MODULES', 'appmenu-gtk-module:gail:atk-bridge:canberra-gtk-module'), ('XDG_SEAT_PATH', '/org/freedesktop/DisplayManager/Seat0'), ('MANAGERPID', '1663'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1686'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=531afbf53fd4eb95884cb8b9680c8089'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3026'), ('UBUNTU_MENUPROXY', '1'), ('QT_QPA_PLATFORMTHEME', 'gtk2'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/piros/Work/ROS2/microRos_ws/install:/home/piros/Work/ROS2/turtlebot3_ws/install:/home/piros/Work/rplidar_ws/install:/home/piros/Work/ROS2/ros2_ws_1/install:/home/piros/Work/ROS2/ros2_ws/install:/home/piros/Work/ROS2/control_ws/install:/home/piros/Work/ROS2/controller_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'piros'), ('JOURNAL_STREAM', '8:27936'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('GTK_OVERLAY_SCROLLING', '0'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/piros:@/tmp/.ICE-unix/1695,unix/piros:/tmp/.ICE-unix/1695'), ('GDM_LANG', 'en_US'), ('INVOCATION_ID', '656f7ef9a71242e8b0df139371bf2cbb'), ('XDG_SESSION_PATH', '/org/freedesktop/DisplayManager/Session0'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'MATE'), ('XDG_SESSION_DESKTOP', 'mate'), ('XAUTHORITY', '/home/piros/.Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('XDG_GREETER_DATA_DIR', '/var/lib/lightdm-data/piros'), ('AMENT_PREFIX_PATH', '/home/piros/Work/ROS2/control_ws/install/three_wheel:/home/piros/Work/ROS2/control_ws/install/diffdrive_arduino:/home/piros/Work/ROS2/control_ws/install/diff_drive:/home/piros/Work/ROS2/turtlebot3_ws/install/turtlebot3_simulations:/home/piros/Work/ROS2/turtlebot3_ws/install/turtlebot3_gazebo:/home/piros/Work/ROS2/turtlebot3_ws/install/turtlebot3_fake_node:/home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup:/home/piros/Work/ROS2/microRos_ws/install/micro_ros_agent:/home/piros/Work/ROS2/microRos_ws/install/micro_ros_msgs:/home/piros/Work/ROS2/ros2_ws_1/install/mera_robot_bringup:/home/piros/Work/ROS2/ros2_ws_1/install/my_robot_description:/home/piros/Work/ROS2/ros2_ws/install/my_robot_bringup:/home/piros/Work/ROS2/ros2_ws/install/py_pkg:/home/piros/Work/ROS2/ros2_ws/install/cpp_pkg:/home/piros/Work/ROS2/ros2_ws/install/course_activities:/home/piros/Work/ROS2/ros2_ws/install/my_robot_interfaces:/home/piros/Work/ROS2/controller_ws/install/three_omniwheel_controller:/home/piros/Work/ROS2/controller_ws/install/diff_drive_controller:/home/piros/Work/rplidar_ws/install/rplidar_ros:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:1361d055-a967-46a8-b11e-aefcf8893eb8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'mate'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('PWD', '/home/piros/Work/ROS2/control_ws/build/three_wheel'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-mate:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=531afbf53fd4eb95884cb8b9680c8089'), ('XDG_DATA_DIRS', '/usr/share/mate:/home/piros/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/piros/Work/ROS2/microRos_ws/install/micro_ros_msgs/local/lib/python3.10/dist-packages:/home/piros/Work/ROS2/ros2_ws/install/py_pkg/lib/python3.10/site-packages:/home/piros/Work/ROS2/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('MATE_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/piros/Work/ROS2/control_ws/install/three_wheel:/home/piros/Work/ROS2/control_ws/install/diffdrive_arduino:/home/piros/Work/ROS2/control_ws/install/diff_drive:/home/piros/Work/ROS2/turtlebot3_ws/install/turtlebot3_simulations:/home/piros/Work/ROS2/turtlebot3_ws/install/turtlebot3_gazebo:/home/piros/Work/ROS2/turtlebot3_ws/install/turtlebot3_fake_node:/home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup:/home/piros/Work/ROS2/microRos_ws/install/micro_ros_agent:/home/piros/Work/ROS2/microRos_ws/install/micro_ros_msgs:/home/piros/Work/ROS2/ros2_ws_1/install/mera_robot_bringup:/home/piros/Work/ROS2/ros2_ws_1/install/my_robot_description:/home/piros/Work/ROS2/ros2_ws/install/my_robot_bringup:/home/piros/Work/ROS2/ros2_ws/install/cpp_pkg:/home/piros/Work/ROS2/ros2_ws/install/course_activities:/home/piros/Work/ROS2/ros2_ws/install/my_robot_interfaces:/home/piros/Work/ROS2/controller_ws/install/three_omniwheel_controller:/home/piros/Work/ROS2/controller_ws/install/diff_drive_controller:/home/piros/Work/rplidar_ws/install/rplidar_ros:/home/piros/Work/ROS2/ros2_ws/install/py_pkg:/opt/ros/humble'), ('QT_FONT_DPI', '96')]), 'shell': False}
+[0.198521] (-) TimerEvent: {}
+[0.299633] (-) TimerEvent: {}
+[0.401188] (-) TimerEvent: {}
+[0.446397] (diff_drive) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.453481] (three_wheel) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.501420] (-) TimerEvent: {}
+[0.602570] (-) TimerEvent: {}
+[0.703801] (-) TimerEvent: {}
+[0.740648] (diff_drive) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.747812] (three_wheel) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.772937] (diff_drive) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.779490] (three_wheel) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.804123] (-) TimerEvent: {}
+[0.905434] (-) TimerEvent: {}
+[1.006267] (-) TimerEvent: {}
+[1.107014] (-) TimerEvent: {}
+[1.207812] (-) TimerEvent: {}
+[1.208438] (diff_drive) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.210714] (three_wheel) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.232793] (diff_drive) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[1.233624] (diff_drive) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.235687] (three_wheel) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[1.236734] (three_wheel) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.237313] (diff_drive) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[1.238107] (three_wheel) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[1.249370] (diff_drive) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.250774] (three_wheel) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.307999] (-) TimerEvent: {}
+[1.408758] (-) TimerEvent: {}
+[1.509515] (-) TimerEvent: {}
+[1.610526] (-) TimerEvent: {}
+[1.672414] (diff_drive) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.674768] (three_wheel) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.697872] (diff_drive) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[1.698933] (diff_drive) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.699891] (three_wheel) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[1.700793] (diff_drive) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.701401] (three_wheel) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.702688] (three_wheel) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.710674] (-) TimerEvent: {}
+[1.744148] (diff_drive) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[1.744963] (three_wheel) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[1.810872] (-) TimerEvent: {}
+[1.912218] (-) TimerEvent: {}
+[2.015058] (-) TimerEvent: {}
+[2.116930] (-) TimerEvent: {}
+[2.217842] (-) TimerEvent: {}
+[2.318755] (-) TimerEvent: {}
+[2.420275] (-) TimerEvent: {}
+[2.521460] (-) TimerEvent: {}
+[2.622197] (-) TimerEvent: {}
+[2.724070] (-) TimerEvent: {}
+[2.750255] (diff_drive) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[2.751953] (three_wheel) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[2.823990] (-) TimerEvent: {}
+[2.924722] (-) TimerEvent: {}
+[3.025523] (-) TimerEvent: {}
+[3.126381] (-) TimerEvent: {}
+[3.227144] (-) TimerEvent: {}
+[3.327904] (-) TimerEvent: {}
+[3.428611] (-) TimerEvent: {}
+[3.529323] (-) TimerEvent: {}
+[3.625798] (three_wheel) StdoutLine: {'line': b'-- Found hardware_interface: 2.49.0 (/opt/ros/humble/share/hardware_interface/cmake)\n'}
+[3.629508] (-) TimerEvent: {}
+[3.631442] (diff_drive) StdoutLine: {'line': b'-- Found hardware_interface: 2.49.0 (/opt/ros/humble/share/hardware_interface/cmake)\n'}
+[3.729753] (-) TimerEvent: {}
+[3.830453] (-) TimerEvent: {}
+[3.931203] (-) TimerEvent: {}
+[4.032045] (-) TimerEvent: {}
+[4.132857] (-) TimerEvent: {}
+[4.180741] (diff_drive) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[4.187282] (three_wheel) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[4.233053] (-) TimerEvent: {}
+[4.266762] (diff_drive) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[4.280178] (three_wheel) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[4.333276] (-) TimerEvent: {}
+[4.371764] (diff_drive) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[4.388012] (three_wheel) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[4.433713] (-) TimerEvent: {}
+[4.511942] (diff_drive) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[4.532769] (three_wheel) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[4.533682] (-) TimerEvent: {}
+[4.635152] (-) TimerEvent: {}
+[4.680471] (diff_drive) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[4.710600] (three_wheel) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[4.735332] (-) TimerEvent: {}
+[4.836053] (-) TimerEvent: {}
+[4.938345] (-) TimerEvent: {}
+[5.040704] (-) TimerEvent: {}
+[5.141529] (-) TimerEvent: {}
+[5.242309] (-) TimerEvent: {}
+[5.343197] (-) TimerEvent: {}
+[5.444053] (-) TimerEvent: {}
+[5.544830] (-) TimerEvent: {}
+[5.645591] (-) TimerEvent: {}
+[5.746296] (-) TimerEvent: {}
+[5.847101] (-) TimerEvent: {}
+[5.947816] (-) TimerEvent: {}
+[6.048532] (-) TimerEvent: {}
+[6.149319] (-) TimerEvent: {}
+[6.250045] (-) TimerEvent: {}
+[6.350771] (-) TimerEvent: {}
+[6.451489] (-) TimerEvent: {}
+[6.465727] (diff_drive) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[6.503341] (three_wheel) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[6.507517] (diff_drive) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[6.544882] (three_wheel) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[6.551727] (-) TimerEvent: {}
+[6.652583] (-) TimerEvent: {}
+[6.749270] (diff_drive) StdoutLine: {'line': b'-- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND\n'}
+[6.752772] (-) TimerEvent: {}
+[6.789073] (three_wheel) StdoutLine: {'line': b'-- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND\n'}
+[6.852973] (-) TimerEvent: {}
+[6.953759] (-) TimerEvent: {}
+[7.054643] (-) TimerEvent: {}
+[7.093247] (diff_drive) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[7.111103] (diff_drive) StdoutLine: {'line': b'-- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND\n'}
+[7.134098] (three_wheel) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[7.147187] (three_wheel) StdoutLine: {'line': b'-- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND\n'}
+[7.154980] (-) TimerEvent: {}
+[7.213758] (diff_drive) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[7.227356] (diff_drive) StdoutLine: {'line': b'-- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND\n'}
+[7.249670] (three_wheel) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[7.256477] (-) TimerEvent: {}
+[7.264839] (three_wheel) StdoutLine: {'line': b'-- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND\n'}
+[7.268377] (diff_drive) StdoutLine: {'line': b'-- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND\n'}
+[7.306220] (three_wheel) StdoutLine: {'line': b'-- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND\n'}
+[7.315871] (diff_drive) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[7.356531] (three_wheel) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[7.357084] (-) TimerEvent: {}
+[7.440869] (diff_drive) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[7.457310] (-) TimerEvent: {}
+[7.485623] (three_wheel) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[7.557651] (-) TimerEvent: {}
+[7.658920] (-) TimerEvent: {}
+[7.760363] (-) TimerEvent: {}
+[7.860848] (diff_drive) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[7.861888] (-) TimerEvent: {}
+[7.866017] (diff_drive) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[7.918708] (three_wheel) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[7.919966] (three_wheel) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[7.962089] (-) TimerEvent: {}
+[8.065114] (-) TimerEvent: {}
+[8.166541] (-) TimerEvent: {}
+[8.267612] (-) TimerEvent: {}
+[8.304532] (diff_drive) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[8.310771] (diff_drive) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[8.352387] (three_wheel) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[8.356551] (three_wheel) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[8.367770] (-) TimerEvent: {}
+[8.468502] (-) TimerEvent: {}
+[8.569425] (-) TimerEvent: {}
+[8.670389] (-) TimerEvent: {}
+[8.711185] (diff_drive) StdoutLine: {'line': b'-- Found micro_ros_agent: 3.0.6 (/home/piros/Work/ROS2/microRos_ws/install/micro_ros_agent/share/micro_ros_agent/cmake)\n'}
+[8.737260] (diff_drive) StdoutLine: {'line': b'-- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND\n'}
+[8.770817] (-) TimerEvent: {}
+[8.815161] (three_wheel) StdoutLine: {'line': b'-- Found micro_ros_agent: 3.0.6 (/home/piros/Work/ROS2/microRos_ws/install/micro_ros_agent/share/micro_ros_agent/cmake)\n'}
+[8.835317] (three_wheel) StdoutLine: {'line': b'-- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND\n'}
+[8.871136] (-) TimerEvent: {}
+[8.901119] (diff_drive) StdoutLine: {'line': b'-- Found ament_cmake_gtest: 1.3.11 (/opt/ros/humble/share/ament_cmake_gtest/cmake)\n'}
+[8.971375] (-) TimerEvent: {}
+[9.006284] (three_wheel) StdoutLine: {'line': b'-- Found ament_cmake_gtest: 1.3.11 (/opt/ros/humble/share/ament_cmake_gtest/cmake)\n'}
+[9.071624] (-) TimerEvent: {}
+[9.173453] (-) TimerEvent: {}
+[9.275650] (-) TimerEvent: {}
+[9.378234] (-) TimerEvent: {}
+[9.402459] (diff_drive) StdoutLine: {'line': b'-- Configuring done\n'}
+[9.465918] (three_wheel) StdoutLine: {'line': b'-- Configuring done\n'}
+[9.478420] (-) TimerEvent: {}
+[9.580197] (-) TimerEvent: {}
+[9.614887] (diff_drive) StdoutLine: {'line': b'-- Generating done\n'}
+[9.644146] (diff_drive) StdoutLine: {'line': b'-- Build files have been written to: /home/piros/Work/ROS2/control_ws/build/diff_drive\n'}
+[9.654186] (three_wheel) StdoutLine: {'line': b'-- Generating done\n'}
+[9.680641] (-) TimerEvent: {}
+[9.687778] (three_wheel) StdoutLine: {'line': b'-- Build files have been written to: /home/piros/Work/ROS2/control_ws/build/three_wheel\n'}
+[9.727633] (diff_drive) CommandEnded: {'returncode': 0}
+[9.736498] (diff_drive) JobProgress: {'identifier': 'diff_drive', 'progress': 'build'}
+[9.736777] (diff_drive) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/piros/Work/ROS2/control_ws/build/diff_drive', '--', '-j4', '-l4'], 'cwd': '/home/piros/Work/ROS2/control_ws/build/diff_drive', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('QT_SCALE_FACTOR', '1'), ('LANGUAGE', 'en_IN:en'), ('USER', 'piros'), ('XDG_SESSION_TYPE', 'x11'), ('COMPIZ_CONFIG_PROFILE', 'mate'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/piros/Work/ROS2/control_ws/install/three_wheel/lib:/home/piros/Work/ROS2/control_ws/install/diffdrive_arduino/lib:/home/piros/Work/ROS2/control_ws/install/diff_drive/lib:/home/piros/Work/ROS2/microRos_ws/install/micro_ros_agent/lib:/home/piros/Work/ROS2/microRos_ws/install/micro_ros_msgs/lib:/home/piros/Work/ROS2/ros2_ws/install/my_robot_interfaces/lib:/home/piros/Work/ROS2/controller_ws/install/three_omniwheel_controller/lib:/home/piros/Work/ROS2/controller_ws/install/diff_drive_controller/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/piros'), ('OLDPWD', '/home/piros/Work/ROS2'), ('DESKTOP_SESSION', 'mate'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GTK_MODULES', 'appmenu-gtk-module:gail:atk-bridge:canberra-gtk-module'), ('XDG_SEAT_PATH', '/org/freedesktop/DisplayManager/Seat0'), ('MANAGERPID', '1663'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1686'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=531afbf53fd4eb95884cb8b9680c8089'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3026'), ('UBUNTU_MENUPROXY', '1'), ('QT_QPA_PLATFORMTHEME', 'gtk2'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/piros/Work/ROS2/microRos_ws/install:/home/piros/Work/ROS2/turtlebot3_ws/install:/home/piros/Work/rplidar_ws/install:/home/piros/Work/ROS2/ros2_ws_1/install:/home/piros/Work/ROS2/ros2_ws/install:/home/piros/Work/ROS2/control_ws/install:/home/piros/Work/ROS2/controller_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'piros'), ('JOURNAL_STREAM', '8:27936'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('GTK_OVERLAY_SCROLLING', '0'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/piros:@/tmp/.ICE-unix/1695,unix/piros:/tmp/.ICE-unix/1695'), ('GDM_LANG', 'en_US'), ('INVOCATION_ID', '656f7ef9a71242e8b0df139371bf2cbb'), ('XDG_SESSION_PATH', '/org/freedesktop/DisplayManager/Session0'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'MATE'), ('XDG_SESSION_DESKTOP', 'mate'), ('XAUTHORITY', '/home/piros/.Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('XDG_GREETER_DATA_DIR', '/var/lib/lightdm-data/piros'), ('AMENT_PREFIX_PATH', '/home/piros/Work/ROS2/control_ws/install/three_wheel:/home/piros/Work/ROS2/control_ws/install/diffdrive_arduino:/home/piros/Work/ROS2/control_ws/install/diff_drive:/home/piros/Work/ROS2/turtlebot3_ws/install/turtlebot3_simulations:/home/piros/Work/ROS2/turtlebot3_ws/install/turtlebot3_gazebo:/home/piros/Work/ROS2/turtlebot3_ws/install/turtlebot3_fake_node:/home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup:/home/piros/Work/ROS2/microRos_ws/install/micro_ros_agent:/home/piros/Work/ROS2/microRos_ws/install/micro_ros_msgs:/home/piros/Work/ROS2/ros2_ws_1/install/mera_robot_bringup:/home/piros/Work/ROS2/ros2_ws_1/install/my_robot_description:/home/piros/Work/ROS2/ros2_ws/install/my_robot_bringup:/home/piros/Work/ROS2/ros2_ws/install/py_pkg:/home/piros/Work/ROS2/ros2_ws/install/cpp_pkg:/home/piros/Work/ROS2/ros2_ws/install/course_activities:/home/piros/Work/ROS2/ros2_ws/install/my_robot_interfaces:/home/piros/Work/ROS2/controller_ws/install/three_omniwheel_controller:/home/piros/Work/ROS2/controller_ws/install/diff_drive_controller:/home/piros/Work/rplidar_ws/install/rplidar_ros:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:1361d055-a967-46a8-b11e-aefcf8893eb8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'mate'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('PWD', '/home/piros/Work/ROS2/control_ws/build/diff_drive'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-mate:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=531afbf53fd4eb95884cb8b9680c8089'), ('XDG_DATA_DIRS', '/usr/share/mate:/home/piros/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/piros/Work/ROS2/microRos_ws/install/micro_ros_msgs/local/lib/python3.10/dist-packages:/home/piros/Work/ROS2/ros2_ws/install/py_pkg/lib/python3.10/site-packages:/home/piros/Work/ROS2/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('MATE_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/piros/Work/ROS2/control_ws/install/three_wheel:/home/piros/Work/ROS2/control_ws/install/diffdrive_arduino:/home/piros/Work/ROS2/control_ws/install/diff_drive:/home/piros/Work/ROS2/turtlebot3_ws/install/turtlebot3_simulations:/home/piros/Work/ROS2/turtlebot3_ws/install/turtlebot3_gazebo:/home/piros/Work/ROS2/turtlebot3_ws/install/turtlebot3_fake_node:/home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup:/home/piros/Work/ROS2/microRos_ws/install/micro_ros_agent:/home/piros/Work/ROS2/microRos_ws/install/micro_ros_msgs:/home/piros/Work/ROS2/ros2_ws_1/install/mera_robot_bringup:/home/piros/Work/ROS2/ros2_ws_1/install/my_robot_description:/home/piros/Work/ROS2/ros2_ws/install/my_robot_bringup:/home/piros/Work/ROS2/ros2_ws/install/cpp_pkg:/home/piros/Work/ROS2/ros2_ws/install/course_activities:/home/piros/Work/ROS2/ros2_ws/install/my_robot_interfaces:/home/piros/Work/ROS2/controller_ws/install/three_omniwheel_controller:/home/piros/Work/ROS2/controller_ws/install/diff_drive_controller:/home/piros/Work/rplidar_ws/install/rplidar_ros:/home/piros/Work/ROS2/ros2_ws/install/py_pkg:/opt/ros/humble'), ('QT_FONT_DPI', '96')]), 'shell': False}
+[9.756973] (three_wheel) CommandEnded: {'returncode': 0}
+[9.759153] (three_wheel) JobProgress: {'identifier': 'three_wheel', 'progress': 'build'}
+[9.759722] (three_wheel) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/piros/Work/ROS2/control_ws/build/three_wheel', '--', '-j4', '-l4'], 'cwd': '/home/piros/Work/ROS2/control_ws/build/three_wheel', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('QT_SCALE_FACTOR', '1'), ('LANGUAGE', 'en_IN:en'), ('USER', 'piros'), ('XDG_SESSION_TYPE', 'x11'), ('COMPIZ_CONFIG_PROFILE', 'mate'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/piros/Work/ROS2/control_ws/install/three_wheel/lib:/home/piros/Work/ROS2/control_ws/install/diffdrive_arduino/lib:/home/piros/Work/ROS2/control_ws/install/diff_drive/lib:/home/piros/Work/ROS2/microRos_ws/install/micro_ros_agent/lib:/home/piros/Work/ROS2/microRos_ws/install/micro_ros_msgs/lib:/home/piros/Work/ROS2/ros2_ws/install/my_robot_interfaces/lib:/home/piros/Work/ROS2/controller_ws/install/three_omniwheel_controller/lib:/home/piros/Work/ROS2/controller_ws/install/diff_drive_controller/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/piros'), ('OLDPWD', '/home/piros/Work/ROS2'), ('DESKTOP_SESSION', 'mate'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GTK_MODULES', 'appmenu-gtk-module:gail:atk-bridge:canberra-gtk-module'), ('XDG_SEAT_PATH', '/org/freedesktop/DisplayManager/Seat0'), ('MANAGERPID', '1663'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1686'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=531afbf53fd4eb95884cb8b9680c8089'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3026'), ('UBUNTU_MENUPROXY', '1'), ('QT_QPA_PLATFORMTHEME', 'gtk2'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/piros/Work/ROS2/microRos_ws/install:/home/piros/Work/ROS2/turtlebot3_ws/install:/home/piros/Work/rplidar_ws/install:/home/piros/Work/ROS2/ros2_ws_1/install:/home/piros/Work/ROS2/ros2_ws/install:/home/piros/Work/ROS2/control_ws/install:/home/piros/Work/ROS2/controller_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'piros'), ('JOURNAL_STREAM', '8:27936'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('GTK_OVERLAY_SCROLLING', '0'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/piros:@/tmp/.ICE-unix/1695,unix/piros:/tmp/.ICE-unix/1695'), ('GDM_LANG', 'en_US'), ('INVOCATION_ID', '656f7ef9a71242e8b0df139371bf2cbb'), ('XDG_SESSION_PATH', '/org/freedesktop/DisplayManager/Session0'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'MATE'), ('XDG_SESSION_DESKTOP', 'mate'), ('XAUTHORITY', '/home/piros/.Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('XDG_GREETER_DATA_DIR', '/var/lib/lightdm-data/piros'), ('AMENT_PREFIX_PATH', '/home/piros/Work/ROS2/control_ws/install/three_wheel:/home/piros/Work/ROS2/control_ws/install/diffdrive_arduino:/home/piros/Work/ROS2/control_ws/install/diff_drive:/home/piros/Work/ROS2/turtlebot3_ws/install/turtlebot3_simulations:/home/piros/Work/ROS2/turtlebot3_ws/install/turtlebot3_gazebo:/home/piros/Work/ROS2/turtlebot3_ws/install/turtlebot3_fake_node:/home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup:/home/piros/Work/ROS2/microRos_ws/install/micro_ros_agent:/home/piros/Work/ROS2/microRos_ws/install/micro_ros_msgs:/home/piros/Work/ROS2/ros2_ws_1/install/mera_robot_bringup:/home/piros/Work/ROS2/ros2_ws_1/install/my_robot_description:/home/piros/Work/ROS2/ros2_ws/install/my_robot_bringup:/home/piros/Work/ROS2/ros2_ws/install/py_pkg:/home/piros/Work/ROS2/ros2_ws/install/cpp_pkg:/home/piros/Work/ROS2/ros2_ws/install/course_activities:/home/piros/Work/ROS2/ros2_ws/install/my_robot_interfaces:/home/piros/Work/ROS2/controller_ws/install/three_omniwheel_controller:/home/piros/Work/ROS2/controller_ws/install/diff_drive_controller:/home/piros/Work/rplidar_ws/install/rplidar_ros:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:1361d055-a967-46a8-b11e-aefcf8893eb8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'mate'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('PWD', '/home/piros/Work/ROS2/control_ws/build/three_wheel'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-mate:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=531afbf53fd4eb95884cb8b9680c8089'), ('XDG_DATA_DIRS', '/usr/share/mate:/home/piros/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/piros/Work/ROS2/microRos_ws/install/micro_ros_msgs/local/lib/python3.10/dist-packages:/home/piros/Work/ROS2/ros2_ws/install/py_pkg/lib/python3.10/site-packages:/home/piros/Work/ROS2/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('MATE_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/piros/Work/ROS2/control_ws/install/three_wheel:/home/piros/Work/ROS2/control_ws/install/diffdrive_arduino:/home/piros/Work/ROS2/control_ws/install/diff_drive:/home/piros/Work/ROS2/turtlebot3_ws/install/turtlebot3_simulations:/home/piros/Work/ROS2/turtlebot3_ws/install/turtlebot3_gazebo:/home/piros/Work/ROS2/turtlebot3_ws/install/turtlebot3_fake_node:/home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup:/home/piros/Work/ROS2/microRos_ws/install/micro_ros_agent:/home/piros/Work/ROS2/microRos_ws/install/micro_ros_msgs:/home/piros/Work/ROS2/ros2_ws_1/install/mera_robot_bringup:/home/piros/Work/ROS2/ros2_ws_1/install/my_robot_description:/home/piros/Work/ROS2/ros2_ws/install/my_robot_bringup:/home/piros/Work/ROS2/ros2_ws/install/cpp_pkg:/home/piros/Work/ROS2/ros2_ws/install/course_activities:/home/piros/Work/ROS2/ros2_ws/install/my_robot_interfaces:/home/piros/Work/ROS2/controller_ws/install/three_omniwheel_controller:/home/piros/Work/ROS2/controller_ws/install/diff_drive_controller:/home/piros/Work/rplidar_ws/install/rplidar_ros:/home/piros/Work/ROS2/ros2_ws/install/py_pkg:/opt/ros/humble'), ('QT_FONT_DPI', '96')]), 'shell': False}
+[9.780837] (-) TimerEvent: {}
+[9.881953] (-) TimerEvent: {}
+[9.982994] (-) TimerEvent: {}
+[10.090229] (-) TimerEvent: {}
+[10.108266] (diff_drive) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/diff_drive.dir/hardware/diffdrive_system.cpp.o\x1b[0m\n'}
+[10.111876] (three_wheel) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/three_wheel.dir/hardware/threewheel_system.cpp.o\x1b[0m\n'}
+[10.190439] (-) TimerEvent: {}
+[10.291947] (-) TimerEvent: {}
+[10.392786] (-) TimerEvent: {}
+[10.493505] (-) TimerEvent: {}
+[10.594234] (-) TimerEvent: {}
+[10.695026] (-) TimerEvent: {}
+[10.795758] (-) TimerEvent: {}
+[10.896443] (-) TimerEvent: {}
+[10.997142] (-) TimerEvent: {}
+[11.097837] (-) TimerEvent: {}
+[11.198549] (-) TimerEvent: {}
+[11.299287] (-) TimerEvent: {}
+[11.399974] (-) TimerEvent: {}
+[11.500672] (-) TimerEvent: {}
+[11.601423] (-) TimerEvent: {}
+[11.702224] (-) TimerEvent: {}
+[11.803215] (-) TimerEvent: {}
+[11.904319] (-) TimerEvent: {}
+[12.005422] (-) TimerEvent: {}
+[12.106196] (-) TimerEvent: {}
+[12.206960] (-) TimerEvent: {}
+[12.307863] (-) TimerEvent: {}
+[12.408996] (-) TimerEvent: {}
+[12.509865] (-) TimerEvent: {}
+[12.611319] (-) TimerEvent: {}
+[12.712323] (-) TimerEvent: {}
+[12.813265] (-) TimerEvent: {}
+[12.914192] (-) TimerEvent: {}
+[13.015764] (-) TimerEvent: {}
+[13.116900] (-) TimerEvent: {}
+[13.218005] (-) TimerEvent: {}
+[13.319064] (-) TimerEvent: {}
+[13.419896] (-) TimerEvent: {}
+[13.520726] (-) TimerEvent: {}
+[13.621591] (-) TimerEvent: {}
+[13.722591] (-) TimerEvent: {}
+[13.823534] (-) TimerEvent: {}
+[13.925635] (-) TimerEvent: {}
+[14.027570] (-) TimerEvent: {}
+[14.128509] (-) TimerEvent: {}
+[14.229807] (-) TimerEvent: {}
+[14.330749] (-) TimerEvent: {}
+[14.432703] (-) TimerEvent: {}
+[14.534985] (-) TimerEvent: {}
+[14.636097] (-) TimerEvent: {}
+[14.737022] (-) TimerEvent: {}
+[14.837898] (-) TimerEvent: {}
+[14.939186] (-) TimerEvent: {}
+[15.040203] (-) TimerEvent: {}
+[15.141040] (-) TimerEvent: {}
+[15.242027] (-) TimerEvent: {}
+[15.343007] (-) TimerEvent: {}
+[15.443957] (-) TimerEvent: {}
+[15.545148] (-) TimerEvent: {}
+[15.646094] (-) TimerEvent: {}
+[15.747269] (-) TimerEvent: {}
+[15.848125] (-) TimerEvent: {}
+[15.949033] (-) TimerEvent: {}
+[16.050036] (-) TimerEvent: {}
+[16.151162] (-) TimerEvent: {}
+[16.252092] (-) TimerEvent: {}
+[16.354241] (-) TimerEvent: {}
+[16.456881] (-) TimerEvent: {}
+[16.557728] (-) TimerEvent: {}
+[16.658729] (-) TimerEvent: {}
+[16.759742] (-) TimerEvent: {}
+[16.860672] (-) TimerEvent: {}
+[16.961599] (-) TimerEvent: {}
+[17.063011] (-) TimerEvent: {}
+[17.163863] (-) TimerEvent: {}
+[17.267097] (-) TimerEvent: {}
+[17.368607] (-) TimerEvent: {}
+[17.469696] (-) TimerEvent: {}
+[17.570587] (-) TimerEvent: {}
+[17.671610] (-) TimerEvent: {}
+[17.772488] (-) TimerEvent: {}
+[17.873450] (-) TimerEvent: {}
+[17.974335] (-) TimerEvent: {}
+[18.075562] (-) TimerEvent: {}
+[18.176497] (-) TimerEvent: {}
+[18.277385] (-) TimerEvent: {}
+[18.378309] (-) TimerEvent: {}
+[18.479405] (-) TimerEvent: {}
+[18.580473] (-) TimerEvent: {}
+[18.681487] (-) TimerEvent: {}
+[18.782820] (-) TimerEvent: {}
+[18.885504] (-) TimerEvent: {}
+[18.987858] (-) TimerEvent: {}
+[19.091053] (-) TimerEvent: {}
+[19.192025] (-) TimerEvent: {}
+[19.292995] (-) TimerEvent: {}
+[19.393848] (-) TimerEvent: {}
+[19.494725] (-) TimerEvent: {}
+[19.595643] (-) TimerEvent: {}
+[19.696580] (-) TimerEvent: {}
+[19.797526] (-) TimerEvent: {}
+[19.898396] (-) TimerEvent: {}
+[19.999335] (-) TimerEvent: {}
+[20.101150] (-) TimerEvent: {}
+[20.202101] (-) TimerEvent: {}
+[20.303247] (-) TimerEvent: {}
+[20.404142] (-) TimerEvent: {}
+[20.505036] (-) TimerEvent: {}
+[20.605898] (-) TimerEvent: {}
+[20.706916] (-) TimerEvent: {}
+[20.807827] (-) TimerEvent: {}
+[20.908717] (-) TimerEvent: {}
+[21.009672] (-) TimerEvent: {}
+[21.110625] (-) TimerEvent: {}
+[21.211891] (-) TimerEvent: {}
+[21.313384] (-) TimerEvent: {}
+[21.414495] (-) TimerEvent: {}
+[21.515612] (-) TimerEvent: {}
+[21.616482] (-) TimerEvent: {}
+[21.717412] (-) TimerEvent: {}
+[21.818413] (-) TimerEvent: {}
+[21.919374] (-) TimerEvent: {}
+[22.020250] (-) TimerEvent: {}
+[22.121131] (-) TimerEvent: {}
+[22.222044] (-) TimerEvent: {}
+[22.322932] (-) TimerEvent: {}
+[22.423803] (-) TimerEvent: {}
+[22.524723] (-) TimerEvent: {}
+[22.625642] (-) TimerEvent: {}
+[22.726946] (-) TimerEvent: {}
+[22.828149] (-) TimerEvent: {}
+[22.929473] (-) TimerEvent: {}
+[23.030960] (-) TimerEvent: {}
+[23.131940] (-) TimerEvent: {}
+[23.232845] (-) TimerEvent: {}
+[23.333713] (-) TimerEvent: {}
+[23.434606] (-) TimerEvent: {}
+[23.535688] (-) TimerEvent: {}
+[23.636625] (-) TimerEvent: {}
+[23.737540] (-) TimerEvent: {}
+[23.838383] (-) TimerEvent: {}
+[23.939675] (-) TimerEvent: {}
+[24.040528] (-) TimerEvent: {}
+[24.141444] (-) TimerEvent: {}
+[24.242346] (-) TimerEvent: {}
+[24.343290] (-) TimerEvent: {}
+[24.444163] (-) TimerEvent: {}
+[24.545014] (-) TimerEvent: {}
+[24.645853] (-) TimerEvent: {}
+[24.746762] (-) TimerEvent: {}
+[24.847679] (-) TimerEvent: {}
+[24.948555] (-) TimerEvent: {}
+[25.049446] (-) TimerEvent: {}
+[25.150367] (-) TimerEvent: {}
+[25.251278] (-) TimerEvent: {}
+[25.352130] (-) TimerEvent: {}
+[25.452983] (-) TimerEvent: {}
+[25.553885] (-) TimerEvent: {}
+[25.654809] (-) TimerEvent: {}
+[25.755767] (-) TimerEvent: {}
+[25.856919] (-) TimerEvent: {}
+[25.957929] (-) TimerEvent: {}
+[26.058810] (-) TimerEvent: {}
+[26.159728] (-) TimerEvent: {}
+[26.260594] (-) TimerEvent: {}
+[26.361519] (-) TimerEvent: {}
+[26.462375] (-) TimerEvent: {}
+[26.563303] (-) TimerEvent: {}
+[26.664192] (-) TimerEvent: {}
+[26.765109] (-) TimerEvent: {}
+[26.865959] (-) TimerEvent: {}
+[26.966888] (-) TimerEvent: {}
+[27.067846] (-) TimerEvent: {}
+[27.168923] (-) TimerEvent: {}
+[27.269862] (-) TimerEvent: {}
+[27.370727] (-) TimerEvent: {}
+[27.471620] (-) TimerEvent: {}
+[27.572519] (-) TimerEvent: {}
+[27.673387] (-) TimerEvent: {}
+[27.778278] (-) TimerEvent: {}
+[27.883153] (-) TimerEvent: {}
+[27.984067] (-) TimerEvent: {}
+[28.085036] (-) TimerEvent: {}
+[28.185978] (-) TimerEvent: {}
+[28.286959] (-) TimerEvent: {}
+[28.387830] (-) TimerEvent: {}
+[28.488694] (-) TimerEvent: {}
+[28.589604] (-) TimerEvent: {}
+[28.690618] (-) TimerEvent: {}
+[28.791560] (-) TimerEvent: {}
+[28.892550] (-) TimerEvent: {}
+[28.993610] (-) TimerEvent: {}
+[29.094592] (-) TimerEvent: {}
+[29.196416] (-) TimerEvent: {}
+[29.298183] (-) TimerEvent: {}
+[29.399126] (-) TimerEvent: {}
+[29.499916] (-) TimerEvent: {}
+[29.600724] (-) TimerEvent: {}
+[29.701581] (-) TimerEvent: {}
+[29.802492] (-) TimerEvent: {}
+[29.904392] (-) TimerEvent: {}
+[30.005267] (-) TimerEvent: {}
+[30.106183] (-) TimerEvent: {}
+[30.207032] (-) TimerEvent: {}
+[30.308081] (-) TimerEvent: {}
+[30.408902] (-) TimerEvent: {}
+[30.509689] (-) TimerEvent: {}
+[30.610509] (-) TimerEvent: {}
+[30.712233] (-) TimerEvent: {}
+[30.813125] (-) TimerEvent: {}
+[30.913969] (-) TimerEvent: {}
+[31.014819] (-) TimerEvent: {}
+[31.115636] (-) TimerEvent: {}
+[31.216413] (-) TimerEvent: {}
+[31.317278] (-) TimerEvent: {}
+[31.418156] (-) TimerEvent: {}
+[31.519056] (-) TimerEvent: {}
+[31.620730] (-) TimerEvent: {}
+[31.721775] (-) TimerEvent: {}
+[31.823047] (-) TimerEvent: {}
+[31.923940] (-) TimerEvent: {}
+[32.024867] (-) TimerEvent: {}
+[32.125841] (-) TimerEvent: {}
+[32.231062] (-) TimerEvent: {}
+[32.335103] (-) TimerEvent: {}
+[32.438255] (-) TimerEvent: {}
+[32.541490] (-) TimerEvent: {}
+[32.642415] (-) TimerEvent: {}
+[32.743332] (-) TimerEvent: {}
+[32.844160] (-) TimerEvent: {}
+[32.945063] (-) TimerEvent: {}
+[33.046037] (-) TimerEvent: {}
+[33.146978] (-) TimerEvent: {}
+[33.247854] (-) TimerEvent: {}
+[33.348760] (-) TimerEvent: {}
+[33.449784] (-) TimerEvent: {}
+[33.550673] (-) TimerEvent: {}
+[33.651597] (-) TimerEvent: {}
+[33.752498] (-) TimerEvent: {}
+[33.853353] (-) TimerEvent: {}
+[33.954234] (-) TimerEvent: {}
+[34.055129] (-) TimerEvent: {}
+[34.155973] (-) TimerEvent: {}
+[34.256887] (-) TimerEvent: {}
+[34.357753] (-) TimerEvent: {}
+[34.458628] (-) TimerEvent: {}
+[34.559550] (-) TimerEvent: {}
+[34.660423] (-) TimerEvent: {}
+[34.761290] (-) TimerEvent: {}
+[34.862149] (-) TimerEvent: {}
+[34.963022] (-) TimerEvent: {}
+[35.063981] (-) TimerEvent: {}
+[35.164840] (-) TimerEvent: {}
+[35.265708] (-) TimerEvent: {}
+[35.366571] (-) TimerEvent: {}
+[35.467548] (-) TimerEvent: {}
+[35.568405] (-) TimerEvent: {}
+[35.669259] (-) TimerEvent: {}
+[35.770137] (-) TimerEvent: {}
+[35.871596] (-) TimerEvent: {}
+[35.972693] (-) TimerEvent: {}
+[36.073558] (-) TimerEvent: {}
+[36.174412] (-) TimerEvent: {}
+[36.275250] (-) TimerEvent: {}
+[36.376254] (-) TimerEvent: {}
+[36.477201] (-) TimerEvent: {}
+[36.577952] (-) TimerEvent: {}
+[36.678903] (-) TimerEvent: {}
+[36.779855] (-) TimerEvent: {}
+[36.880646] (-) TimerEvent: {}
+[36.981465] (-) TimerEvent: {}
+[37.082302] (-) TimerEvent: {}
+[37.186169] (-) TimerEvent: {}
+[37.287130] (-) TimerEvent: {}
+[37.391041] (-) TimerEvent: {}
+[37.492021] (-) TimerEvent: {}
+[37.595128] (-) TimerEvent: {}
+[37.701432] (-) TimerEvent: {}
+[37.802304] (-) TimerEvent: {}
+[37.903228] (-) TimerEvent: {}
+[38.004096] (-) TimerEvent: {}
+[38.105020] (-) TimerEvent: {}
+[38.205889] (-) TimerEvent: {}
+[38.306779] (-) TimerEvent: {}
+[38.407974] (-) TimerEvent: {}
+[38.508886] (-) TimerEvent: {}
+[38.609935] (-) TimerEvent: {}
+[38.710889] (-) TimerEvent: {}
+[38.811849] (-) TimerEvent: {}
+[38.912792] (-) TimerEvent: {}
+[39.013823] (-) TimerEvent: {}
+[39.115198] (-) TimerEvent: {}
+[39.216232] (-) TimerEvent: {}
+[39.317090] (-) TimerEvent: {}
+[39.417973] (-) TimerEvent: {}
+[39.519704] (-) TimerEvent: {}
+[39.621035] (-) TimerEvent: {}
+[39.722321] (-) TimerEvent: {}
+[39.824113] (-) TimerEvent: {}
+[39.926146] (-) TimerEvent: {}
+[40.027038] (-) TimerEvent: {}
+[40.127947] (-) TimerEvent: {}
+[40.228804] (-) TimerEvent: {}
+[40.329762] (-) TimerEvent: {}
+[40.431121] (-) TimerEvent: {}
+[40.532670] (-) TimerEvent: {}
+[40.634236] (-) TimerEvent: {}
+[40.737229] (-) TimerEvent: {}
+[40.840482] (-) TimerEvent: {}
+[40.942115] (-) TimerEvent: {}
+[41.043067] (-) TimerEvent: {}
+[41.143919] (-) TimerEvent: {}
+[41.247057] (-) TimerEvent: {}
+[41.351078] (-) TimerEvent: {}
+[41.452262] (-) TimerEvent: {}
+[41.554693] (-) TimerEvent: {}
+[41.655614] (-) TimerEvent: {}
+[41.756507] (-) TimerEvent: {}
+[41.857528] (-) TimerEvent: {}
+[41.958506] (-) TimerEvent: {}
+[42.059436] (-) TimerEvent: {}
+[42.160337] (-) TimerEvent: {}
+[42.261252] (-) TimerEvent: {}
+[42.362202] (-) TimerEvent: {}
+[42.463282] (-) TimerEvent: {}
+[42.564259] (-) TimerEvent: {}
+[42.665132] (-) TimerEvent: {}
+[42.766140] (-) TimerEvent: {}
+[42.867390] (-) TimerEvent: {}
+[42.971414] (-) TimerEvent: {}
+[43.072450] (-) TimerEvent: {}
+[43.173401] (-) TimerEvent: {}
+[43.274278] (-) TimerEvent: {}
+[43.375293] (-) TimerEvent: {}
+[43.476161] (-) TimerEvent: {}
+[43.577344] (-) TimerEvent: {}
+[43.678348] (-) TimerEvent: {}
+[43.779317] (-) TimerEvent: {}
+[43.880224] (-) TimerEvent: {}
+[43.981141] (-) TimerEvent: {}
+[44.082251] (-) TimerEvent: {}
+[44.184759] (-) TimerEvent: {}
+[44.288726] (-) TimerEvent: {}
+[44.390454] (-) TimerEvent: {}
+[44.491427] (-) TimerEvent: {}
+[44.592471] (-) TimerEvent: {}
+[44.693595] (-) TimerEvent: {}
+[44.794628] (-) TimerEvent: {}
+[44.895649] (-) TimerEvent: {}
+[44.996516] (-) TimerEvent: {}
+[45.097384] (-) TimerEvent: {}
+[45.198262] (-) TimerEvent: {}
+[45.299070] (-) TimerEvent: {}
+[45.399950] (-) TimerEvent: {}
+[45.500856] (-) TimerEvent: {}
+[45.601733] (-) TimerEvent: {}
+[45.702616] (-) TimerEvent: {}
+[45.803460] (-) TimerEvent: {}
+[45.904342] (-) TimerEvent: {}
+[46.005274] (-) TimerEvent: {}
+[46.106164] (-) TimerEvent: {}
+[46.207034] (-) TimerEvent: {}
+[46.307902] (-) TimerEvent: {}
+[46.408772] (-) TimerEvent: {}
+[46.509546] (-) TimerEvent: {}
+[46.610408] (-) TimerEvent: {}
+[46.711426] (-) TimerEvent: {}
+[46.812374] (-) TimerEvent: {}
+[46.913270] (-) TimerEvent: {}
+[47.014166] (-) TimerEvent: {}
+[47.115036] (-) TimerEvent: {}
+[47.215950] (-) TimerEvent: {}
+[47.316802] (-) TimerEvent: {}
+[47.417660] (-) TimerEvent: {}
+[47.518526] (-) TimerEvent: {}
+[47.619498] (-) TimerEvent: {}
+[47.720391] (-) TimerEvent: {}
+[47.821401] (-) TimerEvent: {}
+[47.922254] (-) TimerEvent: {}
+[48.023110] (-) TimerEvent: {}
+[48.124012] (-) TimerEvent: {}
+[48.224819] (-) TimerEvent: {}
+[48.325644] (-) TimerEvent: {}
+[48.426611] (-) TimerEvent: {}
+[48.527547] (-) TimerEvent: {}
+[48.628425] (-) TimerEvent: {}
+[48.729253] (-) TimerEvent: {}
+[48.830142] (-) TimerEvent: {}
+[48.931240] (-) TimerEvent: {}
+[49.032129] (-) TimerEvent: {}
+[49.133029] (-) TimerEvent: {}
+[49.233950] (-) TimerEvent: {}
+[49.334914] (-) TimerEvent: {}
+[49.439041] (-) TimerEvent: {}
+[49.539986] (-) TimerEvent: {}
+[49.642197] (-) TimerEvent: {}
+[49.745215] (-) TimerEvent: {}
+[49.849066] (-) TimerEvent: {}
+[49.951123] (-) TimerEvent: {}
+[50.052604] (-) TimerEvent: {}
+[50.153501] (-) TimerEvent: {}
+[50.254391] (-) TimerEvent: {}
+[50.355330] (-) TimerEvent: {}
+[50.456208] (-) TimerEvent: {}
+[50.557073] (-) TimerEvent: {}
+[50.657962] (-) TimerEvent: {}
+[50.758885] (-) TimerEvent: {}
+[50.859672] (-) TimerEvent: {}
+[50.960553] (-) TimerEvent: {}
+[51.061438] (-) TimerEvent: {}
+[51.162341] (-) TimerEvent: {}
+[51.263245] (-) TimerEvent: {}
+[51.364107] (-) TimerEvent: {}
+[51.464988] (-) TimerEvent: {}
+[51.565946] (-) TimerEvent: {}
+[51.667031] (-) TimerEvent: {}
+[51.767878] (-) TimerEvent: {}
+[51.868764] (-) TimerEvent: {}
+[51.969691] (-) TimerEvent: {}
+[52.070544] (-) TimerEvent: {}
+[52.171569] (-) TimerEvent: {}
+[52.272943] (-) TimerEvent: {}
+[52.373790] (-) TimerEvent: {}
+[52.474659] (-) TimerEvent: {}
+[52.575567] (-) TimerEvent: {}
+[52.676435] (-) TimerEvent: {}
+[52.777361] (-) TimerEvent: {}
+[52.878219] (-) TimerEvent: {}
+[52.979107] (-) TimerEvent: {}
+[53.079939] (-) TimerEvent: {}
+[53.180829] (-) TimerEvent: {}
+[53.281643] (-) TimerEvent: {}
+[53.382511] (-) TimerEvent: {}
+[53.483469] (-) TimerEvent: {}
+[53.584587] (-) TimerEvent: {}
+[53.685452] (-) TimerEvent: {}
+[53.786339] (-) TimerEvent: {}
+[53.887341] (-) TimerEvent: {}
+[53.988250] (-) TimerEvent: {}
+[54.089155] (-) TimerEvent: {}
+[54.190068] (-) TimerEvent: {}
+[54.290968] (-) TimerEvent: {}
+[54.391834] (-) TimerEvent: {}
+[54.492726] (-) TimerEvent: {}
+[54.593684] (-) TimerEvent: {}
+[54.694672] (-) TimerEvent: {}
+[54.795671] (-) TimerEvent: {}
+[54.896580] (-) TimerEvent: {}
+[54.997491] (-) TimerEvent: {}
+[55.098375] (-) TimerEvent: {}
+[55.199343] (-) TimerEvent: {}
+[55.300325] (-) TimerEvent: {}
+[55.401206] (-) TimerEvent: {}
+[55.502118] (-) TimerEvent: {}
+[55.603010] (-) TimerEvent: {}
+[55.704459] (-) TimerEvent: {}
+[55.805419] (-) TimerEvent: {}
+[55.906330] (-) TimerEvent: {}
+[56.007196] (-) TimerEvent: {}
+[56.108100] (-) TimerEvent: {}
+[56.209016] (-) TimerEvent: {}
+[56.310007] (-) TimerEvent: {}
+[56.410987] (-) TimerEvent: {}
+[56.511921] (-) TimerEvent: {}
+[56.612867] (-) TimerEvent: {}
+[56.713795] (-) TimerEvent: {}
+[56.814732] (-) TimerEvent: {}
+[56.915774] (-) TimerEvent: {}
+[57.016791] (-) TimerEvent: {}
+[57.117727] (-) TimerEvent: {}
+[57.218641] (-) TimerEvent: {}
+[57.319541] (-) TimerEvent: {}
+[57.420491] (-) TimerEvent: {}
+[57.521398] (-) TimerEvent: {}
+[57.622296] (-) TimerEvent: {}
+[57.723161] (-) TimerEvent: {}
+[57.824017] (-) TimerEvent: {}
+[57.924952] (-) TimerEvent: {}
+[58.026591] (-) TimerEvent: {}
+[58.127631] (-) TimerEvent: {}
+[58.228524] (-) TimerEvent: {}
+[58.329424] (-) TimerEvent: {}
+[58.430772] (-) TimerEvent: {}
+[58.531686] (-) TimerEvent: {}
+[58.632556] (-) TimerEvent: {}
+[58.733379] (-) TimerEvent: {}
+[58.834287] (-) TimerEvent: {}
+[58.935200] (-) TimerEvent: {}
+[59.036078] (-) TimerEvent: {}
+[59.136976] (-) TimerEvent: {}
+[59.237895] (-) TimerEvent: {}
+[59.338914] (-) TimerEvent: {}
+[59.439800] (-) TimerEvent: {}
+[59.540690] (-) TimerEvent: {}
+[59.641592] (-) TimerEvent: {}
+[59.742483] (-) TimerEvent: {}
+[59.843454] (-) TimerEvent: {}
+[59.944344] (-) TimerEvent: {}
+[60.045256] (-) TimerEvent: {}
+[60.146191] (-) TimerEvent: {}
+[60.247047] (-) TimerEvent: {}
+[60.347895] (-) TimerEvent: {}
+[60.448773] (-) TimerEvent: {}
+[60.549708] (-) TimerEvent: {}
+[60.650572] (-) TimerEvent: {}
+[60.751501] (-) TimerEvent: {}
+[60.852370] (-) TimerEvent: {}
+[60.953326] (-) TimerEvent: {}
+[61.054179] (-) TimerEvent: {}
+[61.155056] (-) TimerEvent: {}
+[61.255919] (-) TimerEvent: {}
+[61.356765] (-) TimerEvent: {}
+[61.457591] (-) TimerEvent: {}
+[61.558350] (-) TimerEvent: {}
+[61.659126] (-) TimerEvent: {}
+[61.759880] (-) TimerEvent: {}
+[61.860662] (-) TimerEvent: {}
+[61.961508] (-) TimerEvent: {}
+[62.062282] (-) TimerEvent: {}
+[62.163043] (-) TimerEvent: {}
+[62.263812] (-) TimerEvent: {}
+[62.364583] (-) TimerEvent: {}
+[62.465512] (-) TimerEvent: {}
+[62.566904] (-) TimerEvent: {}
+[62.668396] (-) TimerEvent: {}
+[62.769727] (-) TimerEvent: {}
+[62.871098] (-) TimerEvent: {}
+[62.972471] (-) TimerEvent: {}
+[63.073936] (-) TimerEvent: {}
+[63.175355] (-) TimerEvent: {}
+[63.276684] (-) TimerEvent: {}
+[63.378059] (-) TimerEvent: {}
+[63.479468] (-) TimerEvent: {}
+[63.581049] (-) TimerEvent: {}
+[63.683065] (-) TimerEvent: {}
+[63.784445] (-) TimerEvent: {}
+[63.885813] (-) TimerEvent: {}
+[63.986657] (-) TimerEvent: {}
+[64.087510] (-) TimerEvent: {}
+[64.188271] (-) TimerEvent: {}
+[64.289025] (-) TimerEvent: {}
+[64.389797] (-) TimerEvent: {}
+[65.347180] (-) TimerEvent: {}
+[65.448146] (-) TimerEvent: {}
+[65.548982] (-) TimerEvent: {}
+[65.649753] (-) TimerEvent: {}
+[65.750558] (-) TimerEvent: {}
+[65.851443] (-) TimerEvent: {}
+[65.952234] (-) TimerEvent: {}
+[66.053025] (-) TimerEvent: {}
+[66.153824] (-) TimerEvent: {}
+[66.254686] (-) TimerEvent: {}
+[66.355613] (-) TimerEvent: {}
+[66.456440] (-) TimerEvent: {}
+[66.557265] (-) TimerEvent: {}
+[66.658133] (-) TimerEvent: {}
+[66.759047] (-) TimerEvent: {}
+[66.859829] (-) TimerEvent: {}
+[66.960607] (-) TimerEvent: {}
+[67.061410] (-) TimerEvent: {}
+[67.162431] (-) TimerEvent: {}
+[67.264022] (-) TimerEvent: {}
+[67.365091] (-) TimerEvent: {}
+[67.466234] (-) TimerEvent: {}
+[67.567027] (-) TimerEvent: {}
+[67.667848] (-) TimerEvent: {}
+[67.768831] (-) TimerEvent: {}
+[67.869891] (-) TimerEvent: {}
+[67.971185] (-) TimerEvent: {}
+[68.073293] (-) TimerEvent: {}
+[68.175130] (-) TimerEvent: {}
+[68.276035] (-) TimerEvent: {}
+[68.376834] (-) TimerEvent: {}
+[68.387997] (three_wheel) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX shared library libthree_wheel.so\x1b[0m\n'}
+[68.477037] (-) TimerEvent: {}
+[68.578122] (-) TimerEvent: {}
+[68.679104] (-) TimerEvent: {}
+[68.780301] (-) TimerEvent: {}
+[68.881924] (-) TimerEvent: {}
+[68.983922] (-) TimerEvent: {}
+[69.086195] (-) TimerEvent: {}
+[69.188807] (-) TimerEvent: {}
+[69.290693] (-) TimerEvent: {}
+[69.392768] (-) TimerEvent: {}
+[69.494012] (-) TimerEvent: {}
+[69.595513] (-) TimerEvent: {}
+[69.696833] (-) TimerEvent: {}
+[69.798049] (-) TimerEvent: {}
+[69.899748] (-) TimerEvent: {}
+[70.001718] (-) TimerEvent: {}
+[70.103737] (-) TimerEvent: {}
+[70.204950] (-) TimerEvent: {}
+[70.306372] (-) TimerEvent: {}
+[70.407935] (-) TimerEvent: {}
+[70.508918] (-) TimerEvent: {}
+[70.610116] (-) TimerEvent: {}
+[70.616037] (diff_drive) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX shared library libdiff_drive.so\x1b[0m\n'}
+[70.710468] (-) TimerEvent: {}
+[70.812006] (-) TimerEvent: {}
+[70.913909] (-) TimerEvent: {}
+[71.015231] (-) TimerEvent: {}
+[71.116457] (-) TimerEvent: {}
+[71.217831] (-) TimerEvent: {}
+[71.320449] (-) TimerEvent: {}
+[71.423024] (-) TimerEvent: {}
+[71.524506] (-) TimerEvent: {}
+[71.625961] (-) TimerEvent: {}
+[71.728128] (-) TimerEvent: {}
+[71.830272] (-) TimerEvent: {}
+[71.931697] (-) TimerEvent: {}
+[72.033535] (-) TimerEvent: {}
+[72.135457] (-) TimerEvent: {}
+[72.236732] (-) TimerEvent: {}
+[72.337824] (-) TimerEvent: {}
+[72.439409] (-) TimerEvent: {}
+[72.540990] (-) TimerEvent: {}
+[72.642416] (-) TimerEvent: {}
+[72.743683] (-) TimerEvent: {}
+[72.845847] (-) TimerEvent: {}
+[72.947060] (-) TimerEvent: {}
+[73.048260] (-) TimerEvent: {}
+[73.150268] (-) TimerEvent: {}
+[73.251947] (-) TimerEvent: {}
+[73.353666] (-) TimerEvent: {}
+[73.455534] (-) TimerEvent: {}
+[73.556632] (-) TimerEvent: {}
+[73.600337] (three_wheel) StdoutLine: {'line': b'[100%] Built target three_wheel\n'}
+[73.656874] (-) TimerEvent: {}
+[73.667034] (three_wheel) CommandEnded: {'returncode': 0}
+[73.670626] (three_wheel) JobProgress: {'identifier': 'three_wheel', 'progress': 'install'}
+[73.734710] (three_wheel) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/piros/Work/ROS2/control_ws/build/three_wheel'], 'cwd': '/home/piros/Work/ROS2/control_ws/build/three_wheel', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('QT_SCALE_FACTOR', '1'), ('LANGUAGE', 'en_IN:en'), ('USER', 'piros'), ('XDG_SESSION_TYPE', 'x11'), ('COMPIZ_CONFIG_PROFILE', 'mate'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/piros/Work/ROS2/control_ws/install/three_wheel/lib:/home/piros/Work/ROS2/control_ws/install/diffdrive_arduino/lib:/home/piros/Work/ROS2/control_ws/install/diff_drive/lib:/home/piros/Work/ROS2/microRos_ws/install/micro_ros_agent/lib:/home/piros/Work/ROS2/microRos_ws/install/micro_ros_msgs/lib:/home/piros/Work/ROS2/ros2_ws/install/my_robot_interfaces/lib:/home/piros/Work/ROS2/controller_ws/install/three_omniwheel_controller/lib:/home/piros/Work/ROS2/controller_ws/install/diff_drive_controller/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/piros'), ('OLDPWD', '/home/piros/Work/ROS2'), ('DESKTOP_SESSION', 'mate'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GTK_MODULES', 'appmenu-gtk-module:gail:atk-bridge:canberra-gtk-module'), ('XDG_SEAT_PATH', '/org/freedesktop/DisplayManager/Seat0'), ('MANAGERPID', '1663'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1686'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=531afbf53fd4eb95884cb8b9680c8089'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3026'), ('UBUNTU_MENUPROXY', '1'), ('QT_QPA_PLATFORMTHEME', 'gtk2'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/piros/Work/ROS2/microRos_ws/install:/home/piros/Work/ROS2/turtlebot3_ws/install:/home/piros/Work/rplidar_ws/install:/home/piros/Work/ROS2/ros2_ws_1/install:/home/piros/Work/ROS2/ros2_ws/install:/home/piros/Work/ROS2/control_ws/install:/home/piros/Work/ROS2/controller_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'piros'), ('JOURNAL_STREAM', '8:27936'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('GTK_OVERLAY_SCROLLING', '0'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/piros:@/tmp/.ICE-unix/1695,unix/piros:/tmp/.ICE-unix/1695'), ('GDM_LANG', 'en_US'), ('INVOCATION_ID', '656f7ef9a71242e8b0df139371bf2cbb'), ('XDG_SESSION_PATH', '/org/freedesktop/DisplayManager/Session0'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'MATE'), ('XDG_SESSION_DESKTOP', 'mate'), ('XAUTHORITY', '/home/piros/.Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('XDG_GREETER_DATA_DIR', '/var/lib/lightdm-data/piros'), ('AMENT_PREFIX_PATH', '/home/piros/Work/ROS2/control_ws/install/three_wheel:/home/piros/Work/ROS2/control_ws/install/diffdrive_arduino:/home/piros/Work/ROS2/control_ws/install/diff_drive:/home/piros/Work/ROS2/turtlebot3_ws/install/turtlebot3_simulations:/home/piros/Work/ROS2/turtlebot3_ws/install/turtlebot3_gazebo:/home/piros/Work/ROS2/turtlebot3_ws/install/turtlebot3_fake_node:/home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup:/home/piros/Work/ROS2/microRos_ws/install/micro_ros_agent:/home/piros/Work/ROS2/microRos_ws/install/micro_ros_msgs:/home/piros/Work/ROS2/ros2_ws_1/install/mera_robot_bringup:/home/piros/Work/ROS2/ros2_ws_1/install/my_robot_description:/home/piros/Work/ROS2/ros2_ws/install/my_robot_bringup:/home/piros/Work/ROS2/ros2_ws/install/py_pkg:/home/piros/Work/ROS2/ros2_ws/install/cpp_pkg:/home/piros/Work/ROS2/ros2_ws/install/course_activities:/home/piros/Work/ROS2/ros2_ws/install/my_robot_interfaces:/home/piros/Work/ROS2/controller_ws/install/three_omniwheel_controller:/home/piros/Work/ROS2/controller_ws/install/diff_drive_controller:/home/piros/Work/rplidar_ws/install/rplidar_ros:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:1361d055-a967-46a8-b11e-aefcf8893eb8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'mate'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('PWD', '/home/piros/Work/ROS2/control_ws/build/three_wheel'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-mate:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=531afbf53fd4eb95884cb8b9680c8089'), ('XDG_DATA_DIRS', '/usr/share/mate:/home/piros/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/piros/Work/ROS2/microRos_ws/install/micro_ros_msgs/local/lib/python3.10/dist-packages:/home/piros/Work/ROS2/ros2_ws/install/py_pkg/lib/python3.10/site-packages:/home/piros/Work/ROS2/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('MATE_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/piros/Work/ROS2/control_ws/install/three_wheel:/home/piros/Work/ROS2/control_ws/install/diffdrive_arduino:/home/piros/Work/ROS2/control_ws/install/diff_drive:/home/piros/Work/ROS2/turtlebot3_ws/install/turtlebot3_simulations:/home/piros/Work/ROS2/turtlebot3_ws/install/turtlebot3_gazebo:/home/piros/Work/ROS2/turtlebot3_ws/install/turtlebot3_fake_node:/home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup:/home/piros/Work/ROS2/microRos_ws/install/micro_ros_agent:/home/piros/Work/ROS2/microRos_ws/install/micro_ros_msgs:/home/piros/Work/ROS2/ros2_ws_1/install/mera_robot_bringup:/home/piros/Work/ROS2/ros2_ws_1/install/my_robot_description:/home/piros/Work/ROS2/ros2_ws/install/my_robot_bringup:/home/piros/Work/ROS2/ros2_ws/install/cpp_pkg:/home/piros/Work/ROS2/ros2_ws/install/course_activities:/home/piros/Work/ROS2/ros2_ws/install/my_robot_interfaces:/home/piros/Work/ROS2/controller_ws/install/three_omniwheel_controller:/home/piros/Work/ROS2/controller_ws/install/diff_drive_controller:/home/piros/Work/rplidar_ws/install/rplidar_ros:/home/piros/Work/ROS2/ros2_ws/install/py_pkg:/opt/ros/humble'), ('QT_FONT_DPI', '96')]), 'shell': False}
+[73.757126] (-) TimerEvent: {}
+[73.781382] (three_wheel) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[73.782593] (three_wheel) StdoutLine: {'line': b'-- Installing: /home/piros/Work/ROS2/control_ws/install/three_wheel/share/three_wheel/three_wheel.xml\n'}
+[73.784222] (three_wheel) StdoutLine: {'line': b'-- Installing: /home/piros/Work/ROS2/control_ws/install/three_wheel/include/three_wheel\n'}
+[73.796386] (three_wheel) StdoutLine: {'line': b'-- Installing: /home/piros/Work/ROS2/control_ws/install/three_wheel/include/three_wheel/three_wheel\n'}
+[73.802927] (three_wheel) StdoutLine: {'line': b'-- Installing: /home/piros/Work/ROS2/control_ws/install/three_wheel/include/three_wheel/three_wheel/drive_wheel.hpp\n'}
+[73.804116] (three_wheel) StdoutLine: {'line': b'-- Installing: /home/piros/Work/ROS2/control_ws/install/three_wheel/include/three_wheel/three_wheel/threewheel_system.hpp\n'}
+[73.804794] (three_wheel) StdoutLine: {'line': b'-- Installing: /home/piros/Work/ROS2/control_ws/install/three_wheel/include/three_wheel/three_wheel/dead_wheel.hpp\n'}
+[73.805805] (three_wheel) StdoutLine: {'line': b'-- Installing: /home/piros/Work/ROS2/control_ws/install/three_wheel/include/three_wheel/three_wheel/visibility_control.h\n'}
+[73.808814] (three_wheel) StdoutLine: {'line': b'-- Installing: /home/piros/Work/ROS2/control_ws/install/three_wheel/share/three_wheel/launch\n'}
+[73.810263] (three_wheel) StdoutLine: {'line': b'-- Installing: /home/piros/Work/ROS2/control_ws/install/three_wheel/share/three_wheel/ros2_control\n'}
+[73.812032] (three_wheel) StdoutLine: {'line': b'-- Installing: /home/piros/Work/ROS2/control_ws/install/three_wheel/share/three_wheel/ros2_control/three_wheel.ros2_control.xacro\n'}
+[73.812939] (three_wheel) StdoutLine: {'line': b'-- Installing: /home/piros/Work/ROS2/control_ws/install/three_wheel/share/three_wheel/urdf\n'}
+[73.814233] (three_wheel) StdoutLine: {'line': b'-- Installing: /home/piros/Work/ROS2/control_ws/install/three_wheel/share/three_wheel/urdf/three_wheel.urdf.xacro\n'}
+[73.815349] (three_wheel) StdoutLine: {'line': b'-- Installing: /home/piros/Work/ROS2/control_ws/install/three_wheel/share/three_wheel/urdf/three_wheel.materials.xacro\n'}
+[73.817122] (three_wheel) StdoutLine: {'line': b'-- Installing: /home/piros/Work/ROS2/control_ws/install/three_wheel/share/three_wheel/urdf/three_wheel_description.urdf.xacro\n'}
+[73.817978] (three_wheel) StdoutLine: {'line': b'-- Installing: /home/piros/Work/ROS2/control_ws/install/three_wheel/share/three_wheel/rviz\n'}
+[73.818864] (three_wheel) StdoutLine: {'line': b'-- Installing: /home/piros/Work/ROS2/control_ws/install/three_wheel/share/three_wheel/rviz/three_wheel_view.rviz\n'}
+[73.819568] (three_wheel) StdoutLine: {'line': b'-- Installing: /home/piros/Work/ROS2/control_ws/install/three_wheel/share/three_wheel/rviz/three_wheel.rviz\n'}
+[73.820309] (three_wheel) StdoutLine: {'line': b'-- Up-to-date: /home/piros/Work/ROS2/control_ws/install/three_wheel/share/three_wheel/launch\n'}
+[73.820929] (three_wheel) StdoutLine: {'line': b'-- Installing: /home/piros/Work/ROS2/control_ws/install/three_wheel/share/three_wheel/launch/three_wheel.launch.py\n'}
+[73.821542] (three_wheel) StdoutLine: {'line': b'-- Installing: /home/piros/Work/ROS2/control_ws/install/three_wheel/share/three_wheel/config\n'}
+[73.822057] (three_wheel) StdoutLine: {'line': b'-- Installing: /home/piros/Work/ROS2/control_ws/install/three_wheel/share/three_wheel/config/three_wheel_controller.yaml\n'}
+[73.822413] (three_wheel) StdoutLine: {'line': b'-- Installing: /home/piros/Work/ROS2/control_ws/install/three_wheel/share/three_wheel/config/joystick.yaml\n'}
+[73.823829] (three_wheel) StdoutLine: {'line': b'-- Installing: /home/piros/Work/ROS2/control_ws/install/three_wheel/lib/libthree_wheel.so\n'}
+[73.857537] (-) TimerEvent: {}
+[73.900481] (three_wheel) StdoutLine: {'line': b'-- Set runtime path of "/home/piros/Work/ROS2/control_ws/install/three_wheel/lib/libthree_wheel.so" to ""\n'}
+[73.901264] (three_wheel) StdoutLine: {'line': b'-- Installing: /home/piros/Work/ROS2/control_ws/install/three_wheel/share/three_wheel/environment/library_path.sh\n'}
+[73.902711] (three_wheel) StdoutLine: {'line': b'-- Installing: /home/piros/Work/ROS2/control_ws/install/three_wheel/share/three_wheel/environment/library_path.dsv\n'}
+[73.904849] (three_wheel) StdoutLine: {'line': b'-- Installing: /home/piros/Work/ROS2/control_ws/install/three_wheel/share/ament_index/resource_index/package_run_dependencies/three_wheel\n'}
+[73.906779] (three_wheel) StdoutLine: {'line': b'-- Installing: /home/piros/Work/ROS2/control_ws/install/three_wheel/share/ament_index/resource_index/parent_prefix_path/three_wheel\n'}
+[73.908279] (three_wheel) StdoutLine: {'line': b'-- Installing: /home/piros/Work/ROS2/control_ws/install/three_wheel/share/three_wheel/environment/ament_prefix_path.sh\n'}
+[73.909966] (three_wheel) StdoutLine: {'line': b'-- Installing: /home/piros/Work/ROS2/control_ws/install/three_wheel/share/three_wheel/environment/ament_prefix_path.dsv\n'}
+[73.911483] (three_wheel) StdoutLine: {'line': b'-- Installing: /home/piros/Work/ROS2/control_ws/install/three_wheel/share/three_wheel/environment/path.sh\n'}
+[73.913091] (three_wheel) StdoutLine: {'line': b'-- Installing: /home/piros/Work/ROS2/control_ws/install/three_wheel/share/three_wheel/environment/path.dsv\n'}
+[73.914689] (three_wheel) StdoutLine: {'line': b'-- Installing: /home/piros/Work/ROS2/control_ws/install/three_wheel/share/three_wheel/local_setup.bash\n'}
+[73.916624] (three_wheel) StdoutLine: {'line': b'-- Installing: /home/piros/Work/ROS2/control_ws/install/three_wheel/share/three_wheel/local_setup.sh\n'}
+[73.917907] (three_wheel) StdoutLine: {'line': b'-- Installing: /home/piros/Work/ROS2/control_ws/install/three_wheel/share/three_wheel/local_setup.zsh\n'}
+[73.919422] (three_wheel) StdoutLine: {'line': b'-- Installing: /home/piros/Work/ROS2/control_ws/install/three_wheel/share/three_wheel/local_setup.dsv\n'}
+[73.920844] (three_wheel) StdoutLine: {'line': b'-- Installing: /home/piros/Work/ROS2/control_ws/install/three_wheel/share/three_wheel/package.dsv\n'}
+[73.922729] (three_wheel) StdoutLine: {'line': b'-- Installing: /home/piros/Work/ROS2/control_ws/install/three_wheel/share/ament_index/resource_index/packages/three_wheel\n'}
+[73.924815] (three_wheel) StdoutLine: {'line': b'-- Installing: /home/piros/Work/ROS2/control_ws/install/three_wheel/share/ament_index/resource_index/hardware_interface__pluginlib__plugin/three_wheel\n'}
+[73.927049] (three_wheel) StdoutLine: {'line': b'-- Installing: /home/piros/Work/ROS2/control_ws/install/three_wheel/share/three_wheel/cmake/export_three_wheelExport.cmake\n'}
+[73.928733] (three_wheel) StdoutLine: {'line': b'-- Installing: /home/piros/Work/ROS2/control_ws/install/three_wheel/share/three_wheel/cmake/export_three_wheelExport-noconfig.cmake\n'}
+[73.930327] (three_wheel) StdoutLine: {'line': b'-- Installing: /home/piros/Work/ROS2/control_ws/install/three_wheel/share/three_wheel/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[73.931933] (three_wheel) StdoutLine: {'line': b'-- Installing: /home/piros/Work/ROS2/control_ws/install/three_wheel/share/three_wheel/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[73.933571] (three_wheel) StdoutLine: {'line': b'-- Installing: /home/piros/Work/ROS2/control_ws/install/three_wheel/share/three_wheel/cmake/three_wheelConfig.cmake\n'}
+[73.934783] (three_wheel) StdoutLine: {'line': b'-- Installing: /home/piros/Work/ROS2/control_ws/install/three_wheel/share/three_wheel/cmake/three_wheelConfig-version.cmake\n'}
+[73.936696] (three_wheel) StdoutLine: {'line': b'-- Installing: /home/piros/Work/ROS2/control_ws/install/three_wheel/share/three_wheel/package.xml\n'}
+[73.945492] (three_wheel) CommandEnded: {'returncode': 0}
+[73.957711] (-) TimerEvent: {}
+[74.059380] (-) TimerEvent: {}
+[74.080511] (three_wheel) JobEnded: {'identifier': 'three_wheel', 'rc': 0}
+[74.159555] (-) TimerEvent: {}
+[74.260242] (-) TimerEvent: {}
+[74.361022] (-) TimerEvent: {}
+[74.462260] (-) TimerEvent: {}
+[74.563019] (-) TimerEvent: {}
+[74.664069] (-) TimerEvent: {}
+[74.764865] (-) TimerEvent: {}
+[74.865608] (-) TimerEvent: {}
+[74.966681] (-) TimerEvent: {}
+[75.068121] (-) TimerEvent: {}
+[75.168763] (-) TimerEvent: {}
+[75.269525] (-) TimerEvent: {}
+[75.370340] (-) TimerEvent: {}
+[75.429756] (diff_drive) StdoutLine: {'line': b'[100%] Built target diff_drive\n'}
+[75.470531] (-) TimerEvent: {}
+[75.476334] (diff_drive) CommandEnded: {'returncode': 0}
+[75.478627] (diff_drive) JobProgress: {'identifier': 'diff_drive', 'progress': 'install'}
+[75.479637] (diff_drive) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/piros/Work/ROS2/control_ws/build/diff_drive'], 'cwd': '/home/piros/Work/ROS2/control_ws/build/diff_drive', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('QT_SCALE_FACTOR', '1'), ('LANGUAGE', 'en_IN:en'), ('USER', 'piros'), ('XDG_SESSION_TYPE', 'x11'), ('COMPIZ_CONFIG_PROFILE', 'mate'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/piros/Work/ROS2/control_ws/install/three_wheel/lib:/home/piros/Work/ROS2/control_ws/install/diffdrive_arduino/lib:/home/piros/Work/ROS2/control_ws/install/diff_drive/lib:/home/piros/Work/ROS2/microRos_ws/install/micro_ros_agent/lib:/home/piros/Work/ROS2/microRos_ws/install/micro_ros_msgs/lib:/home/piros/Work/ROS2/ros2_ws/install/my_robot_interfaces/lib:/home/piros/Work/ROS2/controller_ws/install/three_omniwheel_controller/lib:/home/piros/Work/ROS2/controller_ws/install/diff_drive_controller/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/piros'), ('OLDPWD', '/home/piros/Work/ROS2'), ('DESKTOP_SESSION', 'mate'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GTK_MODULES', 'appmenu-gtk-module:gail:atk-bridge:canberra-gtk-module'), ('XDG_SEAT_PATH', '/org/freedesktop/DisplayManager/Seat0'), ('MANAGERPID', '1663'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1686'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=531afbf53fd4eb95884cb8b9680c8089'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3026'), ('UBUNTU_MENUPROXY', '1'), ('QT_QPA_PLATFORMTHEME', 'gtk2'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/piros/Work/ROS2/microRos_ws/install:/home/piros/Work/ROS2/turtlebot3_ws/install:/home/piros/Work/rplidar_ws/install:/home/piros/Work/ROS2/ros2_ws_1/install:/home/piros/Work/ROS2/ros2_ws/install:/home/piros/Work/ROS2/control_ws/install:/home/piros/Work/ROS2/controller_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'piros'), ('JOURNAL_STREAM', '8:27936'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('GTK_OVERLAY_SCROLLING', '0'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/piros:@/tmp/.ICE-unix/1695,unix/piros:/tmp/.ICE-unix/1695'), ('GDM_LANG', 'en_US'), ('INVOCATION_ID', '656f7ef9a71242e8b0df139371bf2cbb'), ('XDG_SESSION_PATH', '/org/freedesktop/DisplayManager/Session0'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'MATE'), ('XDG_SESSION_DESKTOP', 'mate'), ('XAUTHORITY', '/home/piros/.Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('XDG_GREETER_DATA_DIR', '/var/lib/lightdm-data/piros'), ('AMENT_PREFIX_PATH', '/home/piros/Work/ROS2/control_ws/install/three_wheel:/home/piros/Work/ROS2/control_ws/install/diffdrive_arduino:/home/piros/Work/ROS2/control_ws/install/diff_drive:/home/piros/Work/ROS2/turtlebot3_ws/install/turtlebot3_simulations:/home/piros/Work/ROS2/turtlebot3_ws/install/turtlebot3_gazebo:/home/piros/Work/ROS2/turtlebot3_ws/install/turtlebot3_fake_node:/home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup:/home/piros/Work/ROS2/microRos_ws/install/micro_ros_agent:/home/piros/Work/ROS2/microRos_ws/install/micro_ros_msgs:/home/piros/Work/ROS2/ros2_ws_1/install/mera_robot_bringup:/home/piros/Work/ROS2/ros2_ws_1/install/my_robot_description:/home/piros/Work/ROS2/ros2_ws/install/my_robot_bringup:/home/piros/Work/ROS2/ros2_ws/install/py_pkg:/home/piros/Work/ROS2/ros2_ws/install/cpp_pkg:/home/piros/Work/ROS2/ros2_ws/install/course_activities:/home/piros/Work/ROS2/ros2_ws/install/my_robot_interfaces:/home/piros/Work/ROS2/controller_ws/install/three_omniwheel_controller:/home/piros/Work/ROS2/controller_ws/install/diff_drive_controller:/home/piros/Work/rplidar_ws/install/rplidar_ros:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:1361d055-a967-46a8-b11e-aefcf8893eb8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'mate'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('PWD', '/home/piros/Work/ROS2/control_ws/build/diff_drive'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-mate:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=531afbf53fd4eb95884cb8b9680c8089'), ('XDG_DATA_DIRS', '/usr/share/mate:/home/piros/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/piros/Work/ROS2/microRos_ws/install/micro_ros_msgs/local/lib/python3.10/dist-packages:/home/piros/Work/ROS2/ros2_ws/install/py_pkg/lib/python3.10/site-packages:/home/piros/Work/ROS2/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('MATE_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/piros/Work/ROS2/control_ws/install/three_wheel:/home/piros/Work/ROS2/control_ws/install/diffdrive_arduino:/home/piros/Work/ROS2/control_ws/install/diff_drive:/home/piros/Work/ROS2/turtlebot3_ws/install/turtlebot3_simulations:/home/piros/Work/ROS2/turtlebot3_ws/install/turtlebot3_gazebo:/home/piros/Work/ROS2/turtlebot3_ws/install/turtlebot3_fake_node:/home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup:/home/piros/Work/ROS2/microRos_ws/install/micro_ros_agent:/home/piros/Work/ROS2/microRos_ws/install/micro_ros_msgs:/home/piros/Work/ROS2/ros2_ws_1/install/mera_robot_bringup:/home/piros/Work/ROS2/ros2_ws_1/install/my_robot_description:/home/piros/Work/ROS2/ros2_ws/install/my_robot_bringup:/home/piros/Work/ROS2/ros2_ws/install/cpp_pkg:/home/piros/Work/ROS2/ros2_ws/install/course_activities:/home/piros/Work/ROS2/ros2_ws/install/my_robot_interfaces:/home/piros/Work/ROS2/controller_ws/install/three_omniwheel_controller:/home/piros/Work/ROS2/controller_ws/install/diff_drive_controller:/home/piros/Work/rplidar_ws/install/rplidar_ros:/home/piros/Work/ROS2/ros2_ws/install/py_pkg:/opt/ros/humble'), ('QT_FONT_DPI', '96')]), 'shell': False}
+[75.523667] (diff_drive) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[75.524476] (diff_drive) StdoutLine: {'line': b'-- Installing: /home/piros/Work/ROS2/control_ws/install/diff_drive/share/diff_drive/diff_drive.xml\n'}
+[75.525791] (diff_drive) StdoutLine: {'line': b'-- Installing: /home/piros/Work/ROS2/control_ws/install/diff_drive/include/diff_drive\n'}
+[75.526393] (diff_drive) StdoutLine: {'line': b'-- Installing: /home/piros/Work/ROS2/control_ws/install/diff_drive/include/diff_drive/diff_drive\n'}
+[75.527060] (diff_drive) StdoutLine: {'line': b'-- Installing: /home/piros/Work/ROS2/control_ws/install/diff_drive/include/diff_drive/diff_drive/diffdrive_system.hpp\n'}
+[75.528155] (diff_drive) StdoutLine: {'line': b'-- Installing: /home/piros/Work/ROS2/control_ws/install/diff_drive/include/diff_drive/diff_drive/wheel.hpp\n'}
+[75.529100] (diff_drive) StdoutLine: {'line': b'-- Installing: /home/piros/Work/ROS2/control_ws/install/diff_drive/include/diff_drive/diff_drive/visibility_control.h\n'}
+[75.530180] (diff_drive) StdoutLine: {'line': b'-- Installing: /home/piros/Work/ROS2/control_ws/install/diff_drive/share/diff_drive/launch\n'}
+[75.530730] (diff_drive) StdoutLine: {'line': b'-- Installing: /home/piros/Work/ROS2/control_ws/install/diff_drive/share/diff_drive/ros2_control\n'}
+[75.531916] (diff_drive) StdoutLine: {'line': b'-- Installing: /home/piros/Work/ROS2/control_ws/install/diff_drive/share/diff_drive/ros2_control/diff_drive.ros2_control.xacro\n'}
+[75.532971] (diff_drive) StdoutLine: {'line': b'-- Installing: /home/piros/Work/ROS2/control_ws/install/diff_drive/share/diff_drive/urdf\n'}
+[75.533579] (diff_drive) StdoutLine: {'line': b'-- Installing: /home/piros/Work/ROS2/control_ws/install/diff_drive/share/diff_drive/urdf/diff_drive_description.urdf.xacro\n'}
+[75.534659] (diff_drive) StdoutLine: {'line': b'-- Installing: /home/piros/Work/ROS2/control_ws/install/diff_drive/share/diff_drive/urdf/diff_drive.urdf.xacro\n'}
+[75.535596] (diff_drive) StdoutLine: {'line': b'-- Installing: /home/piros/Work/ROS2/control_ws/install/diff_drive/share/diff_drive/urdf/diff_drive.materials.xacro\n'}
+[75.536485] (diff_drive) StdoutLine: {'line': b'-- Installing: /home/piros/Work/ROS2/control_ws/install/diff_drive/share/diff_drive/rviz\n'}
+[75.537077] (diff_drive) StdoutLine: {'line': b'-- Installing: /home/piros/Work/ROS2/control_ws/install/diff_drive/share/diff_drive/rviz/diff_drive_view.rviz\n'}
+[75.538077] (diff_drive) StdoutLine: {'line': b'-- Installing: /home/piros/Work/ROS2/control_ws/install/diff_drive/share/diff_drive/rviz/diff_drive.rviz\n'}
+[75.539127] (diff_drive) StdoutLine: {'line': b'-- Up-to-date: /home/piros/Work/ROS2/control_ws/install/diff_drive/share/diff_drive/launch\n'}
+[75.539578] (diff_drive) StdoutLine: {'line': b'-- Installing: /home/piros/Work/ROS2/control_ws/install/diff_drive/share/diff_drive/launch/diff_drive.launch.py\n'}
+[75.540509] (diff_drive) StdoutLine: {'line': b'-- Installing: /home/piros/Work/ROS2/control_ws/install/diff_drive/share/diff_drive/launch/joystick.launch.py\n'}
+[75.541349] (diff_drive) StdoutLine: {'line': b'-- Installing: /home/piros/Work/ROS2/control_ws/install/diff_drive/share/diff_drive/config\n'}
+[75.541956] (diff_drive) StdoutLine: {'line': b'-- Installing: /home/piros/Work/ROS2/control_ws/install/diff_drive/share/diff_drive/config/diff_drive_controllers.yaml\n'}
+[75.543147] (diff_drive) StdoutLine: {'line': b'-- Installing: /home/piros/Work/ROS2/control_ws/install/diff_drive/share/diff_drive/config/joystick.yaml\n'}
+[75.544562] (diff_drive) StdoutLine: {'line': b'-- Installing: /home/piros/Work/ROS2/control_ws/install/diff_drive/lib/libdiff_drive.so\n'}
+[75.570718] (-) TimerEvent: {}
+[75.619440] (diff_drive) StdoutLine: {'line': b'-- Set runtime path of "/home/piros/Work/ROS2/control_ws/install/diff_drive/lib/libdiff_drive.so" to ""\n'}
+[75.620065] (diff_drive) StdoutLine: {'line': b'-- Installing: /home/piros/Work/ROS2/control_ws/install/diff_drive/share/diff_drive/environment/library_path.sh\n'}
+[75.621349] (diff_drive) StdoutLine: {'line': b'-- Installing: /home/piros/Work/ROS2/control_ws/install/diff_drive/share/diff_drive/environment/library_path.dsv\n'}
+[75.623150] (diff_drive) StdoutLine: {'line': b'-- Installing: /home/piros/Work/ROS2/control_ws/install/diff_drive/share/ament_index/resource_index/package_run_dependencies/diff_drive\n'}
+[75.624829] (diff_drive) StdoutLine: {'line': b'-- Installing: /home/piros/Work/ROS2/control_ws/install/diff_drive/share/ament_index/resource_index/parent_prefix_path/diff_drive\n'}
+[75.626082] (diff_drive) StdoutLine: {'line': b'-- Installing: /home/piros/Work/ROS2/control_ws/install/diff_drive/share/diff_drive/environment/ament_prefix_path.sh\n'}
+[75.627256] (diff_drive) StdoutLine: {'line': b'-- Installing: /home/piros/Work/ROS2/control_ws/install/diff_drive/share/diff_drive/environment/ament_prefix_path.dsv\n'}
+[75.628428] (diff_drive) StdoutLine: {'line': b'-- Installing: /home/piros/Work/ROS2/control_ws/install/diff_drive/share/diff_drive/environment/path.sh\n'}
+[75.629622] (diff_drive) StdoutLine: {'line': b'-- Installing: /home/piros/Work/ROS2/control_ws/install/diff_drive/share/diff_drive/environment/path.dsv\n'}
+[75.630717] (diff_drive) StdoutLine: {'line': b'-- Installing: /home/piros/Work/ROS2/control_ws/install/diff_drive/share/diff_drive/local_setup.bash\n'}
+[75.631920] (diff_drive) StdoutLine: {'line': b'-- Installing: /home/piros/Work/ROS2/control_ws/install/diff_drive/share/diff_drive/local_setup.sh\n'}
+[75.633012] (diff_drive) StdoutLine: {'line': b'-- Installing: /home/piros/Work/ROS2/control_ws/install/diff_drive/share/diff_drive/local_setup.zsh\n'}
+[75.634138] (diff_drive) StdoutLine: {'line': b'-- Installing: /home/piros/Work/ROS2/control_ws/install/diff_drive/share/diff_drive/local_setup.dsv\n'}
+[75.635274] (diff_drive) StdoutLine: {'line': b'-- Installing: /home/piros/Work/ROS2/control_ws/install/diff_drive/share/diff_drive/package.dsv\n'}
+[75.636696] (diff_drive) StdoutLine: {'line': b'-- Installing: /home/piros/Work/ROS2/control_ws/install/diff_drive/share/ament_index/resource_index/packages/diff_drive\n'}
+[75.638196] (diff_drive) StdoutLine: {'line': b'-- Installing: /home/piros/Work/ROS2/control_ws/install/diff_drive/share/ament_index/resource_index/hardware_interface__pluginlib__plugin/diff_drive\n'}
+[75.639938] (diff_drive) StdoutLine: {'line': b'-- Installing: /home/piros/Work/ROS2/control_ws/install/diff_drive/share/diff_drive/cmake/export_diff_driveExport.cmake\n'}
+[75.641322] (diff_drive) StdoutLine: {'line': b'-- Installing: /home/piros/Work/ROS2/control_ws/install/diff_drive/share/diff_drive/cmake/export_diff_driveExport-noconfig.cmake\n'}
+[75.642553] (diff_drive) StdoutLine: {'line': b'-- Installing: /home/piros/Work/ROS2/control_ws/install/diff_drive/share/diff_drive/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[75.643939] (diff_drive) StdoutLine: {'line': b'-- Installing: /home/piros/Work/ROS2/control_ws/install/diff_drive/share/diff_drive/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[75.645249] (diff_drive) StdoutLine: {'line': b'-- Installing: /home/piros/Work/ROS2/control_ws/install/diff_drive/share/diff_drive/cmake/diff_driveConfig.cmake\n'}
+[75.646211] (diff_drive) StdoutLine: {'line': b'-- Installing: /home/piros/Work/ROS2/control_ws/install/diff_drive/share/diff_drive/cmake/diff_driveConfig-version.cmake\n'}
+[75.647413] (diff_drive) StdoutLine: {'line': b'-- Installing: /home/piros/Work/ROS2/control_ws/install/diff_drive/share/diff_drive/package.xml\n'}
+[75.653954] (diff_drive) CommandEnded: {'returncode': 0}
+[75.671049] (-) TimerEvent: {}
+[75.731853] (diff_drive) JobEnded: {'identifier': 'diff_drive', 'rc': 0}
+[75.734506] (-) EventReactorShutdown: {}

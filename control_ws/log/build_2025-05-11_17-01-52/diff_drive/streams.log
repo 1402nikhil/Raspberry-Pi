@@ -1,0 +1,96 @@
+[0.108s] Invoking command in '/home/piros/Work/ROS2/control_ws/build/diff_drive': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/piros/Work/ROS2/ros2_ws/install/py_pkg:/opt/ros/humble /usr/bin/cmake /home/piros/Work/ROS2/control_ws/src/diff_drive -DCMAKE_INSTALL_PREFIX=/home/piros/Work/ROS2/control_ws/install/diff_drive
+[0.445s] -- The C compiler identification is GNU 11.4.0
+[0.739s] -- The CXX compiler identification is GNU 11.4.0
+[0.772s] -- Detecting C compiler ABI info
+[1.207s] -- Detecting C compiler ABI info - done
+[1.231s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.232s] -- Detecting C compile features
+[1.236s] -- Detecting C compile features - done
+[1.248s] -- Detecting CXX compiler ABI info
+[1.671s] -- Detecting CXX compiler ABI info - done
+[1.696s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.698s] -- Detecting CXX compile features
+[1.699s] -- Detecting CXX compile features - done
+[1.743s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[2.750s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[3.630s] -- Found hardware_interface: 2.49.0 (/opt/ros/humble/share/hardware_interface/cmake)
+[4.179s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[4.266s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[4.370s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[4.511s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[4.679s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[6.464s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[6.506s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[6.748s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[7.092s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[7.110s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[7.212s] -- Found FastRTPS: /opt/ros/humble/include  
+[7.226s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[7.267s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[7.315s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[7.440s] -- Looking for pthread.h
+[7.860s] -- Looking for pthread.h - found
+[7.865s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[8.303s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[8.310s] -- Found Threads: TRUE  
+[8.710s] -- Found micro_ros_agent: 3.0.6 (/home/piros/Work/ROS2/microRos_ws/install/micro_ros_agent/share/micro_ros_agent/cmake)
+[8.736s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[8.900s] -- Found ament_cmake_gtest: 1.3.11 (/opt/ros/humble/share/ament_cmake_gtest/cmake)
+[9.402s] -- Configuring done
+[9.614s] -- Generating done
+[9.643s] -- Build files have been written to: /home/piros/Work/ROS2/control_ws/build/diff_drive
+[9.733s] Invoked command in '/home/piros/Work/ROS2/control_ws/build/diff_drive' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/piros/Work/ROS2/ros2_ws/install/py_pkg:/opt/ros/humble /usr/bin/cmake /home/piros/Work/ROS2/control_ws/src/diff_drive -DCMAKE_INSTALL_PREFIX=/home/piros/Work/ROS2/control_ws/install/diff_drive
+[9.737s] Invoking command in '/home/piros/Work/ROS2/control_ws/build/diff_drive': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/piros/Work/ROS2/ros2_ws/install/py_pkg:/opt/ros/humble /usr/bin/cmake --build /home/piros/Work/ROS2/control_ws/build/diff_drive -- -j4 -l4
+[10.108s] [ 50%] [32mBuilding CXX object CMakeFiles/diff_drive.dir/hardware/diffdrive_system.cpp.o[0m
+[70.615s] [100%] [32m[1mLinking CXX shared library libdiff_drive.so[0m
+[75.428s] [100%] Built target diff_drive
+[75.475s] Invoked command in '/home/piros/Work/ROS2/control_ws/build/diff_drive' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/piros/Work/ROS2/ros2_ws/install/py_pkg:/opt/ros/humble /usr/bin/cmake --build /home/piros/Work/ROS2/control_ws/build/diff_drive -- -j4 -l4
+[75.481s] Invoking command in '/home/piros/Work/ROS2/control_ws/build/diff_drive': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/piros/Work/ROS2/ros2_ws/install/py_pkg:/opt/ros/humble /usr/bin/cmake --install /home/piros/Work/ROS2/control_ws/build/diff_drive
+[75.522s] -- Install configuration: ""
+[75.523s] -- Installing: /home/piros/Work/ROS2/control_ws/install/diff_drive/share/diff_drive/diff_drive.xml
+[75.524s] -- Installing: /home/piros/Work/ROS2/control_ws/install/diff_drive/include/diff_drive
+[75.525s] -- Installing: /home/piros/Work/ROS2/control_ws/install/diff_drive/include/diff_drive/diff_drive
+[75.526s] -- Installing: /home/piros/Work/ROS2/control_ws/install/diff_drive/include/diff_drive/diff_drive/diffdrive_system.hpp
+[75.527s] -- Installing: /home/piros/Work/ROS2/control_ws/install/diff_drive/include/diff_drive/diff_drive/wheel.hpp
+[75.528s] -- Installing: /home/piros/Work/ROS2/control_ws/install/diff_drive/include/diff_drive/diff_drive/visibility_control.h
+[75.529s] -- Installing: /home/piros/Work/ROS2/control_ws/install/diff_drive/share/diff_drive/launch
+[75.529s] -- Installing: /home/piros/Work/ROS2/control_ws/install/diff_drive/share/diff_drive/ros2_control
+[75.530s] -- Installing: /home/piros/Work/ROS2/control_ws/install/diff_drive/share/diff_drive/ros2_control/diff_drive.ros2_control.xacro
+[75.531s] -- Installing: /home/piros/Work/ROS2/control_ws/install/diff_drive/share/diff_drive/urdf
+[75.532s] -- Installing: /home/piros/Work/ROS2/control_ws/install/diff_drive/share/diff_drive/urdf/diff_drive_description.urdf.xacro
+[75.533s] -- Installing: /home/piros/Work/ROS2/control_ws/install/diff_drive/share/diff_drive/urdf/diff_drive.urdf.xacro
+[75.534s] -- Installing: /home/piros/Work/ROS2/control_ws/install/diff_drive/share/diff_drive/urdf/diff_drive.materials.xacro
+[75.535s] -- Installing: /home/piros/Work/ROS2/control_ws/install/diff_drive/share/diff_drive/rviz
+[75.536s] -- Installing: /home/piros/Work/ROS2/control_ws/install/diff_drive/share/diff_drive/rviz/diff_drive_view.rviz
+[75.537s] -- Installing: /home/piros/Work/ROS2/control_ws/install/diff_drive/share/diff_drive/rviz/diff_drive.rviz
+[75.538s] -- Up-to-date: /home/piros/Work/ROS2/control_ws/install/diff_drive/share/diff_drive/launch
+[75.538s] -- Installing: /home/piros/Work/ROS2/control_ws/install/diff_drive/share/diff_drive/launch/diff_drive.launch.py
+[75.539s] -- Installing: /home/piros/Work/ROS2/control_ws/install/diff_drive/share/diff_drive/launch/joystick.launch.py
+[75.540s] -- Installing: /home/piros/Work/ROS2/control_ws/install/diff_drive/share/diff_drive/config
+[75.540s] -- Installing: /home/piros/Work/ROS2/control_ws/install/diff_drive/share/diff_drive/config/diff_drive_controllers.yaml
+[75.542s] -- Installing: /home/piros/Work/ROS2/control_ws/install/diff_drive/share/diff_drive/config/joystick.yaml
+[75.543s] -- Installing: /home/piros/Work/ROS2/control_ws/install/diff_drive/lib/libdiff_drive.so
+[75.618s] -- Set runtime path of "/home/piros/Work/ROS2/control_ws/install/diff_drive/lib/libdiff_drive.so" to ""
+[75.619s] -- Installing: /home/piros/Work/ROS2/control_ws/install/diff_drive/share/diff_drive/environment/library_path.sh
+[75.620s] -- Installing: /home/piros/Work/ROS2/control_ws/install/diff_drive/share/diff_drive/environment/library_path.dsv
+[75.622s] -- Installing: /home/piros/Work/ROS2/control_ws/install/diff_drive/share/ament_index/resource_index/package_run_dependencies/diff_drive
+[75.623s] -- Installing: /home/piros/Work/ROS2/control_ws/install/diff_drive/share/ament_index/resource_index/parent_prefix_path/diff_drive
+[75.625s] -- Installing: /home/piros/Work/ROS2/control_ws/install/diff_drive/share/diff_drive/environment/ament_prefix_path.sh
+[75.626s] -- Installing: /home/piros/Work/ROS2/control_ws/install/diff_drive/share/diff_drive/environment/ament_prefix_path.dsv
+[75.627s] -- Installing: /home/piros/Work/ROS2/control_ws/install/diff_drive/share/diff_drive/environment/path.sh
+[75.628s] -- Installing: /home/piros/Work/ROS2/control_ws/install/diff_drive/share/diff_drive/environment/path.dsv
+[75.629s] -- Installing: /home/piros/Work/ROS2/control_ws/install/diff_drive/share/diff_drive/local_setup.bash
+[75.630s] -- Installing: /home/piros/Work/ROS2/control_ws/install/diff_drive/share/diff_drive/local_setup.sh
+[75.631s] -- Installing: /home/piros/Work/ROS2/control_ws/install/diff_drive/share/diff_drive/local_setup.zsh
+[75.633s] -- Installing: /home/piros/Work/ROS2/control_ws/install/diff_drive/share/diff_drive/local_setup.dsv
+[75.634s] -- Installing: /home/piros/Work/ROS2/control_ws/install/diff_drive/share/diff_drive/package.dsv
+[75.635s] -- Installing: /home/piros/Work/ROS2/control_ws/install/diff_drive/share/ament_index/resource_index/packages/diff_drive
+[75.637s] -- Installing: /home/piros/Work/ROS2/control_ws/install/diff_drive/share/ament_index/resource_index/hardware_interface__pluginlib__plugin/diff_drive
+[75.639s] -- Installing: /home/piros/Work/ROS2/control_ws/install/diff_drive/share/diff_drive/cmake/export_diff_driveExport.cmake
+[75.640s] -- Installing: /home/piros/Work/ROS2/control_ws/install/diff_drive/share/diff_drive/cmake/export_diff_driveExport-noconfig.cmake
+[75.641s] -- Installing: /home/piros/Work/ROS2/control_ws/install/diff_drive/share/diff_drive/cmake/ament_cmake_export_targets-extras.cmake
+[75.642s] -- Installing: /home/piros/Work/ROS2/control_ws/install/diff_drive/share/diff_drive/cmake/ament_cmake_export_dependencies-extras.cmake
+[75.644s] -- Installing: /home/piros/Work/ROS2/control_ws/install/diff_drive/share/diff_drive/cmake/diff_driveConfig.cmake
+[75.645s] -- Installing: /home/piros/Work/ROS2/control_ws/install/diff_drive/share/diff_drive/cmake/diff_driveConfig-version.cmake
+[75.646s] -- Installing: /home/piros/Work/ROS2/control_ws/install/diff_drive/share/diff_drive/package.xml
+[75.654s] Invoked command in '/home/piros/Work/ROS2/control_ws/build/diff_drive' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/piros/Work/ROS2/ros2_ws/install/py_pkg:/opt/ros/humble /usr/bin/cmake --install /home/piros/Work/ROS2/control_ws/build/diff_drive

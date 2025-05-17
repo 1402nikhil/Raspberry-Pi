@@ -1,0 +1,1665 @@
+[0.000000] (-) TimerEvent: {}
+[0.001030] (diff_drive_controller) JobQueued: {'identifier': 'diff_drive_controller', 'dependencies': OrderedDict()}
+[0.001712] (three_omniwheel_controller) JobQueued: {'identifier': 'three_omniwheel_controller', 'dependencies': OrderedDict()}
+[0.001971] (diff_drive_controller) JobStarted: {'identifier': 'diff_drive_controller'}
+[0.053513] (three_omniwheel_controller) JobStarted: {'identifier': 'three_omniwheel_controller'}
+[0.081951] (diff_drive_controller) JobProgress: {'identifier': 'diff_drive_controller', 'progress': 'cmake'}
+[0.084362] (diff_drive_controller) Command: {'cmd': ['/usr/bin/cmake', '/home/piros/Work/ROS2/controller_ws/src/diff_drive_controller', '-DCMAKE_INSTALL_PREFIX=/home/piros/Work/ROS2/controller_ws/install/diff_drive_controller'], 'cwd': '/home/piros/Work/ROS2/controller_ws/build/diff_drive_controller', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('QT_SCALE_FACTOR', '1'), ('LANGUAGE', 'en_IN:en'), ('USER', 'piros'), ('XDG_SESSION_TYPE', 'x11'), ('COMPIZ_CONFIG_PROFILE', 'mate'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/piros'), ('OLDPWD', '/home/piros/Work/ROS2'), ('DESKTOP_SESSION', 'mate'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GTK_MODULES', 'appmenu-gtk-module:gail:atk-bridge:canberra-gtk-module'), ('XDG_SEAT_PATH', '/org/freedesktop/DisplayManager/Seat0'), ('MANAGERPID', '1663'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1686'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=531afbf53fd4eb95884cb8b9680c8089'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3026'), ('UBUNTU_MENUPROXY', '1'), ('QT_QPA_PLATFORMTHEME', 'gtk2'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/piros/Work/rplidar_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'piros'), ('JOURNAL_STREAM', '8:27936'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('GTK_OVERLAY_SCROLLING', '0'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/piros:@/tmp/.ICE-unix/1695,unix/piros:/tmp/.ICE-unix/1695'), ('GDM_LANG', 'en_US'), ('INVOCATION_ID', '656f7ef9a71242e8b0df139371bf2cbb'), ('XDG_SESSION_PATH', '/org/freedesktop/DisplayManager/Session0'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'MATE'), ('XDG_SESSION_DESKTOP', 'mate'), ('XAUTHORITY', '/home/piros/.Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('XDG_GREETER_DATA_DIR', '/var/lib/lightdm-data/piros'), ('AMENT_PREFIX_PATH', '/home/piros/Work/rplidar_ws/install/rplidar_ros:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:cd888be0-f582-4d28-8da4-f8e7e9461455'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'mate'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('PWD', '/home/piros/Work/ROS2/controller_ws/build/diff_drive_controller'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-mate:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=531afbf53fd4eb95884cb8b9680c8089'), ('XDG_DATA_DIRS', '/usr/share/mate:/home/piros/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('MATE_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/piros/Work/rplidar_ws/install/rplidar_ros:/opt/ros/humble'), ('QT_FONT_DPI', '96')]), 'shell': False}
+[0.101205] (-) TimerEvent: {}
+[0.110211] (three_omniwheel_controller) JobProgress: {'identifier': 'three_omniwheel_controller', 'progress': 'cmake'}
+[0.114293] (three_omniwheel_controller) Command: {'cmd': ['/usr/bin/cmake', '/home/piros/Work/ROS2/controller_ws/src/three_omniwheel_controller', '-DCMAKE_INSTALL_PREFIX=/home/piros/Work/ROS2/controller_ws/install/three_omniwheel_controller'], 'cwd': '/home/piros/Work/ROS2/controller_ws/build/three_omniwheel_controller', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('QT_SCALE_FACTOR', '1'), ('LANGUAGE', 'en_IN:en'), ('USER', 'piros'), ('XDG_SESSION_TYPE', 'x11'), ('COMPIZ_CONFIG_PROFILE', 'mate'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/piros'), ('OLDPWD', '/home/piros/Work/ROS2'), ('DESKTOP_SESSION', 'mate'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GTK_MODULES', 'appmenu-gtk-module:gail:atk-bridge:canberra-gtk-module'), ('XDG_SEAT_PATH', '/org/freedesktop/DisplayManager/Seat0'), ('MANAGERPID', '1663'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1686'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=531afbf53fd4eb95884cb8b9680c8089'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3026'), ('UBUNTU_MENUPROXY', '1'), ('QT_QPA_PLATFORMTHEME', 'gtk2'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/piros/Work/rplidar_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'piros'), ('JOURNAL_STREAM', '8:27936'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('GTK_OVERLAY_SCROLLING', '0'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/piros:@/tmp/.ICE-unix/1695,unix/piros:/tmp/.ICE-unix/1695'), ('GDM_LANG', 'en_US'), ('INVOCATION_ID', '656f7ef9a71242e8b0df139371bf2cbb'), ('XDG_SESSION_PATH', '/org/freedesktop/DisplayManager/Session0'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'MATE'), ('XDG_SESSION_DESKTOP', 'mate'), ('XAUTHORITY', '/home/piros/.Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('XDG_GREETER_DATA_DIR', '/var/lib/lightdm-data/piros'), ('AMENT_PREFIX_PATH', '/home/piros/Work/rplidar_ws/install/rplidar_ros:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:cd888be0-f582-4d28-8da4-f8e7e9461455'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'mate'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('PWD', '/home/piros/Work/ROS2/controller_ws/build/three_omniwheel_controller'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-mate:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=531afbf53fd4eb95884cb8b9680c8089'), ('XDG_DATA_DIRS', '/usr/share/mate:/home/piros/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('MATE_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/piros/Work/rplidar_ws/install/rplidar_ros:/opt/ros/humble'), ('QT_FONT_DPI', '96')]), 'shell': False}
+[0.201439] (-) TimerEvent: {}
+[0.302425] (-) TimerEvent: {}
+[0.403527] (-) TimerEvent: {}
+[0.504608] (-) TimerEvent: {}
+[0.606101] (-) TimerEvent: {}
+[0.707335] (-) TimerEvent: {}
+[0.808552] (-) TimerEvent: {}
+[0.910118] (-) TimerEvent: {}
+[1.011260] (-) TimerEvent: {}
+[1.112305] (-) TimerEvent: {}
+[1.213544] (-) TimerEvent: {}
+[1.235421] (three_omniwheel_controller) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[1.313846] (-) TimerEvent: {}
+[1.374496] (diff_drive_controller) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[1.414016] (-) TimerEvent: {}
+[1.426362] (diff_drive_controller) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.509902] (three_omniwheel_controller) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[1.514284] (-) TimerEvent: {}
+[1.546281] (three_omniwheel_controller) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.614544] (-) TimerEvent: {}
+[1.715587] (-) TimerEvent: {}
+[1.816522] (-) TimerEvent: {}
+[1.845254] (diff_drive_controller) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.874220] (diff_drive_controller) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[1.876729] (diff_drive_controller) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.880443] (diff_drive_controller) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.898748] (three_omniwheel_controller) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.916694] (-) TimerEvent: {}
+[1.924616] (three_omniwheel_controller) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[1.925438] (three_omniwheel_controller) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.927020] (three_omniwheel_controller) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[1.932598] (diff_drive_controller) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[1.938409] (three_omniwheel_controller) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[2.016918] (-) TimerEvent: {}
+[2.117754] (-) TimerEvent: {}
+[2.218553] (-) TimerEvent: {}
+[2.311438] (three_omniwheel_controller) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[2.318742] (-) TimerEvent: {}
+[2.338372] (three_omniwheel_controller) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[2.339499] (three_omniwheel_controller) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[2.341252] (three_omniwheel_controller) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[2.371652] (three_omniwheel_controller) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[2.418932] (-) TimerEvent: {}
+[2.520181] (-) TimerEvent: {}
+[2.621109] (-) TimerEvent: {}
+[2.722013] (-) TimerEvent: {}
+[2.804580] (diff_drive_controller) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[2.822284] (-) TimerEvent: {}
+[2.923456] (-) TimerEvent: {}
+[3.026875] (-) TimerEvent: {}
+[3.127742] (-) TimerEvent: {}
+[3.228768] (-) TimerEvent: {}
+[3.248875] (three_omniwheel_controller) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[3.328940] (-) TimerEvent: {}
+[3.429704] (-) TimerEvent: {}
+[3.530515] (-) TimerEvent: {}
+[3.619265] (diff_drive_controller) StdoutLine: {'line': b'-- Found controller_interface: 2.49.0 (/opt/ros/humble/share/controller_interface/cmake)\n'}
+[3.630720] (-) TimerEvent: {}
+[3.731473] (-) TimerEvent: {}
+[3.832328] (-) TimerEvent: {}
+[3.866047] (three_omniwheel_controller) StdoutLine: {'line': b'-- Found controller_interface: 2.49.0 (/opt/ros/humble/share/controller_interface/cmake)\n'}
+[3.932576] (-) TimerEvent: {}
+[4.033396] (-) TimerEvent: {}
+[4.080142] (diff_drive_controller) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[4.133606] (-) TimerEvent: {}
+[4.135116] (diff_drive_controller) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[4.211440] (diff_drive_controller) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[4.233785] (-) TimerEvent: {}
+[4.268321] (three_omniwheel_controller) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[4.309136] (diff_drive_controller) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[4.316243] (three_omniwheel_controller) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[4.333950] (-) TimerEvent: {}
+[4.377863] (three_omniwheel_controller) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[4.434138] (-) TimerEvent: {}
+[4.439016] (diff_drive_controller) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[4.455300] (three_omniwheel_controller) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[4.534341] (-) TimerEvent: {}
+[4.565775] (three_omniwheel_controller) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[4.634567] (-) TimerEvent: {}
+[4.735490] (-) TimerEvent: {}
+[4.836324] (-) TimerEvent: {}
+[4.937151] (-) TimerEvent: {}
+[5.037970] (-) TimerEvent: {}
+[5.139173] (-) TimerEvent: {}
+[5.239991] (-) TimerEvent: {}
+[5.340815] (-) TimerEvent: {}
+[5.441538] (-) TimerEvent: {}
+[5.542238] (-) TimerEvent: {}
+[5.642998] (-) TimerEvent: {}
+[5.743744] (-) TimerEvent: {}
+[5.844487] (-) TimerEvent: {}
+[5.945251] (-) TimerEvent: {}
+[6.046059] (-) TimerEvent: {}
+[6.104848] (diff_drive_controller) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[6.105472] (three_omniwheel_controller) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[6.137290] (three_omniwheel_controller) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[6.137933] (diff_drive_controller) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[6.146240] (-) TimerEvent: {}
+[6.247139] (-) TimerEvent: {}
+[6.347868] (-) TimerEvent: {}
+[6.360013] (three_omniwheel_controller) StdoutLine: {'line': b'-- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND\n'}
+[6.360644] (diff_drive_controller) StdoutLine: {'line': b'-- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND\n'}
+[6.448058] (-) TimerEvent: {}
+[6.549588] (-) TimerEvent: {}
+[6.627666] (three_omniwheel_controller) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[6.628577] (diff_drive_controller) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[6.644819] (three_omniwheel_controller) StdoutLine: {'line': b'-- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND\n'}
+[6.645581] (diff_drive_controller) StdoutLine: {'line': b'-- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND\n'}
+[6.649854] (-) TimerEvent: {}
+[6.738116] (diff_drive_controller) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[6.738857] (three_omniwheel_controller) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[6.750122] (-) TimerEvent: {}
+[6.751453] (three_omniwheel_controller) StdoutLine: {'line': b'-- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND\n'}
+[6.752433] (diff_drive_controller) StdoutLine: {'line': b'-- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND\n'}
+[6.788242] (diff_drive_controller) StdoutLine: {'line': b'-- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND\n'}
+[6.789023] (three_omniwheel_controller) StdoutLine: {'line': b'-- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND\n'}
+[6.828786] (diff_drive_controller) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[6.829416] (three_omniwheel_controller) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[6.850286] (-) TimerEvent: {}
+[6.931351] (three_omniwheel_controller) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[6.932030] (diff_drive_controller) StdoutLine: {'line': b'-- Looking for C++ include pthread.h\n'}
+[6.950485] (-) TimerEvent: {}
+[7.051309] (-) TimerEvent: {}
+[7.152298] (-) TimerEvent: {}
+[7.253391] (-) TimerEvent: {}
+[7.355194] (-) TimerEvent: {}
+[7.456772] (-) TimerEvent: {}
+[7.464174] (three_omniwheel_controller) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[7.465636] (three_omniwheel_controller) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[7.507338] (diff_drive_controller) StdoutLine: {'line': b'-- Looking for C++ include pthread.h - found\n'}
+[7.508735] (diff_drive_controller) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[7.557003] (-) TimerEvent: {}
+[7.657888] (-) TimerEvent: {}
+[7.758778] (-) TimerEvent: {}
+[7.860733] (-) TimerEvent: {}
+[7.951396] (three_omniwheel_controller) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[7.956214] (three_omniwheel_controller) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[7.960954] (-) TimerEvent: {}
+[8.061837] (-) TimerEvent: {}
+[8.069387] (diff_drive_controller) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[8.073855] (diff_drive_controller) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[8.162136] (-) TimerEvent: {}
+[8.263099] (-) TimerEvent: {}
+[8.304662] (three_omniwheel_controller) StdoutLine: {'line': b'-- Found generate_parameter_library: 0.4.0 (/opt/ros/humble/share/generate_parameter_library/cmake)\n'}
+[8.329360] (three_omniwheel_controller) StdoutLine: {'line': b'-- Found parameter_traits: 0.4.0 (/opt/ros/humble/share/parameter_traits/cmake)\n'}
+[8.361623] (diff_drive_controller) StdoutLine: {'line': b'-- Found generate_parameter_library: 0.4.0 (/opt/ros/humble/share/generate_parameter_library/cmake)\n'}
+[8.363215] (-) TimerEvent: {}
+[8.383599] (diff_drive_controller) StdoutLine: {'line': b'-- Found parameter_traits: 0.4.0 (/opt/ros/humble/share/parameter_traits/cmake)\n'}
+[8.463436] (-) TimerEvent: {}
+[8.564173] (-) TimerEvent: {}
+[8.588550] (three_omniwheel_controller) StdoutLine: {'line': b'-- Found nav_msgs: 4.8.0 (/opt/ros/humble/share/nav_msgs/cmake)\n'}
+[8.606908] (diff_drive_controller) StdoutLine: {'line': b'-- Found nav_msgs: 4.8.0 (/opt/ros/humble/share/nav_msgs/cmake)\n'}
+[8.664362] (-) TimerEvent: {}
+[8.696968] (three_omniwheel_controller) StdoutLine: {'line': b'-- Found realtime_tools: 2.12.0 (/opt/ros/humble/share/realtime_tools/cmake)\n'}
+[8.699518] (diff_drive_controller) StdoutLine: {'line': b'-- Found realtime_tools: 2.12.0 (/opt/ros/humble/share/realtime_tools/cmake)\n'}
+[8.764558] (-) TimerEvent: {}
+[8.814883] (three_omniwheel_controller) StdoutLine: {'line': b'-- Found tf2: 0.25.12 (/opt/ros/humble/share/tf2/cmake)\n'}
+[8.815585] (diff_drive_controller) StdoutLine: {'line': b'-- Found tf2: 0.25.12 (/opt/ros/humble/share/tf2/cmake)\n'}
+[8.854993] (diff_drive_controller) StdoutLine: {'line': b'-- Found tf2_msgs: 0.25.12 (/opt/ros/humble/share/tf2_msgs/cmake)\n'}
+[8.855674] (three_omniwheel_controller) StdoutLine: {'line': b'-- Found tf2_msgs: 0.25.12 (/opt/ros/humble/share/tf2_msgs/cmake)\n'}
+[8.864814] (-) TimerEvent: {}
+[8.965589] (-) TimerEvent: {}
+[9.028398] (diff_drive_controller) StdoutLine: {'line': b'-- Found ament_cmake_gmock: 1.3.11 (/opt/ros/humble/share/ament_cmake_gmock/cmake)\n'}
+[9.031663] (three_omniwheel_controller) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[9.054811] (diff_drive_controller) StdoutLine: {'line': b'-- Found controller_manager: 2.49.0 (/opt/ros/humble/share/controller_manager/cmake)\n'}
+[9.057128] (three_omniwheel_controller) StdoutLine: {'line': b'-- Found controller_manager: 2.49.0 (/opt/ros/humble/share/controller_manager/cmake)\n'}
+[9.065781] (-) TimerEvent: {}
+[9.166551] (-) TimerEvent: {}
+[9.208294] (diff_drive_controller) StdoutLine: {'line': b'-- Found ros2_control_test_assets: 2.49.0 (/opt/ros/humble/share/ros2_control_test_assets/cmake)\n'}
+[9.238504] (diff_drive_controller) StdoutLine: {'line': b"-- Found gmock sources under '/opt/ros/humble/src/gmock_vendor': C++ tests using 'Google Mock' will be built\n"}
+[9.266769] (-) TimerEvent: {}
+[9.367660] (-) TimerEvent: {}
+[9.458394] (diff_drive_controller) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[9.468131] (-) TimerEvent: {}
+[9.515462] (diff_drive_controller) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[9.568553] (-) TimerEvent: {}
+[9.610376] (three_omniwheel_controller) StdoutLine: {'line': b'-- Configuring done\n'}
+[9.668820] (-) TimerEvent: {}
+[9.769602] (-) TimerEvent: {}
+[9.870780] (-) TimerEvent: {}
+[9.971890] (-) TimerEvent: {}
+[9.999147] (diff_drive_controller) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[10.025420] (three_omniwheel_controller) StdoutLine: {'line': b'-- Generating done\n'}
+[10.029915] (diff_drive_controller) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[10.031278] (diff_drive_controller) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[10.032910] (diff_drive_controller) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[10.049583] (three_omniwheel_controller) StdoutLine: {'line': b'-- Build files have been written to: /home/piros/Work/ROS2/controller_ws/build/three_omniwheel_controller\n'}
+[10.072125] (-) TimerEvent: {}
+[10.084479] (diff_drive_controller) StdoutLine: {'line': b'-- Found ament_cmake_gtest: 1.3.11 (/opt/ros/humble/share/ament_cmake_gtest/cmake)\n'}
+[10.098494] (diff_drive_controller) StdoutLine: {'line': b"-- Found gtest sources under '/opt/ros/humble/src/gtest_vendor': C++ tests using 'Google Test' will be built\n"}
+[10.102557] (three_omniwheel_controller) CommandEnded: {'returncode': 0}
+[10.113608] (three_omniwheel_controller) JobProgress: {'identifier': 'three_omniwheel_controller', 'progress': 'build'}
+[10.114257] (three_omniwheel_controller) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/piros/Work/ROS2/controller_ws/build/three_omniwheel_controller', '--', '-j4', '-l4'], 'cwd': '/home/piros/Work/ROS2/controller_ws/build/three_omniwheel_controller', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('QT_SCALE_FACTOR', '1'), ('LANGUAGE', 'en_IN:en'), ('USER', 'piros'), ('XDG_SESSION_TYPE', 'x11'), ('COMPIZ_CONFIG_PROFILE', 'mate'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/piros'), ('OLDPWD', '/home/piros/Work/ROS2'), ('DESKTOP_SESSION', 'mate'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GTK_MODULES', 'appmenu-gtk-module:gail:atk-bridge:canberra-gtk-module'), ('XDG_SEAT_PATH', '/org/freedesktop/DisplayManager/Seat0'), ('MANAGERPID', '1663'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1686'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=531afbf53fd4eb95884cb8b9680c8089'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3026'), ('UBUNTU_MENUPROXY', '1'), ('QT_QPA_PLATFORMTHEME', 'gtk2'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/piros/Work/rplidar_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'piros'), ('JOURNAL_STREAM', '8:27936'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('GTK_OVERLAY_SCROLLING', '0'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/piros:@/tmp/.ICE-unix/1695,unix/piros:/tmp/.ICE-unix/1695'), ('GDM_LANG', 'en_US'), ('INVOCATION_ID', '656f7ef9a71242e8b0df139371bf2cbb'), ('XDG_SESSION_PATH', '/org/freedesktop/DisplayManager/Session0'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'MATE'), ('XDG_SESSION_DESKTOP', 'mate'), ('XAUTHORITY', '/home/piros/.Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('XDG_GREETER_DATA_DIR', '/var/lib/lightdm-data/piros'), ('AMENT_PREFIX_PATH', '/home/piros/Work/rplidar_ws/install/rplidar_ros:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:cd888be0-f582-4d28-8da4-f8e7e9461455'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'mate'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('PWD', '/home/piros/Work/ROS2/controller_ws/build/three_omniwheel_controller'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-mate:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=531afbf53fd4eb95884cb8b9680c8089'), ('XDG_DATA_DIRS', '/usr/share/mate:/home/piros/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('MATE_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/piros/Work/rplidar_ws/install/rplidar_ros:/opt/ros/humble'), ('QT_FONT_DPI', '96')]), 'shell': False}
+[10.172340] (-) TimerEvent: {}
+[10.273658] (-) TimerEvent: {}
+[10.335342] (three_omniwheel_controller) StdoutLine: {'line': b'[ 16%] \x1b[34m\x1b[1mRunning `/opt/ros/humble/bin/generate_parameter_library_cpp /home/piros/Work/ROS2/controller_ws/build/three_omniwheel_controller/include/three_omniwheel_controller/three_omniwheel_controller_parameters.hpp /home/piros/Work/ROS2/controller_ws/src/three_omniwheel_controller/src/three_omniwheel_controller_parameter.yaml `\x1b[0m\n'}
+[10.373818] (-) TimerEvent: {}
+[10.474779] (-) TimerEvent: {}
+[10.562805] (diff_drive_controller) StdoutLine: {'line': b'-- Configuring done\n'}
+[10.574879] (-) TimerEvent: {}
+[10.675591] (-) TimerEvent: {}
+[10.776306] (-) TimerEvent: {}
+[10.877047] (-) TimerEvent: {}
+[10.977755] (-) TimerEvent: {}
+[11.078502] (-) TimerEvent: {}
+[11.135463] (diff_drive_controller) StdoutLine: {'line': b'-- Generating done\n'}
+[11.178754] (-) TimerEvent: {}
+[11.194430] (diff_drive_controller) StdoutLine: {'line': b'-- Build files have been written to: /home/piros/Work/ROS2/controller_ws/build/diff_drive_controller\n'}
+[11.258278] (diff_drive_controller) CommandEnded: {'returncode': 0}
+[11.260532] (diff_drive_controller) JobProgress: {'identifier': 'diff_drive_controller', 'progress': 'build'}
+[11.261653] (diff_drive_controller) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/piros/Work/ROS2/controller_ws/build/diff_drive_controller', '--', '-j4', '-l4'], 'cwd': '/home/piros/Work/ROS2/controller_ws/build/diff_drive_controller', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('QT_SCALE_FACTOR', '1'), ('LANGUAGE', 'en_IN:en'), ('USER', 'piros'), ('XDG_SESSION_TYPE', 'x11'), ('COMPIZ_CONFIG_PROFILE', 'mate'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/piros'), ('OLDPWD', '/home/piros/Work/ROS2'), ('DESKTOP_SESSION', 'mate'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GTK_MODULES', 'appmenu-gtk-module:gail:atk-bridge:canberra-gtk-module'), ('XDG_SEAT_PATH', '/org/freedesktop/DisplayManager/Seat0'), ('MANAGERPID', '1663'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1686'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=531afbf53fd4eb95884cb8b9680c8089'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3026'), ('UBUNTU_MENUPROXY', '1'), ('QT_QPA_PLATFORMTHEME', 'gtk2'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/piros/Work/rplidar_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'piros'), ('JOURNAL_STREAM', '8:27936'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('GTK_OVERLAY_SCROLLING', '0'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/piros:@/tmp/.ICE-unix/1695,unix/piros:/tmp/.ICE-unix/1695'), ('GDM_LANG', 'en_US'), ('INVOCATION_ID', '656f7ef9a71242e8b0df139371bf2cbb'), ('XDG_SESSION_PATH', '/org/freedesktop/DisplayManager/Session0'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'MATE'), ('XDG_SESSION_DESKTOP', 'mate'), ('XAUTHORITY', '/home/piros/.Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('XDG_GREETER_DATA_DIR', '/var/lib/lightdm-data/piros'), ('AMENT_PREFIX_PATH', '/home/piros/Work/rplidar_ws/install/rplidar_ros:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:cd888be0-f582-4d28-8da4-f8e7e9461455'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'mate'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('PWD', '/home/piros/Work/ROS2/controller_ws/build/diff_drive_controller'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-mate:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=531afbf53fd4eb95884cb8b9680c8089'), ('XDG_DATA_DIRS', '/usr/share/mate:/home/piros/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('MATE_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/piros/Work/rplidar_ws/install/rplidar_ros:/opt/ros/humble'), ('QT_FONT_DPI', '96')]), 'shell': False}
+[11.279021] (-) TimerEvent: {}
+[11.379923] (-) TimerEvent: {}
+[11.481352] (-) TimerEvent: {}
+[11.522068] (diff_drive_controller) StdoutLine: {'line': b'[  6%] \x1b[34m\x1b[1mRunning `/opt/ros/humble/bin/generate_parameter_library_cpp /home/piros/Work/ROS2/controller_ws/build/diff_drive_controller/include/diff_drive_controller/diff_drive_controller_parameters.hpp /home/piros/Work/ROS2/controller_ws/src/diff_drive_controller/src/diff_drive_controller_parameter.yaml `\x1b[0m\n'}
+[11.524384] (diff_drive_controller) StdoutLine: {'line': b'[ 13%] \x1b[32mBuilding CXX object gmock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o\x1b[0m\n'}
+[11.529992] (diff_drive_controller) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object gmock/CMakeFiles/gmock.dir/src/gmock-all.cc.o\x1b[0m\n'}
+[11.559811] (diff_drive_controller) StdoutLine: {'line': b'[ 26%] \x1b[32mBuilding CXX object gmock/CMakeFiles/gmock.dir/opt/ros/humble/src/gtest_vendor/src/gtest-all.cc.o\x1b[0m\n'}
+[11.581610] (-) TimerEvent: {}
+[11.682745] (-) TimerEvent: {}
+[11.783758] (-) TimerEvent: {}
+[11.885108] (-) TimerEvent: {}
+[11.986176] (-) TimerEvent: {}
+[12.087127] (-) TimerEvent: {}
+[12.188068] (-) TimerEvent: {}
+[12.288998] (-) TimerEvent: {}
+[12.390072] (-) TimerEvent: {}
+[12.491702] (-) TimerEvent: {}
+[12.593500] (-) TimerEvent: {}
+[12.695231] (-) TimerEvent: {}
+[12.797281] (-) TimerEvent: {}
+[12.899244] (-) TimerEvent: {}
+[13.001110] (-) TimerEvent: {}
+[13.103230] (-) TimerEvent: {}
+[13.205371] (-) TimerEvent: {}
+[13.307608] (-) TimerEvent: {}
+[13.409358] (-) TimerEvent: {}
+[13.511163] (-) TimerEvent: {}
+[13.612446] (-) TimerEvent: {}
+[13.713541] (-) TimerEvent: {}
+[13.814760] (-) TimerEvent: {}
+[13.915806] (-) TimerEvent: {}
+[14.016937] (-) TimerEvent: {}
+[14.118689] (-) TimerEvent: {}
+[14.219786] (-) TimerEvent: {}
+[14.321789] (-) TimerEvent: {}
+[14.423026] (-) TimerEvent: {}
+[14.524164] (-) TimerEvent: {}
+[14.625236] (-) TimerEvent: {}
+[14.726124] (-) TimerEvent: {}
+[14.827363] (-) TimerEvent: {}
+[14.928393] (-) TimerEvent: {}
+[15.029507] (-) TimerEvent: {}
+[15.131592] (-) TimerEvent: {}
+[15.233382] (-) TimerEvent: {}
+[15.334722] (-) TimerEvent: {}
+[15.435780] (-) TimerEvent: {}
+[15.537637] (-) TimerEvent: {}
+[15.664524] (-) TimerEvent: {}
+[15.765756] (-) TimerEvent: {}
+[15.867032] (-) TimerEvent: {}
+[15.968725] (-) TimerEvent: {}
+[16.070566] (-) TimerEvent: {}
+[16.172328] (-) TimerEvent: {}
+[16.274127] (-) TimerEvent: {}
+[16.375125] (-) TimerEvent: {}
+[16.477160] (-) TimerEvent: {}
+[16.578827] (-) TimerEvent: {}
+[16.680545] (-) TimerEvent: {}
+[16.782446] (-) TimerEvent: {}
+[16.884453] (-) TimerEvent: {}
+[16.986394] (-) TimerEvent: {}
+[17.088323] (-) TimerEvent: {}
+[17.190278] (-) TimerEvent: {}
+[17.292296] (-) TimerEvent: {}
+[17.393890] (-) TimerEvent: {}
+[17.495310] (-) TimerEvent: {}
+[17.596873] (-) TimerEvent: {}
+[17.700399] (-) TimerEvent: {}
+[17.801974] (-) TimerEvent: {}
+[17.905664] (-) TimerEvent: {}
+[18.007409] (-) TimerEvent: {}
+[18.109058] (-) TimerEvent: {}
+[18.211066] (-) TimerEvent: {}
+[18.312887] (-) TimerEvent: {}
+[18.414922] (-) TimerEvent: {}
+[18.516772] (-) TimerEvent: {}
+[18.618788] (-) TimerEvent: {}
+[18.721196] (-) TimerEvent: {}
+[18.823283] (-) TimerEvent: {}
+[18.925098] (-) TimerEvent: {}
+[19.026573] (-) TimerEvent: {}
+[19.129967] (-) TimerEvent: {}
+[19.231708] (-) TimerEvent: {}
+[19.333132] (-) TimerEvent: {}
+[19.434918] (-) TimerEvent: {}
+[19.536754] (-) TimerEvent: {}
+[19.638817] (-) TimerEvent: {}
+[19.741986] (-) TimerEvent: {}
+[19.843441] (-) TimerEvent: {}
+[19.945284] (-) TimerEvent: {}
+[20.048801] (-) TimerEvent: {}
+[20.150781] (-) TimerEvent: {}
+[20.252626] (-) TimerEvent: {}
+[20.354465] (-) TimerEvent: {}
+[20.465717] (-) TimerEvent: {}
+[20.567553] (-) TimerEvent: {}
+[20.669688] (-) TimerEvent: {}
+[20.771725] (-) TimerEvent: {}
+[20.873128] (-) TimerEvent: {}
+[20.974295] (-) TimerEvent: {}
+[21.076022] (-) TimerEvent: {}
+[21.176950] (-) TimerEvent: {}
+[21.277968] (-) TimerEvent: {}
+[21.379338] (-) TimerEvent: {}
+[21.480861] (-) TimerEvent: {}
+[21.526018] (diff_drive_controller) StdoutLine: {'line': b'[ 33%] \x1b[34m\x1b[1mCreating deprecated header file /home/piros/Work/ROS2/controller_ws/build/diff_drive_controller/include/diff_drive_controller_parameters.hpp\x1b[0m\n'}
+[21.581238] (-) TimerEvent: {}
+[21.682586] (-) TimerEvent: {}
+[21.785538] (-) TimerEvent: {}
+[21.888310] (-) TimerEvent: {}
+[21.989735] (-) TimerEvent: {}
+[22.090792] (-) TimerEvent: {}
+[22.134476] (diff_drive_controller) StdoutLine: {'line': b'[ 33%] Built target diff_drive_controller_parameters\n'}
+[22.191019] (-) TimerEvent: {}
+[22.291946] (-) TimerEvent: {}
+[22.392977] (-) TimerEvent: {}
+[22.423147] (diff_drive_controller) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/diff_drive_controller.dir/src/diff_drive_controller.cpp.o\x1b[0m\n'}
+[22.493367] (-) TimerEvent: {}
+[22.596232] (-) TimerEvent: {}
+[22.697702] (-) TimerEvent: {}
+[22.799819] (-) TimerEvent: {}
+[22.900927] (-) TimerEvent: {}
+[23.002222] (-) TimerEvent: {}
+[23.103638] (-) TimerEvent: {}
+[23.204874] (-) TimerEvent: {}
+[23.306185] (-) TimerEvent: {}
+[23.407462] (-) TimerEvent: {}
+[23.513608] (-) TimerEvent: {}
+[23.615322] (-) TimerEvent: {}
+[23.716912] (-) TimerEvent: {}
+[23.719847] (three_omniwheel_controller) StdoutLine: {'line': b'[ 33%] \x1b[34m\x1b[1mCreating deprecated header file /home/piros/Work/ROS2/controller_ws/build/three_omniwheel_controller/include/three_omniwheel_controller_parameters.hpp\x1b[0m\n'}
+[23.817170] (-) TimerEvent: {}
+[23.919440] (-) TimerEvent: {}
+[23.983104] (three_omniwheel_controller) StdoutLine: {'line': b'[ 33%] Built target three_omniwheel_controller_parameters\n'}
+[24.019747] (-) TimerEvent: {}
+[24.121091] (-) TimerEvent: {}
+[24.159863] (three_omniwheel_controller) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/three_omniwheel_controller.dir/src/three_omniwheel_controller.cpp.o\x1b[0m\n'}
+[24.177132] (three_omniwheel_controller) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/three_omniwheel_controller.dir/src/odometry.cpp.o\x1b[0m\n'}
+[24.219558] (three_omniwheel_controller) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding CXX object CMakeFiles/three_omniwheel_controller.dir/src/speed_limiter.cpp.o\x1b[0m\n'}
+[24.221407] (-) TimerEvent: {}
+[24.323123] (-) TimerEvent: {}
+[24.424545] (-) TimerEvent: {}
+[24.525831] (-) TimerEvent: {}
+[24.627102] (-) TimerEvent: {}
+[24.730026] (-) TimerEvent: {}
+[24.831643] (-) TimerEvent: {}
+[24.934117] (-) TimerEvent: {}
+[25.037063] (-) TimerEvent: {}
+[25.139426] (-) TimerEvent: {}
+[25.241027] (-) TimerEvent: {}
+[25.342560] (-) TimerEvent: {}
+[25.444276] (-) TimerEvent: {}
+[25.545970] (-) TimerEvent: {}
+[25.647329] (-) TimerEvent: {}
+[25.749137] (-) TimerEvent: {}
+[25.851319] (-) TimerEvent: {}
+[25.952892] (-) TimerEvent: {}
+[26.058746] (-) TimerEvent: {}
+[26.174809] (-) TimerEvent: {}
+[26.294824] (-) TimerEvent: {}
+[26.397013] (-) TimerEvent: {}
+[26.499115] (-) TimerEvent: {}
+[26.601017] (-) TimerEvent: {}
+[26.702961] (-) TimerEvent: {}
+[26.805793] (-) TimerEvent: {}
+[26.912488] (-) TimerEvent: {}
+[26.982159] (diff_drive_controller) StdoutLine: {'line': b'[ 46%] \x1b[32m\x1b[1mLinking CXX static library libgmock_main.a\x1b[0m\n'}
+[27.012801] (-) TimerEvent: {}
+[27.114558] (-) TimerEvent: {}
+[27.216584] (-) TimerEvent: {}
+[27.318875] (-) TimerEvent: {}
+[27.419897] (-) TimerEvent: {}
+[27.520937] (-) TimerEvent: {}
+[27.622824] (-) TimerEvent: {}
+[27.724479] (-) TimerEvent: {}
+[27.826550] (-) TimerEvent: {}
+[27.929066] (-) TimerEvent: {}
+[28.030913] (-) TimerEvent: {}
+[28.131888] (-) TimerEvent: {}
+[28.233631] (-) TimerEvent: {}
+[28.335389] (-) TimerEvent: {}
+[28.436425] (-) TimerEvent: {}
+[28.558814] (-) TimerEvent: {}
+[28.660026] (-) TimerEvent: {}
+[28.761073] (-) TimerEvent: {}
+[28.862038] (-) TimerEvent: {}
+[28.963751] (-) TimerEvent: {}
+[29.065400] (-) TimerEvent: {}
+[29.167399] (-) TimerEvent: {}
+[29.238848] (diff_drive_controller) StdoutLine: {'line': b'[ 46%] Built target gmock_main\n'}
+[29.267620] (-) TimerEvent: {}
+[29.368257] (diff_drive_controller) StdoutLine: {'line': b'[ 53%] \x1b[32mBuilding CXX object CMakeFiles/diff_drive_controller.dir/src/odometry.cpp.o\x1b[0m\n'}
+[29.369189] (-) TimerEvent: {}
+[29.471208] (-) TimerEvent: {}
+[29.572405] (-) TimerEvent: {}
+[29.674247] (-) TimerEvent: {}
+[29.775547] (-) TimerEvent: {}
+[29.877414] (-) TimerEvent: {}
+[29.979283] (-) TimerEvent: {}
+[30.080477] (-) TimerEvent: {}
+[30.181614] (-) TimerEvent: {}
+[30.283001] (-) TimerEvent: {}
+[30.384262] (-) TimerEvent: {}
+[30.485942] (-) TimerEvent: {}
+[30.587535] (-) TimerEvent: {}
+[30.691052] (-) TimerEvent: {}
+[30.792136] (-) TimerEvent: {}
+[30.893430] (-) TimerEvent: {}
+[30.994417] (-) TimerEvent: {}
+[31.095630] (-) TimerEvent: {}
+[31.196665] (-) TimerEvent: {}
+[31.297741] (-) TimerEvent: {}
+[31.398752] (-) TimerEvent: {}
+[31.499823] (-) TimerEvent: {}
+[31.601633] (-) TimerEvent: {}
+[31.703308] (-) TimerEvent: {}
+[31.804944] (-) TimerEvent: {}
+[31.906854] (-) TimerEvent: {}
+[32.008914] (-) TimerEvent: {}
+[32.114578] (-) TimerEvent: {}
+[32.215681] (-) TimerEvent: {}
+[32.317730] (-) TimerEvent: {}
+[32.419661] (-) TimerEvent: {}
+[32.521464] (-) TimerEvent: {}
+[32.623617] (-) TimerEvent: {}
+[32.726472] (-) TimerEvent: {}
+[32.827993] (-) TimerEvent: {}
+[32.930835] (-) TimerEvent: {}
+[33.032963] (-) TimerEvent: {}
+[33.075091] (three_omniwheel_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/piros/Work/ROS2/controller_ws/src/three_omniwheel_controller/src/odometry.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kbool three_omniwheel_controller::Odometry::updateFromVelocity(double, double, double, const rclcpp::Time&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[33.076731] (three_omniwheel_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/piros/Work/ROS2/controller_ws/src/three_omniwheel_controller/src/odometry.cpp:70:22:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Klinear\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[33.078262] (three_omniwheel_controller) StderrLine: {'line': b'   70 |         const double \x1b[01;35m\x1b[Klinear\x1b[m\x1b[K = sqrt((x_vel * x_vel) + (y_vel * y_vel));\n'}
+[33.079835] (three_omniwheel_controller) StderrLine: {'line': b'      |                      \x1b[01;35m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[33.091218] (three_omniwheel_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/piros/Work/ROS2/controller_ws/src/three_omniwheel_controller/src/odometry.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid three_omniwheel_controller::Odometry::updateOpenLoop(double, double, double, double, const rclcpp::Time&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[33.092032] (three_omniwheel_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/piros/Work/ROS2/controller_ws/src/three_omniwheel_controller/src/odometry.cpp:91:42:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Klinear\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[33.092874] (three_omniwheel_controller) StderrLine: {'line': b'   91 |     void Odometry::updateOpenLoop(\x1b[01;35m\x1b[Kdouble linear\x1b[m\x1b[K, double linear_x, double linear_y, double angular, const rclcpp::Time &time)\n'}
+[33.093657] (three_omniwheel_controller) StderrLine: {'line': b'      |                                   \x1b[01;35m\x1b[K~~~~~~~^~~~~~\x1b[m\x1b[K\n'}
+[33.133253] (-) TimerEvent: {}
+[33.234513] (-) TimerEvent: {}
+[33.335762] (-) TimerEvent: {}
+[33.437141] (-) TimerEvent: {}
+[33.538469] (-) TimerEvent: {}
+[33.639775] (-) TimerEvent: {}
+[33.741292] (-) TimerEvent: {}
+[33.842478] (-) TimerEvent: {}
+[33.943891] (-) TimerEvent: {}
+[34.045177] (-) TimerEvent: {}
+[34.147338] (-) TimerEvent: {}
+[34.248636] (-) TimerEvent: {}
+[34.349942] (-) TimerEvent: {}
+[34.455553] (-) TimerEvent: {}
+[34.557077] (-) TimerEvent: {}
+[34.658372] (-) TimerEvent: {}
+[34.760256] (-) TimerEvent: {}
+[34.862816] (-) TimerEvent: {}
+[34.965451] (-) TimerEvent: {}
+[35.068366] (-) TimerEvent: {}
+[35.170590] (-) TimerEvent: {}
+[35.273733] (-) TimerEvent: {}
+[35.376485] (-) TimerEvent: {}
+[35.436344] (diff_drive_controller) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object CMakeFiles/diff_drive_controller.dir/src/speed_limiter.cpp.o\x1b[0m\n'}
+[35.476772] (-) TimerEvent: {}
+[35.578922] (-) TimerEvent: {}
+[35.680739] (-) TimerEvent: {}
+[35.782786] (-) TimerEvent: {}
+[35.885234] (-) TimerEvent: {}
+[35.986941] (-) TimerEvent: {}
+[36.089071] (-) TimerEvent: {}
+[36.192368] (-) TimerEvent: {}
+[36.294442] (-) TimerEvent: {}
+[36.397014] (-) TimerEvent: {}
+[36.499355] (-) TimerEvent: {}
+[36.605232] (-) TimerEvent: {}
+[36.706519] (-) TimerEvent: {}
+[36.808031] (-) TimerEvent: {}
+[36.910275] (-) TimerEvent: {}
+[37.012096] (-) TimerEvent: {}
+[37.123475] (-) TimerEvent: {}
+[37.229508] (-) TimerEvent: {}
+[37.330727] (-) TimerEvent: {}
+[37.432900] (-) TimerEvent: {}
+[37.535186] (-) TimerEvent: {}
+[37.637707] (-) TimerEvent: {}
+[37.740014] (-) TimerEvent: {}
+[37.841453] (-) TimerEvent: {}
+[37.942558] (-) TimerEvent: {}
+[38.044090] (-) TimerEvent: {}
+[38.145156] (-) TimerEvent: {}
+[38.246363] (-) TimerEvent: {}
+[38.347433] (-) TimerEvent: {}
+[38.448473] (-) TimerEvent: {}
+[38.549729] (-) TimerEvent: {}
+[38.650843] (-) TimerEvent: {}
+[38.751847] (-) TimerEvent: {}
+[38.852925] (-) TimerEvent: {}
+[38.954084] (-) TimerEvent: {}
+[39.055329] (-) TimerEvent: {}
+[39.156376] (-) TimerEvent: {}
+[39.257673] (-) TimerEvent: {}
+[39.358864] (-) TimerEvent: {}
+[39.460046] (-) TimerEvent: {}
+[39.561446] (-) TimerEvent: {}
+[39.662470] (-) TimerEvent: {}
+[39.763560] (-) TimerEvent: {}
+[39.864604] (-) TimerEvent: {}
+[39.965622] (-) TimerEvent: {}
+[40.066701] (-) TimerEvent: {}
+[40.167762] (-) TimerEvent: {}
+[40.269744] (-) TimerEvent: {}
+[40.371650] (-) TimerEvent: {}
+[40.473578] (-) TimerEvent: {}
+[40.575497] (-) TimerEvent: {}
+[40.679261] (-) TimerEvent: {}
+[40.781172] (-) TimerEvent: {}
+[40.883017] (-) TimerEvent: {}
+[40.984995] (-) TimerEvent: {}
+[41.086667] (-) TimerEvent: {}
+[41.188363] (-) TimerEvent: {}
+[41.290152] (-) TimerEvent: {}
+[41.392335] (-) TimerEvent: {}
+[41.494131] (-) TimerEvent: {}
+[41.595077] (-) TimerEvent: {}
+[41.696813] (-) TimerEvent: {}
+[41.798689] (-) TimerEvent: {}
+[41.900549] (-) TimerEvent: {}
+[42.002327] (-) TimerEvent: {}
+[42.103566] (-) TimerEvent: {}
+[42.206317] (-) TimerEvent: {}
+[42.308889] (-) TimerEvent: {}
+[42.356865] (diff_drive_controller) StdoutLine: {'line': b'[ 66%] \x1b[32m\x1b[1mLinking CXX static library libgmock.a\x1b[0m\n'}
+[42.409124] (-) TimerEvent: {}
+[42.513053] (-) TimerEvent: {}
+[42.617768] (-) TimerEvent: {}
+[42.718818] (-) TimerEvent: {}
+[42.918155] (-) TimerEvent: {}
+[42.943732] (diff_drive_controller) StdoutLine: {'line': b'[ 66%] Built target gmock\n'}
+[43.018459] (-) TimerEvent: {}
+[43.068366] (diff_drive_controller) StdoutLine: {'line': b'[ 73%] \x1b[32mBuilding CXX object CMakeFiles/test_load_diff_drive_controller.dir/test/test_load_diff_drive_controller.cpp.o\x1b[0m\n'}
+[43.118699] (-) TimerEvent: {}
+[43.220354] (-) TimerEvent: {}
+[43.322058] (-) TimerEvent: {}
+[43.423801] (-) TimerEvent: {}
+[43.525682] (-) TimerEvent: {}
+[43.627363] (-) TimerEvent: {}
+[43.729115] (-) TimerEvent: {}
+[43.830800] (-) TimerEvent: {}
+[43.932610] (-) TimerEvent: {}
+[44.034552] (-) TimerEvent: {}
+[44.136986] (-) TimerEvent: {}
+[44.238697] (-) TimerEvent: {}
+[44.339697] (-) TimerEvent: {}
+[44.440623] (-) TimerEvent: {}
+[44.543130] (-) TimerEvent: {}
+[44.644056] (-) TimerEvent: {}
+[44.744950] (-) TimerEvent: {}
+[44.845852] (-) TimerEvent: {}
+[44.946784] (-) TimerEvent: {}
+[45.047629] (-) TimerEvent: {}
+[45.148510] (-) TimerEvent: {}
+[45.249373] (-) TimerEvent: {}
+[45.350360] (-) TimerEvent: {}
+[45.451853] (-) TimerEvent: {}
+[45.553710] (-) TimerEvent: {}
+[45.660296] (-) TimerEvent: {}
+[45.761982] (-) TimerEvent: {}
+[45.863665] (-) TimerEvent: {}
+[45.964889] (-) TimerEvent: {}
+[46.066146] (-) TimerEvent: {}
+[46.167634] (-) TimerEvent: {}
+[46.268971] (-) TimerEvent: {}
+[46.369868] (-) TimerEvent: {}
+[46.471762] (-) TimerEvent: {}
+[46.572727] (-) TimerEvent: {}
+[46.673600] (-) TimerEvent: {}
+[46.774692] (-) TimerEvent: {}
+[46.875619] (-) TimerEvent: {}
+[46.976488] (-) TimerEvent: {}
+[47.077386] (-) TimerEvent: {}
+[47.178347] (-) TimerEvent: {}
+[47.279353] (-) TimerEvent: {}
+[47.380346] (-) TimerEvent: {}
+[47.481410] (-) TimerEvent: {}
+[47.582391] (-) TimerEvent: {}
+[47.683367] (-) TimerEvent: {}
+[47.784276] (-) TimerEvent: {}
+[47.885299] (-) TimerEvent: {}
+[47.986214] (-) TimerEvent: {}
+[48.088370] (-) TimerEvent: {}
+[48.189299] (-) TimerEvent: {}
+[48.192009] (three_omniwheel_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/piros/Work/ROS2/controller_ws/src/three_omniwheel_controller/src/three_omniwheel_controller.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual controller_interface::return_type three_omniwheel_controller::ThreeOmniwheelController::update(const rclcpp::Time&, const rclcpp::Duration&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[48.192704] (three_omniwheel_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/piros/Work/ROS2/controller_ws/src/three_omniwheel_controller/src/three_omniwheel_controller.cpp:284:16:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Ktheta\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[48.193272] (three_omniwheel_controller) StderrLine: {'line': b'  284 |         double \x1b[01;35m\x1b[Ktheta\x1b[m\x1b[K = atan2(linear_command_y_, linear_command_x_);\n'}
+[48.193753] (three_omniwheel_controller) StderrLine: {'line': b'      |                \x1b[01;35m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[48.289589] (-) TimerEvent: {}
+[48.390586] (-) TimerEvent: {}
+[48.491615] (-) TimerEvent: {}
+[48.592460] (-) TimerEvent: {}
+[48.693422] (-) TimerEvent: {}
+[48.794386] (-) TimerEvent: {}
+[48.895634] (-) TimerEvent: {}
+[48.997568] (-) TimerEvent: {}
+[49.098897] (-) TimerEvent: {}
+[49.200335] (-) TimerEvent: {}
+[49.301843] (-) TimerEvent: {}
+[49.404586] (-) TimerEvent: {}
+[49.509741] (-) TimerEvent: {}
+[49.621938] (-) TimerEvent: {}
+[49.723544] (-) TimerEvent: {}
+[49.825321] (-) TimerEvent: {}
+[49.930749] (-) TimerEvent: {}
+[50.033051] (-) TimerEvent: {}
+[50.135967] (-) TimerEvent: {}
+[50.238688] (-) TimerEvent: {}
+[50.348302] (-) TimerEvent: {}
+[50.465453] (-) TimerEvent: {}
+[50.566363] (-) TimerEvent: {}
+[50.667403] (-) TimerEvent: {}
+[50.768532] (-) TimerEvent: {}
+[50.869463] (-) TimerEvent: {}
+[50.971349] (-) TimerEvent: {}
+[51.073298] (-) TimerEvent: {}
+[51.180466] (-) TimerEvent: {}
+[51.282449] (-) TimerEvent: {}
+[51.384684] (-) TimerEvent: {}
+[51.486749] (-) TimerEvent: {}
+[51.589081] (-) TimerEvent: {}
+[51.690516] (-) TimerEvent: {}
+[51.791818] (-) TimerEvent: {}
+[51.893957] (-) TimerEvent: {}
+[51.996458] (-) TimerEvent: {}
+[52.097666] (-) TimerEvent: {}
+[52.199768] (-) TimerEvent: {}
+[52.301865] (-) TimerEvent: {}
+[52.404413] (-) TimerEvent: {}
+[52.514086] (-) TimerEvent: {}
+[52.615535] (-) TimerEvent: {}
+[52.717471] (-) TimerEvent: {}
+[52.818437] (-) TimerEvent: {}
+[52.920215] (-) TimerEvent: {}
+[53.021657] (-) TimerEvent: {}
+[53.122889] (-) TimerEvent: {}
+[53.224915] (-) TimerEvent: {}
+[53.327003] (-) TimerEvent: {}
+[53.429068] (-) TimerEvent: {}
+[53.530221] (-) TimerEvent: {}
+[53.631742] (-) TimerEvent: {}
+[53.732915] (-) TimerEvent: {}
+[53.833902] (-) TimerEvent: {}
+[53.935772] (-) TimerEvent: {}
+[54.036980] (-) TimerEvent: {}
+[54.138404] (-) TimerEvent: {}
+[54.240780] (-) TimerEvent: {}
+[54.343326] (-) TimerEvent: {}
+[54.445699] (-) TimerEvent: {}
+[54.546757] (-) TimerEvent: {}
+[54.647808] (-) TimerEvent: {}
+[54.748793] (-) TimerEvent: {}
+[54.850689] (-) TimerEvent: {}
+[54.952659] (-) TimerEvent: {}
+[55.053887] (-) TimerEvent: {}
+[55.155526] (-) TimerEvent: {}
+[55.258136] (-) TimerEvent: {}
+[55.360595] (-) TimerEvent: {}
+[55.462677] (-) TimerEvent: {}
+[55.564818] (-) TimerEvent: {}
+[55.666127] (-) TimerEvent: {}
+[55.769455] (-) TimerEvent: {}
+[55.871764] (-) TimerEvent: {}
+[55.974170] (-) TimerEvent: {}
+[56.075527] (-) TimerEvent: {}
+[56.178413] (-) TimerEvent: {}
+[56.281090] (-) TimerEvent: {}
+[56.383665] (-) TimerEvent: {}
+[56.484945] (-) TimerEvent: {}
+[56.586227] (-) TimerEvent: {}
+[56.689032] (-) TimerEvent: {}
+[56.790975] (-) TimerEvent: {}
+[56.892852] (-) TimerEvent: {}
+[56.994848] (-) TimerEvent: {}
+[57.095851] (-) TimerEvent: {}
+[57.197711] (-) TimerEvent: {}
+[57.300082] (-) TimerEvent: {}
+[57.402027] (-) TimerEvent: {}
+[57.505330] (-) TimerEvent: {}
+[57.615733] (-) TimerEvent: {}
+[57.716930] (-) TimerEvent: {}
+[57.819050] (-) TimerEvent: {}
+[57.920881] (-) TimerEvent: {}
+[58.022072] (-) TimerEvent: {}
+[58.123170] (-) TimerEvent: {}
+[58.224659] (-) TimerEvent: {}
+[58.326801] (-) TimerEvent: {}
+[58.428792] (-) TimerEvent: {}
+[58.530769] (-) TimerEvent: {}
+[58.632019] (-) TimerEvent: {}
+[58.733335] (-) TimerEvent: {}
+[58.835618] (-) TimerEvent: {}
+[58.937561] (-) TimerEvent: {}
+[59.038732] (-) TimerEvent: {}
+[59.139916] (-) TimerEvent: {}
+[59.241169] (-) TimerEvent: {}
+[59.343027] (-) TimerEvent: {}
+[59.444857] (-) TimerEvent: {}
+[59.546744] (-) TimerEvent: {}
+[59.647949] (-) TimerEvent: {}
+[59.749114] (-) TimerEvent: {}
+[59.850101] (-) TimerEvent: {}
+[59.951939] (-) TimerEvent: {}
+[60.053162] (-) TimerEvent: {}
+[60.158264] (-) TimerEvent: {}
+[60.260146] (-) TimerEvent: {}
+[60.362007] (-) TimerEvent: {}
+[60.463055] (-) TimerEvent: {}
+[60.564946] (-) TimerEvent: {}
+[60.666106] (-) TimerEvent: {}
+[60.767322] (-) TimerEvent: {}
+[60.868322] (-) TimerEvent: {}
+[60.970379] (-) TimerEvent: {}
+[61.071551] (-) TimerEvent: {}
+[61.172669] (-) TimerEvent: {}
+[61.273665] (-) TimerEvent: {}
+[61.375750] (-) TimerEvent: {}
+[61.477672] (-) TimerEvent: {}
+[61.578683] (-) TimerEvent: {}
+[61.679866] (-) TimerEvent: {}
+[61.780997] (-) TimerEvent: {}
+[61.883021] (-) TimerEvent: {}
+[61.985196] (-) TimerEvent: {}
+[62.086719] (-) TimerEvent: {}
+[62.187852] (-) TimerEvent: {}
+[62.288972] (-) TimerEvent: {}
+[62.391443] (-) TimerEvent: {}
+[62.493305] (-) TimerEvent: {}
+[62.595208] (-) TimerEvent: {}
+[62.696552] (-) TimerEvent: {}
+[62.797710] (-) TimerEvent: {}
+[62.898742] (-) TimerEvent: {}
+[63.000817] (-) TimerEvent: {}
+[63.102767] (-) TimerEvent: {}
+[63.204628] (-) TimerEvent: {}
+[63.305620] (-) TimerEvent: {}
+[63.407522] (-) TimerEvent: {}
+[63.514308] (-) TimerEvent: {}
+[63.615960] (-) TimerEvent: {}
+[63.717137] (-) TimerEvent: {}
+[63.819117] (-) TimerEvent: {}
+[63.921074] (-) TimerEvent: {}
+[64.022321] (-) TimerEvent: {}
+[64.123533] (-) TimerEvent: {}
+[64.224670] (-) TimerEvent: {}
+[64.326813] (-) TimerEvent: {}
+[64.429024] (-) TimerEvent: {}
+[64.530977] (-) TimerEvent: {}
+[64.632330] (-) TimerEvent: {}
+[64.733729] (-) TimerEvent: {}
+[64.835231] (-) TimerEvent: {}
+[64.937525] (-) TimerEvent: {}
+[65.039002] (-) TimerEvent: {}
+[65.140325] (-) TimerEvent: {}
+[65.242806] (-) TimerEvent: {}
+[65.345379] (-) TimerEvent: {}
+[65.447409] (-) TimerEvent: {}
+[65.548533] (-) TimerEvent: {}
+[65.650072] (-) TimerEvent: {}
+[65.751056] (-) TimerEvent: {}
+[65.851974] (-) TimerEvent: {}
+[65.952947] (-) TimerEvent: {}
+[66.054045] (-) TimerEvent: {}
+[66.156610] (-) TimerEvent: {}
+[66.257470] (-) TimerEvent: {}
+[66.358326] (-) TimerEvent: {}
+[66.459323] (-) TimerEvent: {}
+[66.560329] (-) TimerEvent: {}
+[66.661579] (-) TimerEvent: {}
+[66.762539] (-) TimerEvent: {}
+[66.864319] (-) TimerEvent: {}
+[66.966257] (-) TimerEvent: {}
+[67.067402] (-) TimerEvent: {}
+[67.168498] (-) TimerEvent: {}
+[67.270340] (-) TimerEvent: {}
+[67.372370] (-) TimerEvent: {}
+[67.474204] (-) TimerEvent: {}
+[67.576120] (-) TimerEvent: {}
+[67.677211] (-) TimerEvent: {}
+[67.778217] (-) TimerEvent: {}
+[67.880075] (-) TimerEvent: {}
+[67.981946] (-) TimerEvent: {}
+[68.082960] (-) TimerEvent: {}
+[68.183973] (-) TimerEvent: {}
+[68.286048] (-) TimerEvent: {}
+[68.388145] (-) TimerEvent: {}
+[68.491081] (-) TimerEvent: {}
+[68.593628] (-) TimerEvent: {}
+[68.694740] (-) TimerEvent: {}
+[68.795845] (-) TimerEvent: {}
+[68.897692] (-) TimerEvent: {}
+[69.001418] (-) TimerEvent: {}
+[69.103638] (-) TimerEvent: {}
+[69.205771] (-) TimerEvent: {}
+[69.308176] (-) TimerEvent: {}
+[69.409954] (-) TimerEvent: {}
+[69.513305] (-) TimerEvent: {}
+[69.614267] (-) TimerEvent: {}
+[69.715484] (-) TimerEvent: {}
+[69.817071] (-) TimerEvent: {}
+[69.921548] (-) TimerEvent: {}
+[70.023631] (-) TimerEvent: {}
+[70.125185] (-) TimerEvent: {}
+[70.230979] (-) TimerEvent: {}
+[70.333501] (-) TimerEvent: {}
+[70.436620] (-) TimerEvent: {}
+[70.539261] (-) TimerEvent: {}
+[70.640781] (-) TimerEvent: {}
+[70.742043] (-) TimerEvent: {}
+[70.843270] (-) TimerEvent: {}
+[70.945466] (-) TimerEvent: {}
+[71.046719] (-) TimerEvent: {}
+[71.147984] (-) TimerEvent: {}
+[71.249280] (-) TimerEvent: {}
+[71.351158] (-) TimerEvent: {}
+[71.453048] (-) TimerEvent: {}
+[71.555985] (-) TimerEvent: {}
+[71.657324] (-) TimerEvent: {}
+[71.758944] (-) TimerEvent: {}
+[71.861035] (-) TimerEvent: {}
+[71.963471] (-) TimerEvent: {}
+[72.064938] (-) TimerEvent: {}
+[72.168522] (-) TimerEvent: {}
+[72.271630] (-) TimerEvent: {}
+[72.374134] (-) TimerEvent: {}
+[72.476983] (-) TimerEvent: {}
+[72.579141] (-) TimerEvent: {}
+[72.681388] (-) TimerEvent: {}
+[72.783822] (-) TimerEvent: {}
+[72.884879] (-) TimerEvent: {}
+[72.987125] (-) TimerEvent: {}
+[73.089100] (-) TimerEvent: {}
+[73.192720] (-) TimerEvent: {}
+[73.295265] (-) TimerEvent: {}
+[73.397612] (-) TimerEvent: {}
+[73.499401] (-) TimerEvent: {}
+[73.601762] (-) TimerEvent: {}
+[73.705203] (-) TimerEvent: {}
+[73.808761] (-) TimerEvent: {}
+[73.914505] (-) TimerEvent: {}
+[74.015843] (-) TimerEvent: {}
+[74.117112] (-) TimerEvent: {}
+[74.218987] (-) TimerEvent: {}
+[74.320987] (-) TimerEvent: {}
+[74.422994] (-) TimerEvent: {}
+[74.525487] (-) TimerEvent: {}
+[74.627126] (-) TimerEvent: {}
+[74.729095] (-) TimerEvent: {}
+[74.831731] (-) TimerEvent: {}
+[74.875940] (diff_drive_controller) StdoutLine: {'line': b'[ 80%] \x1b[32m\x1b[1mLinking CXX executable test_load_diff_drive_controller\x1b[0m\n'}
+[74.932056] (-) TimerEvent: {}
+[75.046483] (-) TimerEvent: {}
+[75.150230] (-) TimerEvent: {}
+[75.251974] (-) TimerEvent: {}
+[75.354312] (-) TimerEvent: {}
+[75.456668] (-) TimerEvent: {}
+[75.561590] (-) TimerEvent: {}
+[75.663693] (-) TimerEvent: {}
+[75.766780] (-) TimerEvent: {}
+[75.869988] (-) TimerEvent: {}
+[75.971727] (-) TimerEvent: {}
+[76.074895] (-) TimerEvent: {}
+[76.177415] (-) TimerEvent: {}
+[76.280228] (-) TimerEvent: {}
+[76.383801] (-) TimerEvent: {}
+[76.487078] (-) TimerEvent: {}
+[76.589158] (-) TimerEvent: {}
+[76.692186] (-) TimerEvent: {}
+[76.795443] (-) TimerEvent: {}
+[76.898164] (-) TimerEvent: {}
+[77.001831] (-) TimerEvent: {}
+[77.103892] (-) TimerEvent: {}
+[77.207681] (-) TimerEvent: {}
+[77.308669] (-) TimerEvent: {}
+[77.410489] (-) TimerEvent: {}
+[77.515755] (-) TimerEvent: {}
+[77.617370] (-) TimerEvent: {}
+[77.717925] (diff_drive_controller) StdoutLine: {'line': b'[ 80%] Built target test_load_diff_drive_controller\n'}
+[77.719499] (-) TimerEvent: {}
+[77.821701] (-) TimerEvent: {}
+[77.923051] (-) TimerEvent: {}
+[78.024286] (-) TimerEvent: {}
+[78.125185] (-) TimerEvent: {}
+[78.226478] (-) TimerEvent: {}
+[78.327801] (-) TimerEvent: {}
+[78.429095] (-) TimerEvent: {}
+[78.530413] (-) TimerEvent: {}
+[78.631787] (-) TimerEvent: {}
+[78.733054] (-) TimerEvent: {}
+[78.833988] (-) TimerEvent: {}
+[78.935403] (-) TimerEvent: {}
+[79.036299] (-) TimerEvent: {}
+[79.137184] (-) TimerEvent: {}
+[79.238124] (-) TimerEvent: {}
+[79.339463] (-) TimerEvent: {}
+[79.440349] (-) TimerEvent: {}
+[79.541391] (-) TimerEvent: {}
+[79.642406] (-) TimerEvent: {}
+[79.743380] (-) TimerEvent: {}
+[79.844200] (-) TimerEvent: {}
+[79.945163] (-) TimerEvent: {}
+[80.046070] (-) TimerEvent: {}
+[80.146895] (-) TimerEvent: {}
+[80.247757] (-) TimerEvent: {}
+[80.348609] (-) TimerEvent: {}
+[80.449401] (-) TimerEvent: {}
+[80.550469] (-) TimerEvent: {}
+[80.651396] (-) TimerEvent: {}
+[80.752224] (-) TimerEvent: {}
+[80.853193] (-) TimerEvent: {}
+[80.954022] (-) TimerEvent: {}
+[81.054979] (-) TimerEvent: {}
+[81.155911] (-) TimerEvent: {}
+[81.256848] (-) TimerEvent: {}
+[81.357686] (-) TimerEvent: {}
+[81.458575] (-) TimerEvent: {}
+[81.559439] (-) TimerEvent: {}
+[81.660327] (-) TimerEvent: {}
+[81.761658] (-) TimerEvent: {}
+[81.862526] (-) TimerEvent: {}
+[81.963400] (-) TimerEvent: {}
+[82.064292] (-) TimerEvent: {}
+[82.165160] (-) TimerEvent: {}
+[82.266044] (-) TimerEvent: {}
+[82.366964] (-) TimerEvent: {}
+[82.467825] (-) TimerEvent: {}
+[82.568691] (-) TimerEvent: {}
+[82.669618] (-) TimerEvent: {}
+[82.770513] (-) TimerEvent: {}
+[82.871425] (-) TimerEvent: {}
+[82.972312] (-) TimerEvent: {}
+[83.073169] (-) TimerEvent: {}
+[83.174046] (-) TimerEvent: {}
+[83.274969] (-) TimerEvent: {}
+[83.375861] (-) TimerEvent: {}
+[83.476807] (-) TimerEvent: {}
+[83.577736] (-) TimerEvent: {}
+[83.678677] (-) TimerEvent: {}
+[83.779551] (-) TimerEvent: {}
+[83.880474] (-) TimerEvent: {}
+[83.981381] (-) TimerEvent: {}
+[84.082267] (-) TimerEvent: {}
+[84.183230] (-) TimerEvent: {}
+[84.284135] (-) TimerEvent: {}
+[84.385027] (-) TimerEvent: {}
+[84.485915] (-) TimerEvent: {}
+[84.586796] (-) TimerEvent: {}
+[84.687722] (-) TimerEvent: {}
+[84.788575] (-) TimerEvent: {}
+[84.889432] (-) TimerEvent: {}
+[84.990353] (-) TimerEvent: {}
+[85.091287] (-) TimerEvent: {}
+[85.192170] (-) TimerEvent: {}
+[85.293054] (-) TimerEvent: {}
+[85.393926] (-) TimerEvent: {}
+[85.494749] (-) TimerEvent: {}
+[85.595683] (-) TimerEvent: {}
+[85.696582] (-) TimerEvent: {}
+[85.797504] (-) TimerEvent: {}
+[85.898385] (-) TimerEvent: {}
+[85.999406] (-) TimerEvent: {}
+[86.100281] (-) TimerEvent: {}
+[86.201159] (-) TimerEvent: {}
+[86.302073] (-) TimerEvent: {}
+[86.403126] (-) TimerEvent: {}
+[86.504054] (-) TimerEvent: {}
+[86.606304] (-) TimerEvent: {}
+[86.707215] (-) TimerEvent: {}
+[86.808069] (-) TimerEvent: {}
+[86.910189] (-) TimerEvent: {}
+[87.011162] (-) TimerEvent: {}
+[87.112052] (-) TimerEvent: {}
+[87.212952] (-) TimerEvent: {}
+[87.313900] (-) TimerEvent: {}
+[87.414793] (-) TimerEvent: {}
+[87.515672] (-) TimerEvent: {}
+[87.616532] (-) TimerEvent: {}
+[87.717412] (-) TimerEvent: {}
+[87.818314] (-) TimerEvent: {}
+[87.919206] (-) TimerEvent: {}
+[88.020034] (-) TimerEvent: {}
+[88.120966] (-) TimerEvent: {}
+[88.221823] (-) TimerEvent: {}
+[88.322706] (-) TimerEvent: {}
+[88.423590] (-) TimerEvent: {}
+[88.524454] (-) TimerEvent: {}
+[88.625367] (-) TimerEvent: {}
+[88.726264] (-) TimerEvent: {}
+[88.827162] (-) TimerEvent: {}
+[88.928039] (-) TimerEvent: {}
+[89.028958] (-) TimerEvent: {}
+[89.129839] (-) TimerEvent: {}
+[89.230750] (-) TimerEvent: {}
+[89.331642] (-) TimerEvent: {}
+[89.432559] (-) TimerEvent: {}
+[89.533450] (-) TimerEvent: {}
+[89.634323] (-) TimerEvent: {}
+[89.735222] (-) TimerEvent: {}
+[89.836131] (-) TimerEvent: {}
+[89.937024] (-) TimerEvent: {}
+[90.037916] (-) TimerEvent: {}
+[90.138784] (-) TimerEvent: {}
+[90.239620] (-) TimerEvent: {}
+[90.340545] (-) TimerEvent: {}
+[90.441396] (-) TimerEvent: {}
+[90.542221] (-) TimerEvent: {}
+[90.643151] (-) TimerEvent: {}
+[90.744004] (-) TimerEvent: {}
+[90.844855] (-) TimerEvent: {}
+[90.945706] (-) TimerEvent: {}
+[91.046524] (-) TimerEvent: {}
+[91.147405] (-) TimerEvent: {}
+[91.248190] (-) TimerEvent: {}
+[91.349014] (-) TimerEvent: {}
+[91.449911] (-) TimerEvent: {}
+[91.550808] (-) TimerEvent: {}
+[91.651670] (-) TimerEvent: {}
+[91.752571] (-) TimerEvent: {}
+[91.853401] (-) TimerEvent: {}
+[91.954260] (-) TimerEvent: {}
+[92.055154] (-) TimerEvent: {}
+[92.156027] (-) TimerEvent: {}
+[92.256963] (-) TimerEvent: {}
+[92.357853] (-) TimerEvent: {}
+[92.458760] (-) TimerEvent: {}
+[92.559596] (-) TimerEvent: {}
+[92.660466] (-) TimerEvent: {}
+[92.761314] (-) TimerEvent: {}
+[92.862208] (-) TimerEvent: {}
+[92.963141] (-) TimerEvent: {}
+[93.064005] (-) TimerEvent: {}
+[93.164880] (-) TimerEvent: {}
+[93.265737] (-) TimerEvent: {}
+[93.366677] (-) TimerEvent: {}
+[93.467504] (-) TimerEvent: {}
+[93.568431] (-) TimerEvent: {}
+[93.669306] (-) TimerEvent: {}
+[93.770152] (-) TimerEvent: {}
+[93.871041] (-) TimerEvent: {}
+[93.971864] (-) TimerEvent: {}
+[94.072762] (-) TimerEvent: {}
+[94.173614] (-) TimerEvent: {}
+[94.274484] (-) TimerEvent: {}
+[94.375381] (-) TimerEvent: {}
+[94.476297] (-) TimerEvent: {}
+[94.577169] (-) TimerEvent: {}
+[94.678011] (-) TimerEvent: {}
+[94.778844] (-) TimerEvent: {}
+[94.879705] (-) TimerEvent: {}
+[94.980567] (-) TimerEvent: {}
+[95.081421] (-) TimerEvent: {}
+[95.182255] (-) TimerEvent: {}
+[95.283161] (-) TimerEvent: {}
+[95.384055] (-) TimerEvent: {}
+[95.484941] (-) TimerEvent: {}
+[95.585878] (-) TimerEvent: {}
+[95.686639] (-) TimerEvent: {}
+[95.787443] (-) TimerEvent: {}
+[95.888268] (-) TimerEvent: {}
+[95.989027] (-) TimerEvent: {}
+[96.089758] (-) TimerEvent: {}
+[96.190520] (-) TimerEvent: {}
+[96.291312] (-) TimerEvent: {}
+[96.392065] (-) TimerEvent: {}
+[96.492817] (-) TimerEvent: {}
+[96.593576] (-) TimerEvent: {}
+[96.694451] (-) TimerEvent: {}
+[96.835709] (-) TimerEvent: {}
+[96.937018] (-) TimerEvent: {}
+[97.038384] (-) TimerEvent: {}
+[97.139757] (-) TimerEvent: {}
+[97.241056] (-) TimerEvent: {}
+[97.342323] (-) TimerEvent: {}
+[97.443505] (-) TimerEvent: {}
+[97.544720] (-) TimerEvent: {}
+[97.645715] (-) TimerEvent: {}
+[97.747009] (-) TimerEvent: {}
+[97.848315] (-) TimerEvent: {}
+[97.949608] (-) TimerEvent: {}
+[98.050861] (-) TimerEvent: {}
+[98.151757] (-) TimerEvent: {}
+[98.252515] (-) TimerEvent: {}
+[98.353240] (-) TimerEvent: {}
+[98.453983] (-) TimerEvent: {}
+[98.554737] (-) TimerEvent: {}
+[98.655510] (-) TimerEvent: {}
+[98.756328] (-) TimerEvent: {}
+[98.857114] (-) TimerEvent: {}
+[98.957889] (-) TimerEvent: {}
+[99.058671] (-) TimerEvent: {}
+[99.159402] (-) TimerEvent: {}
+[99.260230] (-) TimerEvent: {}
+[99.361006] (-) TimerEvent: {}
+[99.461763] (-) TimerEvent: {}
+[99.562525] (-) TimerEvent: {}
+[99.663305] (-) TimerEvent: {}
+[99.764131] (-) TimerEvent: {}
+[99.865072] (-) TimerEvent: {}
+[99.966485] (-) TimerEvent: {}
+[100.067329] (-) TimerEvent: {}
+[100.168146] (-) TimerEvent: {}
+[100.268953] (-) TimerEvent: {}
+[100.369736] (-) TimerEvent: {}
+[100.470536] (-) TimerEvent: {}
+[100.571413] (-) TimerEvent: {}
+[100.672362] (-) TimerEvent: {}
+[100.773179] (-) TimerEvent: {}
+[100.874025] (-) TimerEvent: {}
+[100.974813] (-) TimerEvent: {}
+[101.075655] (-) TimerEvent: {}
+[101.176526] (-) TimerEvent: {}
+[101.277374] (-) TimerEvent: {}
+[101.378210] (-) TimerEvent: {}
+[101.479031] (-) TimerEvent: {}
+[101.579819] (-) TimerEvent: {}
+[101.680638] (-) TimerEvent: {}
+[101.781551] (-) TimerEvent: {}
+[101.883241] (-) TimerEvent: {}
+[101.985464] (-) TimerEvent: {}
+[102.086862] (-) TimerEvent: {}
+[102.188436] (-) TimerEvent: {}
+[102.289265] (-) TimerEvent: {}
+[102.390198] (-) TimerEvent: {}
+[102.494887] (-) TimerEvent: {}
+[102.598879] (-) TimerEvent: {}
+[102.700263] (-) TimerEvent: {}
+[102.804167] (-) TimerEvent: {}
+[102.906836] (-) TimerEvent: {}
+[103.008233] (-) TimerEvent: {}
+[103.110997] (-) TimerEvent: {}
+[103.213660] (-) TimerEvent: {}
+[103.286035] (diff_drive_controller) StdoutLine: {'line': b'[ 86%] \x1b[32m\x1b[1mLinking CXX shared library libdiff_drive_controller.so\x1b[0m\n'}
+[103.313873] (-) TimerEvent: {}
+[103.415811] (-) TimerEvent: {}
+[103.516812] (-) TimerEvent: {}
+[103.619057] (-) TimerEvent: {}
+[103.720243] (-) TimerEvent: {}
+[103.821390] (-) TimerEvent: {}
+[103.922941] (-) TimerEvent: {}
+[104.024272] (-) TimerEvent: {}
+[104.125278] (-) TimerEvent: {}
+[104.226461] (-) TimerEvent: {}
+[104.327556] (-) TimerEvent: {}
+[104.429116] (-) TimerEvent: {}
+[104.531318] (-) TimerEvent: {}
+[104.634018] (-) TimerEvent: {}
+[104.735937] (-) TimerEvent: {}
+[104.837114] (-) TimerEvent: {}
+[104.938679] (-) TimerEvent: {}
+[105.039745] (-) TimerEvent: {}
+[105.140897] (-) TimerEvent: {}
+[105.242354] (-) TimerEvent: {}
+[105.344444] (-) TimerEvent: {}
+[105.446100] (-) TimerEvent: {}
+[105.548167] (-) TimerEvent: {}
+[105.650067] (-) TimerEvent: {}
+[105.752868] (-) TimerEvent: {}
+[105.855437] (-) TimerEvent: {}
+[105.958285] (-) TimerEvent: {}
+[106.060146] (-) TimerEvent: {}
+[106.106492] (three_omniwheel_controller) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX shared library libthree_omniwheel_controller.so\x1b[0m\n'}
+[106.160555] (-) TimerEvent: {}
+[106.262100] (-) TimerEvent: {}
+[106.363390] (-) TimerEvent: {}
+[106.464970] (-) TimerEvent: {}
+[106.566503] (-) TimerEvent: {}
+[106.667851] (-) TimerEvent: {}
+[106.769261] (-) TimerEvent: {}
+[106.870649] (-) TimerEvent: {}
+[106.972094] (-) TimerEvent: {}
+[107.074446] (-) TimerEvent: {}
+[107.176578] (-) TimerEvent: {}
+[107.278910] (-) TimerEvent: {}
+[107.380989] (-) TimerEvent: {}
+[107.483566] (-) TimerEvent: {}
+[107.585856] (-) TimerEvent: {}
+[107.687776] (-) TimerEvent: {}
+[107.789429] (-) TimerEvent: {}
+[107.891281] (-) TimerEvent: {}
+[107.992772] (-) TimerEvent: {}
+[108.094298] (-) TimerEvent: {}
+[108.195212] (-) TimerEvent: {}
+[108.296215] (-) TimerEvent: {}
+[108.397594] (-) TimerEvent: {}
+[108.498881] (-) TimerEvent: {}
+[108.600671] (-) TimerEvent: {}
+[108.701738] (-) TimerEvent: {}
+[108.802861] (-) TimerEvent: {}
+[108.905377] (-) TimerEvent: {}
+[109.010954] (-) TimerEvent: {}
+[109.112437] (-) TimerEvent: {}
+[109.213712] (-) TimerEvent: {}
+[109.314885] (-) TimerEvent: {}
+[109.416212] (-) TimerEvent: {}
+[109.517336] (-) TimerEvent: {}
+[109.618482] (-) TimerEvent: {}
+[109.719745] (-) TimerEvent: {}
+[109.754516] (diff_drive_controller) StdoutLine: {'line': b'[ 86%] Built target diff_drive_controller\n'}
+[109.820008] (-) TimerEvent: {}
+[109.871923] (diff_drive_controller) StdoutLine: {'line': b'[ 93%] \x1b[32mBuilding CXX object CMakeFiles/test_diff_drive_controller.dir/test/test_diff_drive_controller.cpp.o\x1b[0m\n'}
+[109.920457] (-) TimerEvent: {}
+[110.021712] (-) TimerEvent: {}
+[110.123136] (-) TimerEvent: {}
+[110.224133] (-) TimerEvent: {}
+[110.325011] (-) TimerEvent: {}
+[110.425853] (-) TimerEvent: {}
+[110.526559] (-) TimerEvent: {}
+[110.627260] (-) TimerEvent: {}
+[110.727964] (-) TimerEvent: {}
+[110.828685] (-) TimerEvent: {}
+[110.929391] (-) TimerEvent: {}
+[111.030135] (-) TimerEvent: {}
+[111.130925] (-) TimerEvent: {}
+[111.231708] (-) TimerEvent: {}
+[111.332833] (-) TimerEvent: {}
+[111.433814] (-) TimerEvent: {}
+[111.534689] (-) TimerEvent: {}
+[111.635546] (-) TimerEvent: {}
+[111.736626] (-) TimerEvent: {}
+[111.837378] (-) TimerEvent: {}
+[111.865745] (three_omniwheel_controller) StdoutLine: {'line': b'[100%] Built target three_omniwheel_controller\n'}
+[111.907165] (three_omniwheel_controller) CommandEnded: {'returncode': 0}
+[111.909699] (three_omniwheel_controller) JobProgress: {'identifier': 'three_omniwheel_controller', 'progress': 'install'}
+[111.937649] (-) TimerEvent: {}
+[111.940894] (three_omniwheel_controller) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/piros/Work/ROS2/controller_ws/build/three_omniwheel_controller'], 'cwd': '/home/piros/Work/ROS2/controller_ws/build/three_omniwheel_controller', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('QT_SCALE_FACTOR', '1'), ('LANGUAGE', 'en_IN:en'), ('USER', 'piros'), ('XDG_SESSION_TYPE', 'x11'), ('COMPIZ_CONFIG_PROFILE', 'mate'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/piros'), ('OLDPWD', '/home/piros/Work/ROS2'), ('DESKTOP_SESSION', 'mate'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GTK_MODULES', 'appmenu-gtk-module:gail:atk-bridge:canberra-gtk-module'), ('XDG_SEAT_PATH', '/org/freedesktop/DisplayManager/Seat0'), ('MANAGERPID', '1663'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1686'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=531afbf53fd4eb95884cb8b9680c8089'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3026'), ('UBUNTU_MENUPROXY', '1'), ('QT_QPA_PLATFORMTHEME', 'gtk2'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/piros/Work/rplidar_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'piros'), ('JOURNAL_STREAM', '8:27936'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('GTK_OVERLAY_SCROLLING', '0'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/piros:@/tmp/.ICE-unix/1695,unix/piros:/tmp/.ICE-unix/1695'), ('GDM_LANG', 'en_US'), ('INVOCATION_ID', '656f7ef9a71242e8b0df139371bf2cbb'), ('XDG_SESSION_PATH', '/org/freedesktop/DisplayManager/Session0'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'MATE'), ('XDG_SESSION_DESKTOP', 'mate'), ('XAUTHORITY', '/home/piros/.Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('XDG_GREETER_DATA_DIR', '/var/lib/lightdm-data/piros'), ('AMENT_PREFIX_PATH', '/home/piros/Work/rplidar_ws/install/rplidar_ros:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:cd888be0-f582-4d28-8da4-f8e7e9461455'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'mate'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('PWD', '/home/piros/Work/ROS2/controller_ws/build/three_omniwheel_controller'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-mate:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=531afbf53fd4eb95884cb8b9680c8089'), ('XDG_DATA_DIRS', '/usr/share/mate:/home/piros/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('MATE_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/piros/Work/rplidar_ws/install/rplidar_ros:/opt/ros/humble'), ('QT_FONT_DPI', '96')]), 'shell': False}
+[111.973401] (three_omniwheel_controller) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[111.974071] (three_omniwheel_controller) StdoutLine: {'line': b'-- Installing: /home/piros/Work/ROS2/controller_ws/install/three_omniwheel_controller/include/three_omniwheel_controller\n'}
+[111.974720] (three_omniwheel_controller) StdoutLine: {'line': b'-- Installing: /home/piros/Work/ROS2/controller_ws/install/three_omniwheel_controller/include/three_omniwheel_controller/three_omniwheel_controller_parameters.hpp\n'}
+[111.977309] (three_omniwheel_controller) StdoutLine: {'line': b'-- Installing: /home/piros/Work/ROS2/controller_ws/install/three_omniwheel_controller/share/three_omniwheel_controller/three_omniwheel_plugin.xml\n'}
+[111.979732] (three_omniwheel_controller) StdoutLine: {'line': b'-- Up-to-date: /home/piros/Work/ROS2/controller_ws/install/three_omniwheel_controller/include/three_omniwheel_controller\n'}
+[111.980420] (three_omniwheel_controller) StdoutLine: {'line': b'-- Installing: /home/piros/Work/ROS2/controller_ws/install/three_omniwheel_controller/include/three_omniwheel_controller/three_omniwheel_controller\n'}
+[111.981080] (three_omniwheel_controller) StdoutLine: {'line': b'-- Installing: /home/piros/Work/ROS2/controller_ws/install/three_omniwheel_controller/include/three_omniwheel_controller/three_omniwheel_controller/odometry.hpp\n'}
+[111.982174] (three_omniwheel_controller) StdoutLine: {'line': b'-- Installing: /home/piros/Work/ROS2/controller_ws/install/three_omniwheel_controller/include/three_omniwheel_controller/three_omniwheel_controller/three_omniwheel_controller.hpp\n'}
+[111.983539] (three_omniwheel_controller) StdoutLine: {'line': b'-- Installing: /home/piros/Work/ROS2/controller_ws/install/three_omniwheel_controller/include/three_omniwheel_controller/three_omniwheel_controller/speed_limiter.hpp\n'}
+[111.984825] (three_omniwheel_controller) StdoutLine: {'line': b'-- Installing: /home/piros/Work/ROS2/controller_ws/install/three_omniwheel_controller/include/three_omniwheel_controller/three_omniwheel_controller/visibility_control.h\n'}
+[111.986551] (three_omniwheel_controller) StdoutLine: {'line': b'-- Installing: /home/piros/Work/ROS2/controller_ws/install/three_omniwheel_controller/lib/libthree_omniwheel_controller.so\n'}
+[112.037879] (-) TimerEvent: {}
+[112.068146] (three_omniwheel_controller) StdoutLine: {'line': b'-- Set runtime path of "/home/piros/Work/ROS2/controller_ws/install/three_omniwheel_controller/lib/libthree_omniwheel_controller.so" to ""\n'}
+[112.069185] (three_omniwheel_controller) StdoutLine: {'line': b'-- Installing: /home/piros/Work/ROS2/controller_ws/install/three_omniwheel_controller/share/three_omniwheel_controller/environment/library_path.sh\n'}
+[112.070773] (three_omniwheel_controller) StdoutLine: {'line': b'-- Installing: /home/piros/Work/ROS2/controller_ws/install/three_omniwheel_controller/share/three_omniwheel_controller/environment/library_path.dsv\n'}
+[112.073022] (three_omniwheel_controller) StdoutLine: {'line': b'-- Installing: /home/piros/Work/ROS2/controller_ws/install/three_omniwheel_controller/share/ament_index/resource_index/package_run_dependencies/three_omniwheel_controller\n'}
+[112.074894] (three_omniwheel_controller) StdoutLine: {'line': b'-- Installing: /home/piros/Work/ROS2/controller_ws/install/three_omniwheel_controller/share/ament_index/resource_index/parent_prefix_path/three_omniwheel_controller\n'}
+[112.076284] (three_omniwheel_controller) StdoutLine: {'line': b'-- Installing: /home/piros/Work/ROS2/controller_ws/install/three_omniwheel_controller/share/three_omniwheel_controller/environment/ament_prefix_path.sh\n'}
+[112.077610] (three_omniwheel_controller) StdoutLine: {'line': b'-- Installing: /home/piros/Work/ROS2/controller_ws/install/three_omniwheel_controller/share/three_omniwheel_controller/environment/ament_prefix_path.dsv\n'}
+[112.078977] (three_omniwheel_controller) StdoutLine: {'line': b'-- Installing: /home/piros/Work/ROS2/controller_ws/install/three_omniwheel_controller/share/three_omniwheel_controller/environment/path.sh\n'}
+[112.080202] (three_omniwheel_controller) StdoutLine: {'line': b'-- Installing: /home/piros/Work/ROS2/controller_ws/install/three_omniwheel_controller/share/three_omniwheel_controller/environment/path.dsv\n'}
+[112.081727] (three_omniwheel_controller) StdoutLine: {'line': b'-- Installing: /home/piros/Work/ROS2/controller_ws/install/three_omniwheel_controller/share/three_omniwheel_controller/local_setup.bash\n'}
+[112.083067] (three_omniwheel_controller) StdoutLine: {'line': b'-- Installing: /home/piros/Work/ROS2/controller_ws/install/three_omniwheel_controller/share/three_omniwheel_controller/local_setup.sh\n'}
+[112.084363] (three_omniwheel_controller) StdoutLine: {'line': b'-- Installing: /home/piros/Work/ROS2/controller_ws/install/three_omniwheel_controller/share/three_omniwheel_controller/local_setup.zsh\n'}
+[112.085642] (three_omniwheel_controller) StdoutLine: {'line': b'-- Installing: /home/piros/Work/ROS2/controller_ws/install/three_omniwheel_controller/share/three_omniwheel_controller/local_setup.dsv\n'}
+[112.086866] (three_omniwheel_controller) StdoutLine: {'line': b'-- Installing: /home/piros/Work/ROS2/controller_ws/install/three_omniwheel_controller/share/three_omniwheel_controller/package.dsv\n'}
+[112.088515] (three_omniwheel_controller) StdoutLine: {'line': b'-- Installing: /home/piros/Work/ROS2/controller_ws/install/three_omniwheel_controller/share/ament_index/resource_index/packages/three_omniwheel_controller\n'}
+[112.090298] (three_omniwheel_controller) StdoutLine: {'line': b'-- Installing: /home/piros/Work/ROS2/controller_ws/install/three_omniwheel_controller/share/ament_index/resource_index/controller_interface__pluginlib__plugin/three_omniwheel_controller\n'}
+[112.092369] (three_omniwheel_controller) StdoutLine: {'line': b'-- Installing: /home/piros/Work/ROS2/controller_ws/install/three_omniwheel_controller/share/three_omniwheel_controller/cmake/export_three_omniwheel_controllerExport.cmake\n'}
+[112.094023] (three_omniwheel_controller) StdoutLine: {'line': b'-- Installing: /home/piros/Work/ROS2/controller_ws/install/three_omniwheel_controller/share/three_omniwheel_controller/cmake/export_three_omniwheel_controllerExport-noconfig.cmake\n'}
+[112.095653] (three_omniwheel_controller) StdoutLine: {'line': b'-- Installing: /home/piros/Work/ROS2/controller_ws/install/three_omniwheel_controller/share/three_omniwheel_controller/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[112.097255] (three_omniwheel_controller) StdoutLine: {'line': b'-- Installing: /home/piros/Work/ROS2/controller_ws/install/three_omniwheel_controller/share/three_omniwheel_controller/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[112.098709] (three_omniwheel_controller) StdoutLine: {'line': b'-- Installing: /home/piros/Work/ROS2/controller_ws/install/three_omniwheel_controller/share/three_omniwheel_controller/cmake/three_omniwheel_controllerConfig.cmake\n'}
+[112.099987] (three_omniwheel_controller) StdoutLine: {'line': b'-- Installing: /home/piros/Work/ROS2/controller_ws/install/three_omniwheel_controller/share/three_omniwheel_controller/cmake/three_omniwheel_controllerConfig-version.cmake\n'}
+[112.101405] (three_omniwheel_controller) StdoutLine: {'line': b'-- Installing: /home/piros/Work/ROS2/controller_ws/install/three_omniwheel_controller/share/three_omniwheel_controller/package.xml\n'}
+[112.107593] (three_omniwheel_controller) CommandEnded: {'returncode': 0}
+[112.138771] (-) TimerEvent: {}
+[112.224493] (three_omniwheel_controller) JobEnded: {'identifier': 'three_omniwheel_controller', 'rc': 0}
+[112.238966] (-) TimerEvent: {}
+[112.339673] (-) TimerEvent: {}
+[112.440386] (-) TimerEvent: {}
+[112.541092] (-) TimerEvent: {}
+[112.641789] (-) TimerEvent: {}
+[112.742497] (-) TimerEvent: {}
+[112.843308] (-) TimerEvent: {}
+[112.944222] (-) TimerEvent: {}
+[113.044986] (-) TimerEvent: {}
+[113.145754] (-) TimerEvent: {}
+[113.246543] (-) TimerEvent: {}
+[113.347314] (-) TimerEvent: {}
+[113.448028] (-) TimerEvent: {}
+[113.548776] (-) TimerEvent: {}
+[113.649573] (-) TimerEvent: {}
+[113.750333] (-) TimerEvent: {}
+[113.851217] (-) TimerEvent: {}
+[113.951952] (-) TimerEvent: {}
+[114.052679] (-) TimerEvent: {}
+[114.153586] (-) TimerEvent: {}
+[114.254291] (-) TimerEvent: {}
+[114.355050] (-) TimerEvent: {}
+[114.455772] (-) TimerEvent: {}
+[114.556537] (-) TimerEvent: {}
+[114.657343] (-) TimerEvent: {}
+[114.758305] (-) TimerEvent: {}
+[114.859272] (-) TimerEvent: {}
+[114.960398] (-) TimerEvent: {}
+[115.061581] (-) TimerEvent: {}
+[115.162795] (-) TimerEvent: {}
+[115.263998] (-) TimerEvent: {}
+[115.365292] (-) TimerEvent: {}
+[115.467180] (-) TimerEvent: {}
+[115.568419] (-) TimerEvent: {}
+[115.669170] (-) TimerEvent: {}
+[115.769966] (-) TimerEvent: {}
+[115.870879] (-) TimerEvent: {}
+[115.971642] (-) TimerEvent: {}
+[116.072408] (-) TimerEvent: {}
+[116.173319] (-) TimerEvent: {}
+[116.274120] (-) TimerEvent: {}
+[116.374844] (-) TimerEvent: {}
+[116.475789] (-) TimerEvent: {}
+[116.576540] (-) TimerEvent: {}
+[116.677294] (-) TimerEvent: {}
+[116.778124] (-) TimerEvent: {}
+[116.879026] (-) TimerEvent: {}
+[116.979848] (-) TimerEvent: {}
+[117.080905] (-) TimerEvent: {}
+[117.181797] (-) TimerEvent: {}
+[117.282683] (-) TimerEvent: {}
+[117.383462] (-) TimerEvent: {}
+[117.484184] (-) TimerEvent: {}
+[117.585176] (-) TimerEvent: {}
+[117.685929] (-) TimerEvent: {}
+[117.786759] (-) TimerEvent: {}
+[117.887691] (-) TimerEvent: {}
+[117.988505] (-) TimerEvent: {}
+[118.089468] (-) TimerEvent: {}
+[118.190286] (-) TimerEvent: {}
+[118.291028] (-) TimerEvent: {}
+[118.391814] (-) TimerEvent: {}
+[118.492630] (-) TimerEvent: {}
+[118.593355] (-) TimerEvent: {}
+[118.694190] (-) TimerEvent: {}
+[118.794993] (-) TimerEvent: {}
+[118.895715] (-) TimerEvent: {}
+[118.996499] (-) TimerEvent: {}
+[119.097258] (-) TimerEvent: {}
+[119.198080] (-) TimerEvent: {}
+[119.298818] (-) TimerEvent: {}
+[119.399707] (-) TimerEvent: {}
+[119.500593] (-) TimerEvent: {}
+[119.601375] (-) TimerEvent: {}
+[119.702100] (-) TimerEvent: {}
+[119.802810] (-) TimerEvent: {}
+[119.903573] (-) TimerEvent: {}
+[120.004559] (-) TimerEvent: {}
+[120.105590] (-) TimerEvent: {}
+[120.206364] (-) TimerEvent: {}
+[120.307248] (-) TimerEvent: {}
+[120.408189] (-) TimerEvent: {}
+[120.509242] (-) TimerEvent: {}
+[120.609958] (-) TimerEvent: {}
+[120.710727] (-) TimerEvent: {}
+[120.811466] (-) TimerEvent: {}
+[120.912285] (-) TimerEvent: {}
+[121.013086] (-) TimerEvent: {}
+[121.113931] (-) TimerEvent: {}
+[121.214719] (-) TimerEvent: {}
+[121.315436] (-) TimerEvent: {}
+[121.416194] (-) TimerEvent: {}
+[121.516983] (-) TimerEvent: {}
+[121.617745] (-) TimerEvent: {}
+[121.718520] (-) TimerEvent: {}
+[121.819450] (-) TimerEvent: {}
+[121.920351] (-) TimerEvent: {}
+[122.021173] (-) TimerEvent: {}
+[122.121933] (-) TimerEvent: {}
+[122.222747] (-) TimerEvent: {}
+[122.323499] (-) TimerEvent: {}
+[122.424251] (-) TimerEvent: {}
+[122.525054] (-) TimerEvent: {}
+[122.625794] (-) TimerEvent: {}
+[122.726637] (-) TimerEvent: {}
+[122.827393] (-) TimerEvent: {}
+[122.928176] (-) TimerEvent: {}
+[123.028928] (-) TimerEvent: {}
+[123.129737] (-) TimerEvent: {}
+[123.230488] (-) TimerEvent: {}
+[123.331287] (-) TimerEvent: {}
+[123.432047] (-) TimerEvent: {}
+[123.532804] (-) TimerEvent: {}
+[123.633604] (-) TimerEvent: {}
+[123.734357] (-) TimerEvent: {}
+[123.835138] (-) TimerEvent: {}
+[123.935887] (-) TimerEvent: {}
+[124.036640] (-) TimerEvent: {}
+[124.137388] (-) TimerEvent: {}
+[124.238215] (-) TimerEvent: {}
+[124.339079] (-) TimerEvent: {}
+[124.439776] (-) TimerEvent: {}
+[124.540510] (-) TimerEvent: {}
+[124.641393] (-) TimerEvent: {}
+[124.742192] (-) TimerEvent: {}
+[124.843151] (-) TimerEvent: {}
+[124.943946] (-) TimerEvent: {}
+[125.044770] (-) TimerEvent: {}
+[125.145543] (-) TimerEvent: {}
+[125.246299] (-) TimerEvent: {}
+[125.347073] (-) TimerEvent: {}
+[125.447851] (-) TimerEvent: {}
+[125.548872] (-) TimerEvent: {}
+[125.649575] (-) TimerEvent: {}
+[125.750726] (-) TimerEvent: {}
+[125.851447] (-) TimerEvent: {}
+[125.952270] (-) TimerEvent: {}
+[126.053172] (-) TimerEvent: {}
+[126.153934] (-) TimerEvent: {}
+[126.254734] (-) TimerEvent: {}
+[126.355475] (-) TimerEvent: {}
+[126.456233] (-) TimerEvent: {}
+[126.557007] (-) TimerEvent: {}
+[126.657783] (-) TimerEvent: {}
+[126.758581] (-) TimerEvent: {}
+[126.859393] (-) TimerEvent: {}
+[126.960190] (-) TimerEvent: {}
+[127.061008] (-) TimerEvent: {}
+[127.161830] (-) TimerEvent: {}
+[127.262695] (-) TimerEvent: {}
+[127.363436] (-) TimerEvent: {}
+[127.464194] (-) TimerEvent: {}
+[127.564957] (-) TimerEvent: {}
+[127.665716] (-) TimerEvent: {}
+[127.766701] (-) TimerEvent: {}
+[127.867467] (-) TimerEvent: {}
+[127.968223] (-) TimerEvent: {}
+[128.068966] (-) TimerEvent: {}
+[128.169727] (-) TimerEvent: {}
+[128.270488] (-) TimerEvent: {}
+[128.371333] (-) TimerEvent: {}
+[128.472072] (-) TimerEvent: {}
+[128.572821] (-) TimerEvent: {}
+[128.673585] (-) TimerEvent: {}
+[128.774360] (-) TimerEvent: {}
+[128.875148] (-) TimerEvent: {}
+[128.975919] (-) TimerEvent: {}
+[129.076828] (-) TimerEvent: {}
+[129.177675] (-) TimerEvent: {}
+[129.278658] (-) TimerEvent: {}
+[129.379442] (-) TimerEvent: {}
+[129.480179] (-) TimerEvent: {}
+[129.580956] (-) TimerEvent: {}
+[129.681711] (-) TimerEvent: {}
+[129.782448] (-) TimerEvent: {}
+[129.883232] (-) TimerEvent: {}
+[129.984024] (-) TimerEvent: {}
+[130.084800] (-) TimerEvent: {}
+[130.185546] (-) TimerEvent: {}
+[130.286325] (-) TimerEvent: {}
+[130.387091] (-) TimerEvent: {}
+[130.487839] (-) TimerEvent: {}
+[130.588632] (-) TimerEvent: {}
+[130.689395] (-) TimerEvent: {}
+[130.790150] (-) TimerEvent: {}
+[130.890954] (-) TimerEvent: {}
+[130.991748] (-) TimerEvent: {}
+[131.092540] (-) TimerEvent: {}
+[131.193300] (-) TimerEvent: {}
+[131.294057] (-) TimerEvent: {}
+[131.394799] (-) TimerEvent: {}
+[131.495593] (-) TimerEvent: {}
+[131.597434] (-) TimerEvent: {}
+[131.698209] (-) TimerEvent: {}
+[131.799044] (-) TimerEvent: {}
+[131.899855] (-) TimerEvent: {}
+[132.000584] (-) TimerEvent: {}
+[132.101432] (-) TimerEvent: {}
+[132.202441] (-) TimerEvent: {}
+[132.303354] (-) TimerEvent: {}
+[132.404195] (-) TimerEvent: {}
+[132.505017] (-) TimerEvent: {}
+[132.605956] (-) TimerEvent: {}
+[132.706950] (-) TimerEvent: {}
+[132.807680] (-) TimerEvent: {}
+[132.908450] (-) TimerEvent: {}
+[133.009208] (-) TimerEvent: {}
+[133.109969] (-) TimerEvent: {}
+[133.210808] (-) TimerEvent: {}
+[133.311669] (-) TimerEvent: {}
+[133.412487] (-) TimerEvent: {}
+[133.513270] (-) TimerEvent: {}
+[133.614036] (-) TimerEvent: {}
+[133.714749] (-) TimerEvent: {}
+[133.815464] (-) TimerEvent: {}
+[133.916184] (-) TimerEvent: {}
+[134.016928] (-) TimerEvent: {}
+[134.117703] (-) TimerEvent: {}
+[134.218557] (-) TimerEvent: {}
+[134.319351] (-) TimerEvent: {}
+[134.420086] (-) TimerEvent: {}
+[134.520914] (-) TimerEvent: {}
+[134.621628] (-) TimerEvent: {}
+[134.722348] (-) TimerEvent: {}
+[134.823161] (-) TimerEvent: {}
+[134.923881] (-) TimerEvent: {}
+[135.024615] (-) TimerEvent: {}
+[135.125449] (-) TimerEvent: {}
+[135.226253] (-) TimerEvent: {}
+[135.327015] (-) TimerEvent: {}
+[135.427740] (-) TimerEvent: {}
+[135.528502] (-) TimerEvent: {}
+[135.629249] (-) TimerEvent: {}
+[135.729991] (-) TimerEvent: {}
+[135.830766] (-) TimerEvent: {}
+[135.931510] (-) TimerEvent: {}
+[136.032265] (-) TimerEvent: {}
+[136.133098] (-) TimerEvent: {}
+[136.233919] (-) TimerEvent: {}
+[136.334679] (-) TimerEvent: {}
+[136.435380] (-) TimerEvent: {}
+[136.536231] (-) TimerEvent: {}
+[136.637103] (-) TimerEvent: {}
+[136.737840] (-) TimerEvent: {}
+[136.838629] (-) TimerEvent: {}
+[136.939365] (-) TimerEvent: {}
+[137.040100] (-) TimerEvent: {}
+[137.140864] (-) TimerEvent: {}
+[137.241616] (-) TimerEvent: {}
+[137.342379] (-) TimerEvent: {}
+[137.618058] (-) TimerEvent: {}
+[137.718769] (-) TimerEvent: {}
+[137.819547] (-) TimerEvent: {}
+[137.920293] (-) TimerEvent: {}
+[138.021092] (-) TimerEvent: {}
+[138.121936] (-) TimerEvent: {}
+[138.222789] (-) TimerEvent: {}
+[138.323553] (-) TimerEvent: {}
+[138.424318] (-) TimerEvent: {}
+[138.525053] (-) TimerEvent: {}
+[138.625845] (-) TimerEvent: {}
+[138.726640] (-) TimerEvent: {}
+[138.827382] (-) TimerEvent: {}
+[138.928189] (-) TimerEvent: {}
+[139.028952] (-) TimerEvent: {}
+[139.129704] (-) TimerEvent: {}
+[139.230918] (-) TimerEvent: {}
+[139.331882] (-) TimerEvent: {}
+[139.432767] (-) TimerEvent: {}
+[139.534145] (-) TimerEvent: {}
+[139.573178] (diff_drive_controller) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable test_diff_drive_controller\x1b[0m\n'}
+[139.634328] (-) TimerEvent: {}
+[139.735285] (-) TimerEvent: {}
+[139.836748] (-) TimerEvent: {}
+[139.938109] (-) TimerEvent: {}
+[140.039421] (-) TimerEvent: {}
+[140.140446] (-) TimerEvent: {}
+[140.241648] (-) TimerEvent: {}
+[140.342748] (-) TimerEvent: {}
+[140.443732] (-) TimerEvent: {}
+[140.544666] (-) TimerEvent: {}
+[140.645735] (-) TimerEvent: {}
+[140.746855] (-) TimerEvent: {}
+[140.848209] (-) TimerEvent: {}
+[140.949484] (-) TimerEvent: {}
+[141.050388] (-) TimerEvent: {}
+[141.151316] (-) TimerEvent: {}
+[141.252239] (-) TimerEvent: {}
+[141.353216] (-) TimerEvent: {}
+[141.454445] (-) TimerEvent: {}
+[141.555352] (-) TimerEvent: {}
+[141.656224] (-) TimerEvent: {}
+[141.757251] (-) TimerEvent: {}
+[141.858472] (-) TimerEvent: {}
+[141.959370] (-) TimerEvent: {}
+[142.060365] (-) TimerEvent: {}
+[142.162031] (-) TimerEvent: {}
+[142.263200] (-) TimerEvent: {}
+[142.364686] (-) TimerEvent: {}
+[142.465935] (-) TimerEvent: {}
+[142.567117] (-) TimerEvent: {}
+[142.668567] (-) TimerEvent: {}
+[142.772649] (-) TimerEvent: {}
+[142.873570] (-) TimerEvent: {}
+[142.974820] (-) TimerEvent: {}
+[143.076092] (-) TimerEvent: {}
+[143.177310] (-) TimerEvent: {}
+[143.278209] (-) TimerEvent: {}
+[143.379291] (-) TimerEvent: {}
+[143.480537] (-) TimerEvent: {}
+[143.581606] (-) TimerEvent: {}
+[143.683035] (-) TimerEvent: {}
+[143.784223] (-) TimerEvent: {}
+[143.885236] (-) TimerEvent: {}
+[143.986874] (-) TimerEvent: {}
+[144.089006] (-) TimerEvent: {}
+[144.190397] (-) TimerEvent: {}
+[144.291679] (-) TimerEvent: {}
+[144.392707] (-) TimerEvent: {}
+[144.493926] (-) TimerEvent: {}
+[144.594834] (-) TimerEvent: {}
+[144.695862] (-) TimerEvent: {}
+[144.797136] (-) TimerEvent: {}
+[144.897979] (-) TimerEvent: {}
+[144.998865] (-) TimerEvent: {}
+[145.099604] (-) TimerEvent: {}
+[145.200254] (-) TimerEvent: {}
+[145.300951] (-) TimerEvent: {}
+[145.402026] (-) TimerEvent: {}
+[145.502881] (-) TimerEvent: {}
+[145.603797] (-) TimerEvent: {}
+[145.704451] (-) TimerEvent: {}
+[145.764698] (diff_drive_controller) StdoutLine: {'line': b'[100%] Built target test_diff_drive_controller\n'}
+[145.804691] (-) TimerEvent: {}
+[145.810916] (diff_drive_controller) CommandEnded: {'returncode': 0}
+[145.813286] (diff_drive_controller) JobProgress: {'identifier': 'diff_drive_controller', 'progress': 'install'}
+[145.814187] (diff_drive_controller) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/piros/Work/ROS2/controller_ws/build/diff_drive_controller'], 'cwd': '/home/piros/Work/ROS2/controller_ws/build/diff_drive_controller', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('QT_SCALE_FACTOR', '1'), ('LANGUAGE', 'en_IN:en'), ('USER', 'piros'), ('XDG_SESSION_TYPE', 'x11'), ('COMPIZ_CONFIG_PROFILE', 'mate'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/piros'), ('OLDPWD', '/home/piros/Work/ROS2'), ('DESKTOP_SESSION', 'mate'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GTK_MODULES', 'appmenu-gtk-module:gail:atk-bridge:canberra-gtk-module'), ('XDG_SEAT_PATH', '/org/freedesktop/DisplayManager/Seat0'), ('MANAGERPID', '1663'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1686'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=531afbf53fd4eb95884cb8b9680c8089'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3026'), ('UBUNTU_MENUPROXY', '1'), ('QT_QPA_PLATFORMTHEME', 'gtk2'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/piros/Work/rplidar_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'piros'), ('JOURNAL_STREAM', '8:27936'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('GTK_OVERLAY_SCROLLING', '0'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/piros:@/tmp/.ICE-unix/1695,unix/piros:/tmp/.ICE-unix/1695'), ('GDM_LANG', 'en_US'), ('INVOCATION_ID', '656f7ef9a71242e8b0df139371bf2cbb'), ('XDG_SESSION_PATH', '/org/freedesktop/DisplayManager/Session0'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'MATE'), ('XDG_SESSION_DESKTOP', 'mate'), ('XAUTHORITY', '/home/piros/.Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('XDG_GREETER_DATA_DIR', '/var/lib/lightdm-data/piros'), ('AMENT_PREFIX_PATH', '/home/piros/Work/rplidar_ws/install/rplidar_ros:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:cd888be0-f582-4d28-8da4-f8e7e9461455'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'mate'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('PWD', '/home/piros/Work/ROS2/controller_ws/build/diff_drive_controller'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-mate:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=531afbf53fd4eb95884cb8b9680c8089'), ('XDG_DATA_DIRS', '/usr/share/mate:/home/piros/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('MATE_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/piros/Work/rplidar_ws/install/rplidar_ros:/opt/ros/humble'), ('QT_FONT_DPI', '96')]), 'shell': False}
+[145.849504] (diff_drive_controller) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[145.850087] (diff_drive_controller) StdoutLine: {'line': b'-- Installing: /home/piros/Work/ROS2/controller_ws/install/diff_drive_controller/include/diff_drive_controller\n'}
+[145.850549] (diff_drive_controller) StdoutLine: {'line': b'-- Installing: /home/piros/Work/ROS2/controller_ws/install/diff_drive_controller/include/diff_drive_controller/diff_drive_controller_parameters.hpp\n'}
+[145.853012] (diff_drive_controller) StdoutLine: {'line': b'-- Installing: /home/piros/Work/ROS2/controller_ws/install/diff_drive_controller/share/diff_drive_controller/diff_drive_plugin.xml\n'}
+[145.856090] (diff_drive_controller) StdoutLine: {'line': b'-- Up-to-date: /home/piros/Work/ROS2/controller_ws/install/diff_drive_controller/include/diff_drive_controller\n'}
+[145.856666] (diff_drive_controller) StdoutLine: {'line': b'-- Installing: /home/piros/Work/ROS2/controller_ws/install/diff_drive_controller/include/diff_drive_controller/diff_drive_controller\n'}
+[145.857142] (diff_drive_controller) StdoutLine: {'line': b'-- Installing: /home/piros/Work/ROS2/controller_ws/install/diff_drive_controller/include/diff_drive_controller/diff_drive_controller/odometry.hpp\n'}
+[145.858325] (diff_drive_controller) StdoutLine: {'line': b'-- Installing: /home/piros/Work/ROS2/controller_ws/install/diff_drive_controller/include/diff_drive_controller/diff_drive_controller/diff_drive_controller.hpp\n'}
+[145.859762] (diff_drive_controller) StdoutLine: {'line': b'-- Installing: /home/piros/Work/ROS2/controller_ws/install/diff_drive_controller/include/diff_drive_controller/diff_drive_controller/speed_limiter.hpp\n'}
+[145.860893] (diff_drive_controller) StdoutLine: {'line': b'-- Installing: /home/piros/Work/ROS2/controller_ws/install/diff_drive_controller/include/diff_drive_controller/diff_drive_controller/visibility_control.h\n'}
+[145.863114] (diff_drive_controller) StdoutLine: {'line': b'-- Installing: /home/piros/Work/ROS2/controller_ws/install/diff_drive_controller/lib/libdiff_drive_controller.so\n'}
+[145.904962] (-) TimerEvent: {}
+[145.945188] (diff_drive_controller) StdoutLine: {'line': b'-- Set runtime path of "/home/piros/Work/ROS2/controller_ws/install/diff_drive_controller/lib/libdiff_drive_controller.so" to ""\n'}
+[145.945826] (diff_drive_controller) StdoutLine: {'line': b'-- Installing: /home/piros/Work/ROS2/controller_ws/install/diff_drive_controller/share/diff_drive_controller/environment/library_path.sh\n'}
+[145.947195] (diff_drive_controller) StdoutLine: {'line': b'-- Installing: /home/piros/Work/ROS2/controller_ws/install/diff_drive_controller/share/diff_drive_controller/environment/library_path.dsv\n'}
+[145.948965] (diff_drive_controller) StdoutLine: {'line': b'-- Installing: /home/piros/Work/ROS2/controller_ws/install/diff_drive_controller/share/ament_index/resource_index/package_run_dependencies/diff_drive_controller\n'}
+[145.950661] (diff_drive_controller) StdoutLine: {'line': b'-- Installing: /home/piros/Work/ROS2/controller_ws/install/diff_drive_controller/share/ament_index/resource_index/parent_prefix_path/diff_drive_controller\n'}
+[145.952165] (diff_drive_controller) StdoutLine: {'line': b'-- Installing: /home/piros/Work/ROS2/controller_ws/install/diff_drive_controller/share/diff_drive_controller/environment/ament_prefix_path.sh\n'}
+[145.953415] (diff_drive_controller) StdoutLine: {'line': b'-- Installing: /home/piros/Work/ROS2/controller_ws/install/diff_drive_controller/share/diff_drive_controller/environment/ament_prefix_path.dsv\n'}
+[145.954867] (diff_drive_controller) StdoutLine: {'line': b'-- Installing: /home/piros/Work/ROS2/controller_ws/install/diff_drive_controller/share/diff_drive_controller/environment/path.sh\n'}
+[145.956120] (diff_drive_controller) StdoutLine: {'line': b'-- Installing: /home/piros/Work/ROS2/controller_ws/install/diff_drive_controller/share/diff_drive_controller/environment/path.dsv\n'}
+[145.957346] (diff_drive_controller) StdoutLine: {'line': b'-- Installing: /home/piros/Work/ROS2/controller_ws/install/diff_drive_controller/share/diff_drive_controller/local_setup.bash\n'}
+[145.958520] (diff_drive_controller) StdoutLine: {'line': b'-- Installing: /home/piros/Work/ROS2/controller_ws/install/diff_drive_controller/share/diff_drive_controller/local_setup.sh\n'}
+[145.959863] (diff_drive_controller) StdoutLine: {'line': b'-- Installing: /home/piros/Work/ROS2/controller_ws/install/diff_drive_controller/share/diff_drive_controller/local_setup.zsh\n'}
+[145.961076] (diff_drive_controller) StdoutLine: {'line': b'-- Installing: /home/piros/Work/ROS2/controller_ws/install/diff_drive_controller/share/diff_drive_controller/local_setup.dsv\n'}
+[145.962283] (diff_drive_controller) StdoutLine: {'line': b'-- Installing: /home/piros/Work/ROS2/controller_ws/install/diff_drive_controller/share/diff_drive_controller/package.dsv\n'}
+[145.963935] (diff_drive_controller) StdoutLine: {'line': b'-- Installing: /home/piros/Work/ROS2/controller_ws/install/diff_drive_controller/share/ament_index/resource_index/packages/diff_drive_controller\n'}
+[145.965585] (diff_drive_controller) StdoutLine: {'line': b'-- Installing: /home/piros/Work/ROS2/controller_ws/install/diff_drive_controller/share/ament_index/resource_index/controller_interface__pluginlib__plugin/diff_drive_controller\n'}
+[145.967474] (diff_drive_controller) StdoutLine: {'line': b'-- Installing: /home/piros/Work/ROS2/controller_ws/install/diff_drive_controller/share/diff_drive_controller/cmake/export_diff_drive_controllerExport.cmake\n'}
+[145.969034] (diff_drive_controller) StdoutLine: {'line': b'-- Installing: /home/piros/Work/ROS2/controller_ws/install/diff_drive_controller/share/diff_drive_controller/cmake/export_diff_drive_controllerExport-noconfig.cmake\n'}
+[145.970452] (diff_drive_controller) StdoutLine: {'line': b'-- Installing: /home/piros/Work/ROS2/controller_ws/install/diff_drive_controller/share/diff_drive_controller/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[145.972121] (diff_drive_controller) StdoutLine: {'line': b'-- Installing: /home/piros/Work/ROS2/controller_ws/install/diff_drive_controller/share/diff_drive_controller/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[145.973479] (diff_drive_controller) StdoutLine: {'line': b'-- Installing: /home/piros/Work/ROS2/controller_ws/install/diff_drive_controller/share/diff_drive_controller/cmake/diff_drive_controllerConfig.cmake\n'}
+[145.974530] (diff_drive_controller) StdoutLine: {'line': b'-- Installing: /home/piros/Work/ROS2/controller_ws/install/diff_drive_controller/share/diff_drive_controller/cmake/diff_drive_controllerConfig-version.cmake\n'}
+[145.975948] (diff_drive_controller) StdoutLine: {'line': b'-- Installing: /home/piros/Work/ROS2/controller_ws/install/diff_drive_controller/share/diff_drive_controller/package.xml\n'}
+[145.981741] (diff_drive_controller) CommandEnded: {'returncode': 0}
+[146.005404] (-) TimerEvent: {}
+[146.060887] (diff_drive_controller) JobEnded: {'identifier': 'diff_drive_controller', 'rc': 0}
+[146.063582] (-) EventReactorShutdown: {}

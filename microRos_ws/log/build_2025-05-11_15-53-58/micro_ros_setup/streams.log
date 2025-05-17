@@ -1,0 +1,210 @@
+[0.068s] Invoking command in '/home/piros/Work/ROS2/microRos_ws/build/micro_ros_setup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/piros/Work/ROS2/microRos_ws/src/micro_ros_setup -DCMAKE_INSTALL_PREFIX=/home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup
+[0.351s] -- The C compiler identification is GNU 11.4.0
+[0.630s] -- The CXX compiler identification is GNU 11.4.0
+[0.657s] -- Detecting C compiler ABI info
+[0.994s] -- Detecting C compiler ABI info - done
+[1.019s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.020s] -- Detecting C compile features
+[1.021s] -- Detecting C compile features - done
+[1.033s] -- Detecting CXX compiler ABI info
+[1.409s] -- Detecting CXX compiler ABI info - done
+[1.436s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.437s] -- Detecting CXX compile features
+[1.439s] -- Detecting CXX compile features - done
+[1.466s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[2.317s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[2.957s] -- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[3.470s] -- Added test 'copyright' to check source files copyright and LICENSE
+[3.751s] -- Added test 'flake8' to check Python code syntax and style conventions
+[3.785s] -- Added test 'lint_cmake' to check CMake code style
+[3.805s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[3.954s] -- Added test 'xmllint' to check XML markup files
+[3.962s] -- Configuring done
+[3.982s] -- Generating done
+[3.990s] -- Build files have been written to: /home/piros/Work/ROS2/microRos_ws/build/micro_ros_setup
+[4.007s] Invoked command in '/home/piros/Work/ROS2/microRos_ws/build/micro_ros_setup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/piros/Work/ROS2/microRos_ws/src/micro_ros_setup -DCMAKE_INSTALL_PREFIX=/home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup
+[4.018s] Invoking command in '/home/piros/Work/ROS2/microRos_ws/build/micro_ros_setup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/piros/Work/ROS2/microRos_ws/build/micro_ros_setup -- -j4 -l4
+[4.160s] Invoked command in '/home/piros/Work/ROS2/microRos_ws/build/micro_ros_setup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/piros/Work/ROS2/microRos_ws/build/micro_ros_setup -- -j4 -l4
+[4.201s] Invoking command in '/home/piros/Work/ROS2/microRos_ws/build/micro_ros_setup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/piros/Work/ROS2/microRos_ws/build/micro_ros_setup
+[4.228s] -- Install configuration: ""
+[4.230s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/share/ament_index/resource_index/package_run_dependencies/micro_ros_setup
+[4.236s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/share/ament_index/resource_index/parent_prefix_path/micro_ros_setup
+[4.242s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/share/micro_ros_setup/environment/ament_prefix_path.sh
+[4.245s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/share/micro_ros_setup/environment/ament_prefix_path.dsv
+[4.246s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/share/micro_ros_setup/environment/path.sh
+[4.246s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/share/micro_ros_setup/environment/path.dsv
+[4.247s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/share/micro_ros_setup/local_setup.bash
+[4.247s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/share/micro_ros_setup/local_setup.sh
+[4.248s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/share/micro_ros_setup/local_setup.zsh
+[4.248s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/share/micro_ros_setup/local_setup.dsv
+[4.249s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/share/micro_ros_setup/package.dsv
+[4.251s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/share/ament_index/resource_index/packages/micro_ros_setup
+[4.253s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/share/micro_ros_setup/cmake/micro_ros_setupConfig.cmake
+[4.254s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/share/micro_ros_setup/cmake/micro_ros_setupConfig-version.cmake
+[4.256s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/share/micro_ros_setup/package.xml
+[4.257s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config
+[4.259s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/freertos
+[4.259s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/freertos/nucleo_f746zg
+[4.260s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/freertos/nucleo_f746zg/flash.sh
+[4.263s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/freertos/nucleo_f746zg/configure.sh
+[4.265s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/freertos/nucleo_f746zg/build.sh
+[4.266s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/freertos/nucleo_f746zg/package.xml
+[4.268s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/freertos/nucleo_f746zg/client-colcon.meta
+[4.270s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/freertos/nucleo_f746zg/create.sh
+[4.272s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/freertos/nucleo_f746zg/board.repos
+[4.274s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/freertos/nucleo_f746zg/client_uros_packages.repos
+[4.275s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/freertos/olimex-stm32-e407
+[4.275s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/freertos/olimex-stm32-e407/flash.sh
+[4.277s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/freertos/olimex-stm32-e407/configure.sh
+[4.278s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/freertos/olimex-stm32-e407/build.sh
+[4.280s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/freertos/olimex-stm32-e407/package.xml
+[4.282s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/freertos/olimex-stm32-e407/client-colcon.meta
+[4.284s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/freertos/olimex-stm32-e407/create.sh
+[4.286s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/freertos/olimex-stm32-e407/board.repos
+[4.288s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/freertos/olimex-stm32-e407/client_uros_packages.repos
+[4.288s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/freertos/dev_uros_packages.repos
+[4.290s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/freertos/nucleo_f767zi
+[4.290s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/freertos/nucleo_f767zi/flash.sh
+[4.293s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/freertos/nucleo_f767zi/configure.sh
+[4.294s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/freertos/nucleo_f767zi/build.sh
+[4.296s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/freertos/nucleo_f767zi/package.xml
+[4.298s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/freertos/nucleo_f767zi/client-colcon.meta
+[4.300s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/freertos/nucleo_f767zi/create.sh
+[4.303s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/freertos/nucleo_f767zi/board.repos
+[4.306s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/freertos/nucleo_f767zi/client_uros_packages.repos
+[4.309s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/freertos/esp32
+[4.311s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/freertos/esp32/README.md
+[4.312s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/freertos/esp32/flash.sh
+[4.313s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/freertos/esp32/configure.sh
+[4.314s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/freertos/esp32/build.sh
+[4.317s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/freertos/esp32/package.xml
+[4.319s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/freertos/esp32/client-colcon.meta
+[4.321s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/freertos/esp32/create.sh
+[4.323s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/freertos/esp32/board.repos
+[4.325s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/freertos/esp32/client_uros_packages.repos
+[4.325s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/freertos/nucleo_f446re
+[4.326s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/freertos/nucleo_f446re/flash.sh
+[4.327s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/freertos/nucleo_f446re/configure.sh
+[4.329s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/freertos/nucleo_f446re/build.sh
+[4.331s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/freertos/nucleo_f446re/package.xml
+[4.334s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/freertos/nucleo_f446re/client-colcon.meta
+[4.336s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/freertos/nucleo_f446re/create.sh
+[4.341s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/freertos/nucleo_f446re/board.repos
+[4.344s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/freertos/nucleo_f446re/client_uros_packages.repos
+[4.344s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/freertos/dev_ros2_packages.txt
+[4.345s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/freertos/list_apps.sh
+[4.347s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/freertos/nucleo_f446ze
+[4.348s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/freertos/nucleo_f446ze/flash.sh
+[4.350s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/freertos/nucleo_f446ze/configure.sh
+[4.352s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/freertos/nucleo_f446ze/build.sh
+[4.354s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/freertos/nucleo_f446ze/package.xml
+[4.355s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/freertos/nucleo_f446ze/client-colcon.meta
+[4.357s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/freertos/nucleo_f446ze/create.sh
+[4.359s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/freertos/nucleo_f446ze/board.repos
+[4.361s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/freertos/nucleo_f446ze/client_uros_packages.repos
+[4.361s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/freertos/crazyflie21
+[4.362s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/freertos/crazyflie21/flash.sh
+[4.364s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/freertos/crazyflie21/configure.sh
+[4.365s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/freertos/crazyflie21/build.sh
+[4.367s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/freertos/crazyflie21/package.xml
+[4.369s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/freertos/crazyflie21/client-colcon.meta
+[4.371s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/freertos/crazyflie21/create.sh
+[4.373s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/freertos/crazyflie21/board.repos
+[4.375s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/freertos/crazyflie21/client_uros_packages.repos
+[4.375s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/agent_ros2_packages.txt
+[4.377s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/raspbian
+[4.377s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/raspbian/dev_uros_packages.repos
+[4.379s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/raspbian/generic
+[4.380s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/raspbian/generic/supported_platforms
+[4.381s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/raspbian/generic/flash.sh
+[4.383s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/raspbian/generic/configure.sh
+[4.385s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/raspbian/generic/build.sh
+[4.386s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/raspbian/generic/client-colcon.meta
+[4.388s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/raspbian/generic/create.sh
+[4.390s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/raspbian/generic/client_uros_packages.repos
+[4.392s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/raspbian/dev_ros2_packages.txt
+[4.393s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/agent_uros_packages.repos
+[4.395s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/utils.sh
+[4.397s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/zephyr
+[4.398s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/zephyr/dev_uros_packages.repos
+[4.400s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/zephyr/generic
+[4.401s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/zephyr/generic/supported_platforms
+[4.403s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/zephyr/generic/flash.sh
+[4.405s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/zephyr/generic/configure.sh
+[4.407s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/zephyr/generic/build.sh
+[4.409s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/zephyr/generic/package.xml
+[4.410s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/zephyr/generic/client-colcon.meta
+[4.412s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/zephyr/generic/create.sh
+[4.413s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/zephyr/generic/board.repos
+[4.415s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/zephyr/generic/client_uros_packages.repos
+[4.416s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/zephyr/dev_ros2_packages.txt
+[4.417s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/zephyr/list_apps.sh
+[4.419s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/android
+[4.420s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/android/dev_uros_packages.repos
+[4.423s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/android/generic
+[4.424s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/android/generic/flash.sh
+[4.426s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/android/generic/build.sh
+[4.428s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/android/generic/package.xml
+[4.431s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/android/generic/client-colcon.meta
+[4.436s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/android/generic/create.sh
+[4.437s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/android/generic/client_uros_packages.repos
+[4.439s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/android/dev_ros2_packages.txt
+[4.442s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/mbed
+[4.442s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/mbed/dev_uros_packages.repos
+[4.444s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/mbed/generic
+[4.444s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/mbed/generic/supported_platforms
+[4.446s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/mbed/generic/flash.sh
+[4.448s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/mbed/generic/build.sh
+[4.450s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/mbed/generic/package.xml
+[4.451s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/mbed/generic/create.sh
+[4.453s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/mbed/generic/board.repos
+[4.455s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/mbed/generic/client_uros_packages.repos
+[4.457s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/mbed/dev_ros2_packages.txt
+[4.459s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/mbed/list_apps.sh
+[4.461s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/renesas_ra
+[4.461s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/renesas_ra/dev_uros_packages.repos
+[4.463s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/renesas_ra/ra6m5
+[4.464s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/renesas_ra/ra6m5/flash.sh
+[4.465s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/renesas_ra/ra6m5/configure.sh
+[4.467s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/renesas_ra/ra6m5/build.sh
+[4.469s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/renesas_ra/ra6m5/client-colcon.meta
+[4.470s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/renesas_ra/ra6m5/create.sh
+[4.472s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/renesas_ra/ra6m5/board.repos
+[4.473s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/renesas_ra/ra6m5/client_uros_packages.repos
+[4.475s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/renesas_ra/dev_ros2_packages.txt
+[4.477s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/renesas_ra/list_apps.sh
+[4.478s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/host
+[4.479s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/host/dev_uros_packages.repos
+[4.481s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/host/generic
+[4.482s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/host/generic/flash.sh
+[4.484s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/host/generic/build.sh
+[4.485s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/host/generic/client_host_packages.repos
+[4.487s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/host/generic/package.xml
+[4.489s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/host/generic/create.sh
+[4.490s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/host/generic/client-host-colcon.meta
+[4.492s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/host/dev_ros2_packages.txt
+[4.494s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/host/client_ros2_packages.txt
+[4.495s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/client_uros_packages.repos
+[4.497s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/generate_lib
+[4.498s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/generate_lib/dev_uros_packages.repos
+[4.499s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/generate_lib/generic
+[4.502s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/generate_lib/generic/flash.sh
+[4.503s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/generate_lib/generic/build.sh
+[4.505s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/generate_lib/generic/package.xml
+[4.507s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/generate_lib/generic/client-colcon.meta
+[4.509s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/generate_lib/generic/demo_toolchain.cmake
+[4.510s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/generate_lib/generic/create.sh
+[4.512s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/generate_lib/generic/client_uros_packages.repos
+[4.513s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/generate_lib/dev_ros2_packages.txt
+[4.515s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/./config/client_ros2_packages.txt
+[4.518s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/lib/micro_ros_setup/create_ws.sh
+[4.520s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/lib/micro_ros_setup/create_agent_ws.sh
+[4.521s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/lib/micro_ros_setup/create_firmware_ws.sh
+[4.523s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/lib/micro_ros_setup/configure_firmware.sh
+[4.525s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/lib/micro_ros_setup/flash_firmware.sh
+[4.526s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/lib/micro_ros_setup/build_firmware.sh
+[4.528s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/lib/micro_ros_setup/build_agent.sh
+[4.529s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/lib/micro_ros_setup/yaml_filter.py
+[4.531s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/lib/micro_ros_setup/clean_env.sh
+[4.533s] -- Installing: /home/piros/Work/ROS2/microRos_ws/install/micro_ros_setup/lib/micro_ros_setup/component
+[4.543s] Invoked command in '/home/piros/Work/ROS2/microRos_ws/build/micro_ros_setup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/piros/Work/ROS2/microRos_ws/build/micro_ros_setup

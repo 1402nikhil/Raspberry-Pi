@@ -1,0 +1,52 @@
+[0.152s] Invoking command in '/home/piros/Work/ROS2/control_ws/build/three_wheel': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/piros/Work/ROS2/ros2_ws/install/py_pkg:/opt/ros/humble /usr/bin/cmake --build /home/piros/Work/ROS2/control_ws/build/three_wheel -- -j4 -l4
+[0.862s] [35m[1mConsolidate compiler generated dependencies of target three_wheel[0m
+[1.402s] [100%] Built target three_wheel
+[1.457s] Invoked command in '/home/piros/Work/ROS2/control_ws/build/three_wheel' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/piros/Work/ROS2/ros2_ws/install/py_pkg:/opt/ros/humble /usr/bin/cmake --build /home/piros/Work/ROS2/control_ws/build/three_wheel -- -j4 -l4
+[1.508s] Invoking command in '/home/piros/Work/ROS2/control_ws/build/three_wheel': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/piros/Work/ROS2/ros2_ws/install/py_pkg:/opt/ros/humble /usr/bin/cmake --install /home/piros/Work/ROS2/control_ws/build/three_wheel
+[1.548s] -- Install configuration: ""
+[1.549s] -- Up-to-date: /home/piros/Work/ROS2/control_ws/install/three_wheel/share/three_wheel/three_wheel.xml
+[1.549s] -- Up-to-date: /home/piros/Work/ROS2/control_ws/install/three_wheel/include/three_wheel
+[1.550s] -- Up-to-date: /home/piros/Work/ROS2/control_ws/install/three_wheel/include/three_wheel/three_wheel
+[1.551s] -- Up-to-date: /home/piros/Work/ROS2/control_ws/install/three_wheel/include/three_wheel/three_wheel/drive_wheel.hpp
+[1.551s] -- Up-to-date: /home/piros/Work/ROS2/control_ws/install/three_wheel/include/three_wheel/three_wheel/threewheel_system.hpp
+[1.552s] -- Up-to-date: /home/piros/Work/ROS2/control_ws/install/three_wheel/include/three_wheel/three_wheel/dead_wheel.hpp
+[1.553s] -- Up-to-date: /home/piros/Work/ROS2/control_ws/install/three_wheel/include/three_wheel/three_wheel/visibility_control.h
+[1.553s] -- Up-to-date: /home/piros/Work/ROS2/control_ws/install/three_wheel/share/three_wheel/launch
+[1.554s] -- Up-to-date: /home/piros/Work/ROS2/control_ws/install/three_wheel/share/three_wheel/ros2_control
+[1.554s] -- Up-to-date: /home/piros/Work/ROS2/control_ws/install/three_wheel/share/three_wheel/ros2_control/three_wheel.ros2_control.xacro
+[1.555s] -- Up-to-date: /home/piros/Work/ROS2/control_ws/install/three_wheel/share/three_wheel/urdf
+[1.555s] -- Up-to-date: /home/piros/Work/ROS2/control_ws/install/three_wheel/share/three_wheel/urdf/three_wheel.urdf.xacro
+[1.556s] -- Up-to-date: /home/piros/Work/ROS2/control_ws/install/three_wheel/share/three_wheel/urdf/three_wheel.materials.xacro
+[1.556s] -- Up-to-date: /home/piros/Work/ROS2/control_ws/install/three_wheel/share/three_wheel/urdf/three_wheel_description.urdf.xacro
+[1.557s] -- Up-to-date: /home/piros/Work/ROS2/control_ws/install/three_wheel/share/three_wheel/rviz
+[1.557s] -- Up-to-date: /home/piros/Work/ROS2/control_ws/install/three_wheel/share/three_wheel/rviz/three_wheel_view.rviz
+[1.557s] -- Up-to-date: /home/piros/Work/ROS2/control_ws/install/three_wheel/share/three_wheel/rviz/three_wheel.rviz
+[1.558s] -- Up-to-date: /home/piros/Work/ROS2/control_ws/install/three_wheel/share/three_wheel/launch
+[1.559s] -- Up-to-date: /home/piros/Work/ROS2/control_ws/install/three_wheel/share/three_wheel/launch/three_wheel.launch.py
+[1.560s] -- Up-to-date: /home/piros/Work/ROS2/control_ws/install/three_wheel/share/three_wheel/config
+[1.561s] -- Up-to-date: /home/piros/Work/ROS2/control_ws/install/three_wheel/share/three_wheel/config/three_wheel_controller.yaml
+[1.562s] -- Up-to-date: /home/piros/Work/ROS2/control_ws/install/three_wheel/share/three_wheel/config/joystick.yaml
+[1.563s] -- Up-to-date: /home/piros/Work/ROS2/control_ws/install/three_wheel/lib/libthree_wheel.so
+[1.565s] -- Up-to-date: /home/piros/Work/ROS2/control_ws/install/three_wheel/share/three_wheel/environment/library_path.sh
+[1.566s] -- Up-to-date: /home/piros/Work/ROS2/control_ws/install/three_wheel/share/three_wheel/environment/library_path.dsv
+[1.567s] -- Up-to-date: /home/piros/Work/ROS2/control_ws/install/three_wheel/share/ament_index/resource_index/package_run_dependencies/three_wheel
+[1.571s] -- Up-to-date: /home/piros/Work/ROS2/control_ws/install/three_wheel/share/ament_index/resource_index/parent_prefix_path/three_wheel
+[1.575s] -- Up-to-date: /home/piros/Work/ROS2/control_ws/install/three_wheel/share/three_wheel/environment/ament_prefix_path.sh
+[1.577s] -- Up-to-date: /home/piros/Work/ROS2/control_ws/install/three_wheel/share/three_wheel/environment/ament_prefix_path.dsv
+[1.581s] -- Up-to-date: /home/piros/Work/ROS2/control_ws/install/three_wheel/share/three_wheel/environment/path.sh
+[1.583s] -- Up-to-date: /home/piros/Work/ROS2/control_ws/install/three_wheel/share/three_wheel/environment/path.dsv
+[1.584s] -- Up-to-date: /home/piros/Work/ROS2/control_ws/install/three_wheel/share/three_wheel/local_setup.bash
+[1.585s] -- Up-to-date: /home/piros/Work/ROS2/control_ws/install/three_wheel/share/three_wheel/local_setup.sh
+[1.587s] -- Up-to-date: /home/piros/Work/ROS2/control_ws/install/three_wheel/share/three_wheel/local_setup.zsh
+[1.588s] -- Up-to-date: /home/piros/Work/ROS2/control_ws/install/three_wheel/share/three_wheel/local_setup.dsv
+[1.590s] -- Installing: /home/piros/Work/ROS2/control_ws/install/three_wheel/share/three_wheel/package.dsv
+[1.604s] -- Up-to-date: /home/piros/Work/ROS2/control_ws/install/three_wheel/share/ament_index/resource_index/packages/three_wheel
+[1.604s] -- Up-to-date: /home/piros/Work/ROS2/control_ws/install/three_wheel/share/ament_index/resource_index/hardware_interface__pluginlib__plugin/three_wheel
+[1.605s] -- Up-to-date: /home/piros/Work/ROS2/control_ws/install/three_wheel/share/three_wheel/cmake/export_three_wheelExport.cmake
+[1.606s] -- Up-to-date: /home/piros/Work/ROS2/control_ws/install/three_wheel/share/three_wheel/cmake/export_three_wheelExport-noconfig.cmake
+[1.606s] -- Up-to-date: /home/piros/Work/ROS2/control_ws/install/three_wheel/share/three_wheel/cmake/ament_cmake_export_targets-extras.cmake
+[1.607s] -- Up-to-date: /home/piros/Work/ROS2/control_ws/install/three_wheel/share/three_wheel/cmake/ament_cmake_export_dependencies-extras.cmake
+[1.608s] -- Up-to-date: /home/piros/Work/ROS2/control_ws/install/three_wheel/share/three_wheel/cmake/three_wheelConfig.cmake
+[1.609s] -- Up-to-date: /home/piros/Work/ROS2/control_ws/install/three_wheel/share/three_wheel/cmake/three_wheelConfig-version.cmake
+[1.610s] -- Up-to-date: /home/piros/Work/ROS2/control_ws/install/three_wheel/share/three_wheel/package.xml
+[1.616s] Invoked command in '/home/piros/Work/ROS2/control_ws/build/three_wheel' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/piros/Work/ROS2/ros2_ws/install/py_pkg:/opt/ros/humble /usr/bin/cmake --install /home/piros/Work/ROS2/control_ws/build/three_wheel
